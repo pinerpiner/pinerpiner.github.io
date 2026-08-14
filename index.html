@@ -414,5 +414,22 @@ main > footer a:hover { color: var(--accent); }
   </main>
 
 </div>
+   <script>
+(function () {
+  var KEEP = 6; // 主列表保留最新 6 条，其余自动折叠
+  var list = document.querySelector('main ul.news');
+  if (!list) return;
+  var items = list.querySelectorAll(':scope > li');
+  if (items.length <= KEEP) return;
+  var details = document.createElement('details');
+  details.className = 'more';
+  details.innerHTML = '<summary><span class="label-more">Earlier items</span>' +
+    '<span class="label-less">Hide earlier items</span></summary>';
+  var inner = document.createElement('ul');
+  inner.className = 'news';
+  for (var i = KEEP; i < items.length; i++) inner.appendChild(items[i]);
+  details.appendChild(inner);
+  list.parentNode.insertBefore(details, list.nextSibling);
+})();
 </body>
 </html>
