@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>框架、议程与路径 &mdash; 吕频</title>
+<meta name="description" content="吕频反思中国反家庭暴力法倡导与妇女运动的讲演，2016年2月。">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="canonical" href="https://lupin.phd/2016-framework-agenda-path.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="框架、议程与路径 — 吕频">
+<meta property="og:description" content="吕频反思中国反家庭暴力法倡导与妇女运动的讲演，2016年2月。">
+<meta property="og:url" content="https://lupin.phd/2016-framework-agenda-path.html">
+<meta property="og:image" content="https://lupin.phd/photo-full.jpg">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600&display=swap" rel="stylesheet">
+<style>
+/* ---------------------------------------------------------------
+   Shared styles.
+   Layout:  narrow sidebar (identity + navigation) beside a single
+            reading column set to a bibliographic measure.
+   Palette: cool paper, ink, one deep teal used sparingly.
+   Type:    Source Serif 4 for reading, Archivo for labels and nav.
+   --------------------------------------------------------------- */
+
+:root {
+  --paper:      #F2F3F0;
+  --ink:        #161C1A;
+  --ink-quiet:  #5E6863;
+  --rule:       #D5D9D2;
+  --accent:     #145A3C;
+  --accent-mid: #3E8A63;
+  --accent-pale:#BFD6C6;
+
+  --serif: "Source Serif 4", Georgia, "Songti SC", serif;
+  --sans:  "Archivo", -apple-system, "Helvetica Neue", "PingFang SC", Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 17px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  border-top: 3px solid var(--accent);
+}
+
+a {
+  color: var(--accent-mid);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  text-decoration-color: rgba(62, 138, 99, 0.4);
+}
+a:hover {
+  color: var(--accent);
+  text-decoration-color: var(--accent);
+}
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+/* ---------- page frame ---------- */
+
+.page {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 3rem 2rem 4rem;
+  display: grid;
+  grid-template-columns: 13rem minmax(0, 41rem);
+  gap: 4rem;
+}
+
+/* ---------- sidebar ---------- */
+
+.sidebar {
+  position: sticky;
+  top: 3.5rem;
+  align-self: start;
+}
+
+.sidebar .name {
+  font-family: var(--sans);
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  margin: 0 0 1.5rem;
+  line-height: 1.35;
+}
+.sidebar .name a { color: var(--ink); text-decoration: none; }
+.sidebar .name a:hover { color: var(--accent-mid); }
+
+.sidebar nav {
+  font-family: var(--sans);
+  font-size: 0.84rem;
+  border-top: 1px solid var(--rule);
+  padding-top: 0.9rem;
+}
+.sidebar nav a {
+  display: block;
+  padding: 0.28rem 0 0.28rem 0.85rem;
+  margin-left: -0.85rem;
+  border-left: 2px solid transparent;
+  color: var(--ink-quiet);
+  text-decoration: none;
+}
+.sidebar nav a:hover { color: var(--ink); }
+.sidebar nav a.current { color: var(--ink); border-left-color: var(--accent); }
+
+/* ---------- headings ---------- */
+
+h1 {
+  color: var(--accent);
+  font-family: var(--serif);
+  font-size: 1.9rem;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -0.012em;
+  margin: 0 0 1.3rem;
+  text-wrap: balance;
+}
+
+h2 {
+  font-family: var(--sans);
+  font-size: 0.74rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 2rem 0 0.85rem;
+  padding-bottom: 0.45rem;
+  border-bottom: 1px solid var(--accent-pale);
+}
+
+h3 {
+  font-family: var(--serif);
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.35;
+  margin: 1.4rem 0 0.4rem;
+}
+
+/* ---------- text ---------- */
+
+p { margin: 0 0 0.85rem; }
+
+p.lede { font-size: 1.16rem; line-height: 1.6; margin-bottom: 1.5rem; }
+
+.note { font-size: 0.92rem; color: var(--ink-quiet); }
+.at { color: var(--ink-quiet); font-style: italic; }
+.cn {
+  font-family: "Noto Serif SC", "Songti SC", "SimSun", serif;
+  color: inherit;
+  font-weight: 400;
+  font-size: 0.88em;
+  margin-left: 0.34em;
+}
+
+
+
+.status {
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  letter-spacing: 0.02em;
+  color: var(--ink-quiet);
+}
+
+/* ---------- lists ---------- */
+
+/* Bibliographic hanging indent, as in a reference list. */
+ul.entries { list-style: none; margin: 0 0 1.15rem; padding: 0; }
+ul.entries li {
+  padding-left: 1.5rem;
+  text-indent: -1.5rem;
+  margin-bottom: 0.8rem;
+}
+ul.entries li .note,
+ul.entries li .status { display: block; text-indent: 0; }
+
+ul.plain { margin: 0 0 1.15rem; padding-left: 1.1rem; }
+ul.plain li { margin-bottom: 0.25rem; }
+
+/* ---------- contact list ---------- */
+
+dl.info { margin: 0; }
+dl.info dt {
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-quiet);
+  margin-top: 0.9rem;
+}
+dl.info dd { margin: 0.15rem 0 0; }
+
+/* ---------- portrait (home page sidebar) ---------- */
+
+.portrait {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border: 1px solid var(--accent-pale);
+  margin: 0 0 0.55rem;
+  background: #E4EAE6;
+}
+.portrait-note {
+  font-family: var(--sans);
+  font-size: 0.86rem;
+  line-height: 1.5;
+  margin: 0 0 1.8rem;
+}
+.portrait-note a {
+  display: block;
+  padding: 0.3rem 0;
+  text-decoration: none;
+  color: var(--ink);
+}
+.portrait-note a:hover { color: var(--accent); }
+.portrait-note a::before {
+  content: "\2193";
+  display: inline-block;
+  width: 1em;
+  color: var(--accent);
+}
+
+@media (max-width: 860px) {
+  .portrait { width: 8.5rem; aspect-ratio: 4 / 5; float: left; margin: 0 1.1rem 0.6rem 0; }
+  .portrait-note { clear: both; margin-bottom: 1.1rem; }
+}
+
+/* ---------- news (home page) ---------- */
+
+ul.news { list-style: none; margin: 0 0 1.5rem; padding: 0; }
+ul.news li {
+  display: grid;
+  grid-template-columns: 5.75rem minmax(0, 1fr);
+  gap: 1rem;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+ul.news li:first-child { border-top: 1px solid var(--accent-pale); }
+ul.news .date {
+  font-family: var(--sans);
+  font-size: 0.74rem;
+  letter-spacing: 0.05em;
+  color: var(--accent-mid);
+  padding-top: 0.3rem;
+}
+ul.news .item { margin: 0; }
+ul.news .item .note { display: block; margin-top: 0.15rem; }
+
+/* older news, collapsed by default (no JavaScript) */
+details.more { margin: 0 0 1.5rem; }
+details.more > summary {
+  list-style: none;
+  cursor: pointer;
+  font-family: var(--sans);
+  font-size: 0.9rem;
+  letter-spacing: 0.02em;
+  color: var(--accent-mid);
+  padding: 0.85rem 0;
+}
+details.more > summary::-webkit-details-marker { display: none; }
+details.more > summary::before {
+  content: "\002B";
+  display: inline-block;
+  width: 1.1em;
+  color: var(--accent-mid);
+}
+details.more[open] > summary::before { content: "\2212"; }
+details.more > summary:hover { color: var(--accent); }
+details.more .label-less { display: none; }
+details.more[open] .label-more { display: none; }
+details.more[open] .label-less { display: inline; }
+details.more ul.news,
+details.more ul.entries { margin-bottom: 0; }
+details.more > p:first-of-type { margin-top: 0.35rem; }
+details.more > p:last-of-type { margin-bottom: 0.35rem; }
+details.more ul.news li:first-child { border-top: 0; }
+details.more > summary { margin-top: -0.35rem; }
+
+@media (max-width: 640px) {
+  ul.news li { grid-template-columns: minmax(0, 1fr); gap: 0.15rem; }
+  ul.news .date { padding-top: 0; }
+}
+
+/* ---------- footer ---------- */
+
+main > footer {
+  margin-top: 2.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--rule);
+}
+main > footer p {
+  margin: 0;
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  color: var(--ink-quiet);
+}
+main > footer a { color: var(--ink-quiet); text-decoration-color: var(--rule); }
+main > footer a:hover { color: var(--accent); }
+
+/* ---------- responsive ---------- */
+
+@media (max-width: 860px) {
+  .page {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2.25rem;
+    padding: 2.25rem 1.5rem 4rem;
+    max-width: 42rem;
+  }
+  .sidebar { position: static; }
+  .sidebar .name { margin-bottom: 1.1rem; }
+  .sidebar nav {
+    border-top: 0;
+    padding-top: 0;
+  }
+  .sidebar nav a {
+    display: inline-block;
+    margin: 0 1.1rem 0.3rem 0;
+    padding: 0 0 0.2rem;
+    border-left: 0;
+    border-bottom: 2px solid transparent;
+  }
+  .sidebar nav a.current { border-bottom-color: var(--accent); }
+  h1 { font-size: 1.6rem; }
+}
+
+@media (max-width: 460px) {
+  body { font-size: 16px; }
+  .page { padding: 2rem 1.15rem 3.5rem; }
+}
+
+/* ---------- print ---------- */
+
+@media print {
+  body { background: #fff; border-top: 0; }
+  .page { display: block; max-width: none; padding: 0; }
+  .sidebar nav { display: none; }
+  a { color: #000; text-decoration: none; }
+}
+
+.zh { font-family: "Noto Serif SC", "Songti SC", "SimSun", serif; }
+ul.entries li .zh-title { font-family: "Noto Serif SC", "Songti SC", "SimSun", serif; font-weight: 600; }
+ul.entries li .meta { display: block; text-indent: 0; font-family: "Noto Serif SC", "Songti SC", "SimSun", serif; font-size: 0.92rem; color: var(--ink-quiet); }
+
+.article h1 { font-family: "Noto Serif SC", "Songti SC", "SimSun", serif; font-weight: 600; font-size: 1.6rem; line-height: 1.5; }
+.article .meta-line { color: var(--ink-quiet); margin: 0 0 2rem; }
+.article p { font-family: "Noto Serif SC", "Songti SC", "SimSun", serif; line-height: 1.95; text-align: justify; }
+.article .back { font-size: 0.92rem; margin-top: 2.5rem; }
+.article .subtitle { font-weight: 600; margin: -0.5rem 0 1rem; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header class="sidebar">
+    <p class="name"><a href="index.html">Lü Pin</a></p>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="public.html">Public scholarship</a>
+      <a href="writings.html" class="current">Writing Archive</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="article" lang="zh-Hans">
+
+    <h1>框架、议程与路径</h1>
+    <p class="subtitle">——反思中国反家庭暴力法倡导与妇女运动</p>
+    <p class="meta-line">吕频　2016年2月26日在麦迪逊</p>
+
+    <p>反家庭暴力法即将在3月1日施行，在过去十多年中，我作为妇女运动中的一员，参与和目睹了运动围绕这部法律所开展的倡导活动，一方面在不同阶段有不同策略，另一方面，却始终有共同的旋律。我并非法律专家。所以我想大家并不期待我们详细讨论这部法律的条文。我只想用这段经历，从一个个人的角度来说明，在中国这样一个相当控制的国家里，推进妇女权利的经验与反思。</p>
+    <p>在20世纪初我还是一名记者，参与了一个“反对家庭暴力网络”的活动，其目标之一是推进反家庭暴力法的立法，我负责这个网络的媒体推广部分。2003年3月，当全国人大的会议在北京召开时，我带着许多材料，希望递交给报道那次会议的记者，并通他们，让全国人大接受我们的建议。</p>
+    <p>现在想来，从媒体推广的角度来看，那是很笨拙的活动。我给每位记者都送了几百页的文字材料，却没有一份简洁的新闻稿帮助他们明白这个主张的重要性。我相信他们没有人能读完那几百页，我自己都没有。</p>
+    <p>然而这个笨拙的活动背后却有推进家庭暴力法所要解决的关键点，那就是，我们必须要让公众、媒体、国家，承认家庭暴力是一个公共议题，因此需要相应的立法。——如果家庭暴力还只被认为是打老婆，是家庭的私事，是道德问题或者偶然的不幸，那么就不需要相应的法律。</p>
+    <p>这涉及到两个与媒体活动有关的关键概念：第一，框架，第二，议程。框架即人们用什么样的方法来理解、诠释和表达一件事情或一种现象；议程指的是什么事情被谁认为重要并被如何排序。</p>
+    <p>所以我们的媒体活动必须传达出这样的清楚的理念：1、在框架层面上，家庭暴力是人权问题；2、在议程层面上，它必须成为社会和国家处理的重要事项。</p>
+    <p>在那时候这是纯民间的声音，但是，“民间”也是一个地带，在反对家庭暴力网络的伞状结构下，有学者、记者、NGO、教师、律师的个人身份的加入，也有地方妇联、法院、派出所的加入。这个网络最大时曾达到在中国的28个省有78个成员单位，这在中国的NGO中是相当壮观的。它成功建立了一个跨越不同体制的、广泛的联盟，而这个联盟仍然由女权主义者来主导。另一方面它也得到了国际性援助机构的资金与技术的支持。这些支持帮助组织开展她们的倡导、研究与培训，同时，通过她们，将关于家庭暴力的专业主义知识带给相应的责任部门。</p>
+    <p>因此这是我关于我们当时的媒体活动的第三个体会，那就是，“路径”。家庭暴力的立法是一个专业问题，就这一问题在媒体发言的，首先是专家，而不是活动家。而推进它的民间团体，也是专业机构。这一点为什么有意思，后面我还要讲到。</p>
+    <p>在这个网络成立六年后的评估中，我所参与的部分被认为是最有成效的进展之一，即公众的意识有了很大提高，也就是说，公众已经开始认识到，这是一个具有公共性的问题。</p>
+    <p>越来越多的人加入到这部法律的倡导之中，全国妇联的明确支持尤其重要。在2010年，全国人大宣布考虑将反家庭暴力法纳入立法计划。</p>
+    <p>2011年发生了一起轰动全国的家庭暴力案，案件的施暴者是一位以教授英语出名的亿万富翁Li Yang，受害者是他的妻子与合作伙伴，美国籍的Kim Lee。案件受关注当然是因为牵涉到名人和富翁。双方展开了媒体战争，李阳在媒体上拥有明星一样的号召力，但是，Kim通过中国的社交媒体来发表她的看法，并且和中国的民间妇女组织建立了联盟关系。从她揭发家庭暴力，到法院判决离婚，她们的案件在一年半当中持续高曝光。</p>
+    <p>从与今天我们有关的主题的角度看，这一案件的意义在于，它有力地佐证了上文谈到的“框架”和“议程”两方面的诉求，用一个典型案例来证明家庭暴力是人权问题，而且必须立法解决。它还促进了“路径”的转变：将家庭暴力立法从一个专家建言政府的议题，变成了全民大讨论。</p>
+    <p>就这个案件，妇女组织是有意识地造势。这里我将放映一段大约5分钟的现场视频，表现我们所发起的“媒体战争”。</p>
+    <p>大家可以看到，这些年轻人的舞蹈非常的滑稽，这其实是一种吸引注意力的手段。这个视频本身也是倡导行动的一部分，它是连夜制作出来的，很快就放到了网上，在很短时间里有20万人观看。</p>
+    <p>最终这个案件的判决，在全国人的关注下，取得了相当大的突破。在离婚判决中，专门写明要给kIM大约8000美元的家庭暴力赔偿。当然对一个亿万富翁的财产来说这太微不足道了，但是，这已经是我们所听说过的，在中国最高的家庭暴力离婚赔偿了。</p>
+    <p>路径的转变背后是中国的政治形势和中国妇女组织的模式的转变。2010年两个重要的组织：反家暴网络和北京大学妇女法律援助中心，都结束了她们与学术机构的合作，但是，她们也无法获得NGO注册，只能重新注册成商业公司。也就是说，妇女组织逐渐不能再“装扮”成专业主义团体来与政府机关打交道。</p>
+    <p>那么在这种情况下如何能够保持甚至扩大影响力？更彻底的面向公众的媒体策略开始兴起，如我们在Kim案当中所看到的那样。</p>
+    <p>在2012年年底，我们发起了一个敦促反家庭暴力法的公众签名。这个联署的主题不是任何该法的条款，而是要求整个法律透明、公开、参与。为了吸引眼球，我们实行了一个在线裸照行动。这里是我们所拍摄的一系列裸照。裸照的意思是：我们的身体，我们自主。最终我们征集到了1.3万个签名并送给全国人大。这是妇女权利领域中迄今为止最大规模的签名活动。当然，这人数恐怕还是不多，但是，中国毕竟是一个对公众活动有许多限制的国家。</p>
+    <p>2014年年底，国家终于发布了反家庭暴力法的第一个正式草案，并开始征求公众意见。中国的妇女组织积极参与，包括我所在的组织。但是，这时候，我发现，路径重新回到了专业主义。由于是针对一些具体法律条款的讨论，只有具有专业能力的人才能参与。虽然最终这个草案收到了8000多个意见，但是，真正参与的圈子是相当小的，尤其是和这个法律对人民生活的影响相对而言，更是小。我们也曾努力推进这个阶段的全民参与和媒体报道，但是，结果却相当不如人意。媒体对我们就各种条款的推敲并没有兴趣。而我们所提的意见，有些被接受了，有些没有。</p>
+    <p>当2015年年底，这部法律终于被宣布通过，等待实施的时候，我已经对这部法律兴趣缺缺。我承认我甚至没有看过最后的文本。这并不是因为我此时在美国，而是因为，这个时候已经不得不面对一个问题了：这部法律的通过，到底能给中国妇女带来多少实际的利益。</p>
+    <p>我绝对不是完全否定它能改善受害妇女的境遇，例如，这部法律最终规定了一定程度的人身保护令。但是，总的来说，我认为其成效与我们在过去这么多年中为之所付出的努力未必相称。要说出这一点对我来说并不容易。</p>
+    <p>我们成功地将反对家庭暴力立法，从民间议程推入了国家议程。但是在国家议程当中，一些对法治至关重要的理念被搁置和丢失了，例如我刚才说到的，民众参与。——最核心的决策过程并不开放，我们所提的意见，哪些会被接受，哪些不被接受，以及为什么，我们都不能掌握也不能获得解释。因此这是一个黑箱。而这个黑箱的存在导致公众不参与，因为参与需要很大的成本而结果并不保证。</p>
+    <p>毕竟我们的目的不是文字上的法律对吗？即使有了法律，法律如何被落实，是严重缺乏监督的，而许多法律就是一纸空文。据说有超过40%的法律条款从未被在法庭上引用。在过去20年中我只听说过一个民事案件引用过“妇女权益保障法”。从这个角度看，我们必须警惕所谓进入国家议程的最终价值，以及它是否含有对民间力量的消耗和收编。</p>
+    <p>谁能够发起和主导议程始终是一个问题，而且变得越来越争议。我刚才提到，当年妇女组织推动反家庭暴力法，是以专业人士的身份搞起的。但专业主义的空间后来也被缩小。2015年3月五名中国女权行动者被捕，原因是她们计划组织反对性骚扰的宣传活动。反性骚扰当然没有错，错在她们想自己做还想联合起一个自发的网络。不久之前，代理过不少家庭暴力案件的众泽妇女法律援助中心，被迫关闭。所以反家暴法通过了妇女法律中心却被关闭了，这是为什么？反家庭暴力也同意，但不同意由民间社会去做。因为民间社会的动员、组织和治理会影响政府的总体控制。</p>
+    <p>这是我们到今天不得不面对的问题，而这也是我对未来家庭暴力法的实施担忧的原因。如果一切都由国家来决定，而民间不能自主，我想这很难让人相信有什么社会问题能真正被解决。</p>
+    <p>而危险的是，人们看到的最表面的现象，却是通过了一部法律，需要为之叫好。一些更深层次的探讨可能被忘记或者屏蔽。</p>
+    <p>我还是要强调，我认为，在过去这么多年当中，民间社会为反家庭暴力法所做的争取，是非常有意义的，表现在：1、创造和积累了大量与家庭暴力有关的专业知识。2、提高了公众反对家庭暴力普遍意识；3、为妇女运动的组织化提供了经验和基础。对立法倡导的评价，不能只看法律是否通过，更应该关注过程中的成果和广泛的、或许是潜在的收获。</p>
+    <p>目前，我认为我们迫切需要更正视“路径”这个角度。我们不仅要发展特定的框架论述、争取议程中的地位，还需要仔细思考，我们的论述是针对谁，我们用什么方法来争取。或者说，一个始终存在的关键问题是，谁有权利、权力组织社会。这是我们讨论中国这样的国家的问题，包括家庭暴力问题的基线。</p>
+
+    <p class="back" lang="en"><a href="writings.html">Writing Archive</a></p>
+
+  </main>
+
+</div>
+</body>
+</html>
