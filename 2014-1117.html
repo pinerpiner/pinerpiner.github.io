@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>是什么决定了性别不平等，SIGI指数告诉你 &mdash; 吕频</title>
+<meta name="description" content="吕频，是什么决定了性别不平等，SIGI指数告诉你，2014年11月17日。">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="canonical" href="https://lupin.phd/2014-1117.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="是什么决定了性别不平等，SIGI指数告诉你 — 吕频">
+<meta property="og:description" content="吕频，是什么决定了性别不平等，SIGI指数告诉你，2014年11月17日。">
+<meta property="og:url" content="https://lupin.phd/2014-1117.html">
+<meta property="og:image" content="https://lupin.phd/photo-full.jpg">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600&display=swap" rel="stylesheet">
+<style>
+/* ---------------------------------------------------------------
+   Shared styles.
+   Layout:  narrow sidebar (identity + navigation) beside a single
+            reading column set to a bibliographic measure.
+   Palette: cool paper, ink, one deep teal used sparingly.
+   Type:    Source Serif 4 for reading, Archivo for labels and nav.
+   --------------------------------------------------------------- */
+
+:root {
+  --paper:      #F2F3F0;
+  --ink:        #161C1A;
+  --ink-quiet:  #5E6863;
+  --rule:       #D5D9D2;
+  --accent:     #145A3C;
+  --accent-mid: #3E8A63;
+  --accent-pale:#BFD6C6;
+
+  --serif: "Source Serif 4", Georgia, "Songti SC", serif;
+  --sans:  "Archivo", -apple-system, "Helvetica Neue", "PingFang SC", Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 17px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  border-top: 3px solid var(--accent);
+}
+
+a {
+  color: var(--accent-mid);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  text-decoration-color: rgba(62, 138, 99, 0.4);
+}
+a:hover {
+  color: var(--accent);
+  text-decoration-color: var(--accent);
+}
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+/* ---------- page frame ---------- */
+
+.page {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 3rem 2rem 4rem;
+  display: grid;
+  grid-template-columns: 13rem minmax(0, 41rem);
+  gap: 4rem;
+}
+
+/* ---------- sidebar ---------- */
+
+.sidebar {
+  position: sticky;
+  top: 3.5rem;
+  align-self: start;
+}
+
+.sidebar .name {
+  font-family: var(--sans);
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  margin: 0 0 1.5rem;
+  line-height: 1.35;
+}
+.sidebar .name a { color: var(--ink); text-decoration: none; }
+.sidebar .name a:hover { color: var(--accent-mid); }
+
+.sidebar nav {
+  font-family: var(--sans);
+  font-size: 0.84rem;
+  border-top: 1px solid var(--rule);
+  padding-top: 0.9rem;
+}
+.sidebar nav a {
+  display: block;
+  padding: 0.28rem 0 0.28rem 0.85rem;
+  margin-left: -0.85rem;
+  border-left: 2px solid transparent;
+  color: var(--ink-quiet);
+  text-decoration: none;
+}
+.sidebar nav a:hover { color: var(--ink); }
+.sidebar nav a.current { color: var(--ink); border-left-color: var(--accent); }
+
+/* ---------- headings ---------- */
+
+h1 {
+  color: var(--accent);
+  font-family: var(--serif);
+  font-size: 1.9rem;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -0.012em;
+  margin: 0 0 1.3rem;
+  text-wrap: balance;
+}
+
+h2 {
+  font-family: var(--sans);
+  font-size: 0.74rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 2rem 0 0.85rem;
+  padding-bottom: 0.45rem;
+  border-bottom: 1px solid var(--accent-pale);
+}
+
+h3 {
+  font-family: var(--serif);
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.35;
+  margin: 1.4rem 0 0.4rem;
+}
+
+/* ---------- text ---------- */
+
+p { margin: 0 0 0.85rem; }
+
+p.lede { font-size: 1.16rem; line-height: 1.6; margin-bottom: 1.5rem; }
+
+.note { font-size: 0.92rem; color: var(--ink-quiet); }
+.at { color: var(--ink-quiet); font-style: italic; }
+.cn {
+  font-family: "Noto Serif SC", "Songti SC", "SimSun", serif;
+  color: inherit;
+  font-weight: 400;
+  font-size: 0.88em;
+  margin-left: 0.34em;
+}
+
+
+
+.status {
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  letter-spacing: 0.02em;
+  color: var(--ink-quiet);
+}
+
+/* ---------- lists ---------- */
+
+/* Bibliographic hanging indent, as in a reference list. */
+ul.entries { list-style: none; margin: 0 0 1.15rem; padding: 0; }
+ul.entries li {
+  padding-left: 1.5rem;
+  text-indent: -1.5rem;
+  margin-bottom: 0.8rem;
+}
+ul.entries li .note,
+ul.entries li .status { display: block; text-indent: 0; }
+
+ul.plain { margin: 0 0 1.15rem; padding-left: 1.1rem; }
+ul.plain li { margin-bottom: 0.25rem; }
+
+/* ---------- contact list ---------- */
+
+dl.info { margin: 0; }
+dl.info dt {
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-quiet);
+  margin-top: 0.9rem;
+}
+dl.info dd { margin: 0.15rem 0 0; }
+
+/* ---------- portrait (home page sidebar) ---------- */
+
+.portrait {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border: 1px solid var(--accent-pale);
+  margin: 0 0 0.55rem;
+  background: #E4EAE6;
+}
+.portrait-note {
+  font-family: var(--sans);
+  font-size: 0.86rem;
+  line-height: 1.5;
+  margin: 0 0 1.8rem;
+}
+.portrait-note a {
+  display: block;
+  padding: 0.3rem 0;
+  text-decoration: none;
+  color: var(--ink);
+}
+.portrait-note a:hover { color: var(--accent); }
+.portrait-note a::before {
+  content: "\2193";
+  display: inline-block;
+  width: 1em;
+  color: var(--accent);
+}
+
+@media (max-width: 860px) {
+  .portrait { width: 8.5rem; aspect-ratio: 4 / 5; float: left; margin: 0 1.1rem 0.6rem 0; }
+  .portrait-note { clear: both; margin-bottom: 1.1rem; }
+}
+
+/* ---------- news (home page) ---------- */
+
+ul.news { list-style: none; margin: 0 0 1.5rem; padding: 0; }
+ul.news li {
+  display: grid;
+  grid-template-columns: 5.75rem minmax(0, 1fr);
+  gap: 1rem;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+ul.news li:first-child { border-top: 1px solid var(--accent-pale); }
+ul.news .date {
+  font-family: var(--sans);
+  font-size: 0.74rem;
+  letter-spacing: 0.05em;
+  color: var(--accent-mid);
+  padding-top: 0.3rem;
+}
+ul.news .item { margin: 0; }
+ul.news .item .note { display: block; margin-top: 0.15rem; }
+
+/* older news, collapsed by default (no JavaScript) */
+details.more { margin: 0 0 1.5rem; }
+details.more > summary {
+  list-style: none;
+  cursor: pointer;
+  font-family: var(--sans);
+  font-size: 0.9rem;
+  letter-spacing: 0.02em;
+  color: var(--accent-mid);
+  padding: 0.85rem 0;
+}
+details.more > summary::-webkit-details-marker { display: none; }
+details.more > summary::before {
+  content: "\002B";
+  display: inline-block;
+  width: 1.1em;
+  color: var(--accent-mid);
+}
+details.more[open] > summary::before { content: "\2212"; }
+details.more > summary:hover { color: var(--accent); }
+details.more .label-less { display: none; }
+details.more[open] .label-more { display: none; }
+details.more[open] .label-less { display: inline; }
+details.more ul.news,
+details.more ul.entries { margin-bottom: 0; }
+details.more > p:first-of-type { margin-top: 0.35rem; }
+details.more > p:last-of-type { margin-bottom: 0.35rem; }
+details.more ul.news li:first-child { border-top: 0; }
+details.more > summary { margin-top: -0.35rem; }
+
+@media (max-width: 640px) {
+  ul.news li { grid-template-columns: minmax(0, 1fr); gap: 0.15rem; }
+  ul.news .date { padding-top: 0; }
+}
+
+/* ---------- footer ---------- */
+
+main > footer {
+  margin-top: 2.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--rule);
+}
+main > footer p {
+  margin: 0;
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  color: var(--ink-quiet);
+}
+main > footer a { color: var(--ink-quiet); text-decoration-color: var(--rule); }
+main > footer a:hover { color: var(--accent); }
+
+/* ---------- responsive ---------- */
+
+@media (max-width: 860px) {
+  .page {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2.25rem;
+    padding: 2.25rem 1.5rem 4rem;
+    max-width: 42rem;
+  }
+  .sidebar { position: static; }
+  .sidebar .name { margin-bottom: 1.1rem; }
+  .sidebar nav {
+    border-top: 0;
+    padding-top: 0;
+  }
+  .sidebar nav a {
+    display: inline-block;
+    margin: 0 1.1rem 0.3rem 0;
+    padding: 0 0 0.2rem;
+    border-left: 0;
+    border-bottom: 2px solid transparent;
+  }
+  .sidebar nav a.current { border-bottom-color: var(--accent); }
+  h1 { font-size: 1.6rem; }
+}
+
+@media (max-width: 460px) {
+  body { font-size: 16px; }
+  .page { padding: 2rem 1.15rem 3.5rem; }
+}
+
+/* ---------- print ---------- */
+
+@media print {
+  body { background: #fff; border-top: 0; }
+  .page { display: block; max-width: none; padding: 0; }
+  .sidebar nav { display: none; }
+  a { color: #000; text-decoration: none; }
+}
+
+.zh { font-family: "Noto Serif SC", "Songti SC", "SimSun", serif; }
+ul.entries li .zh-title { font-family: "Noto Serif SC", "Songti SC", "SimSun", serif; font-weight: 600; }
+ul.entries li .meta { display: block; text-indent: 0; font-family: "Noto Serif SC", "Songti SC", "SimSun", serif; font-size: 0.92rem; color: var(--ink-quiet); }
+
+.article h1 { font-family: "Noto Serif SC", "Songti SC", "SimSun", serif; font-weight: 600; font-size: 1.6rem; line-height: 1.5; }
+.article .meta-line { color: var(--ink-quiet); margin: 0 0 2rem; }
+.article p { font-family: "Noto Serif SC", "Songti SC", "SimSun", serif; line-height: 1.95; text-align: justify; }
+.article .back { font-size: 0.92rem; margin-top: 2.5rem; }
+.article h3 { font-family: "Noto Serif SC", "Songti SC", "SimSun", serif; font-weight: 600; font-size: 1.05rem; margin: 1.8rem 0 0.6rem; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header class="sidebar">
+    <p class="name"><a href="index.html">Lü Pin</a></p>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="public.html">Public scholarship</a>
+      <a href="writings.html" class="current">Writing Archive</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="article" lang="zh-Hans">
+
+    <h1>是什么决定了性别不平等，SIGI指数告诉你</h1>
+    <p class="meta-line">吕频　2014年11月17日</p>
+
+    <p>摘要：多项研究显示，由女性经营的土地，谷物单产量低于男性。这是为什么？女人当不好农民吗？在农业女性化的今天，这可不是令人欣慰的信号。</p>
+    <p>联合国粮农组织在一份报告中说，女性和男性的农业生产率是一样的，但是，女性的农业产出确实比较低。但这和能力及付出无关，是因为，她们能支配的生产资源和能获得的服务都比男性少。</p>
+    <p>该报告引用了经济合作与发展组织（OECD）的一张表格，证明：性别较平等的国家，谷物平均产量通常高于性别较不平等的国家。</p>
+    <p>这张表格从谷物产量的角度，证明了性别平等与发展、增长、减贫和粮食安全的重要相关性。这是经合组织开发的“社会制度与性别指数”的发现之一。</p>
+    <h3>指数为证</h3>
+    <p>1990年，联合国开始发布全球性的人类发展指数，这里的指数，是综合计算多项指标之后得出的数字结果和排名，可以简易而显著地标示出各个国家的发展水平和比较状况。1995年，联合国开始在人类发展指数下专门发布性别相关的指数，到目前，国人所知的全球性别指数有两种：联合国的性别不平等指数（GII）及性别发展指数（GDI）；达沃斯世界经济论坛的性别差距指数（GGI）。后者虽然出现较晚，但在近年得到更多的中文报道。</p>
+    <p>例如，2014年的世界性别差距指数已经在10月公布，受累于居高的出生性别比，中国的年度排名比2013年下降18位，在142个国家中排名第87位。</p>
+    <p>对一个已经进入“高人类发展”阶段，经济总量全球第一的国家来说，这当然甚不光彩。其实这就是性别指数的价值：为“男女到底平等还是不平等”的感性争论提供鲜明而坚实的证据，是就性别平等做公众教育的有力素材。</p>
+    <p>至于经合组织的“社会制度和性别指数”（Social Institutions and Gender Index, SIGI），在中国媒体上还从未有过报道。维基百科中文版说：“逾40年以来，经合组织已经成为世界上最大和最可靠的全球性经济和社会统计数据的来源之一。”11月18日，在曼谷亚太“北京加二十”（妇女赋权和性别平等）会议期间的一次发布会上，女声第一次了解这一指数。</p>
+    <p>和其他性别指数一样，“社会性别与制度指数”评估发展而不是经济增长，离GDP很远。英国《每日电讯报》11月17日发表的一篇文章刚刚这样批评GDP崇拜：“独尊GDP……是把进步等同于金钱，却忽略了影响广大人民真实生活的真实形势。”</p>
+    <h3>看见不可见的</h3>
+    <p>如果说各种性别指数的目的都是以性别平等的眼光为GDP补充或矫正以“另一种”真实，那么，如它的开发者所宣称的，“社会制度与性别指数”的独特之处还在于，它想揭示更深层的、隐秘的性别真实，并牵出从深层到表层，从原因到结果的性别机制。</p>
+    <p>它不关注入学率、就业率、孕产妇死亡率……因为它认为这些都只是表象和结果。它想捕捉可见及不可见的制度，包括成文法、习惯法、风俗、惯例、规制、观念，由此回答：是什么导引着性别不平等，是什么造成了各个国家之间的差距？</p>
+    <p>它认为，改善教育、就业和健康不会令妇女真正受益，除非社会和经济体制转变。</p>
+    <p>“在一个社会中，哪些决定、机会和行为被视为可接受或不可接受，会对社会性别角色和关系发生关键影响。”“通过家庭、经济领域、社会生活中的性别权力分配，歧视性的社会制度削弱了妇女如愿创造生活的能力，进而对发展成果造成消极影响。”“社会制度与性别指数”的专门网站www.genderindex.org上这样写道。</p>
+    <p>那么，如何追究根源，特别是那些不成文的制度？</p>
+    <p>性别统计的指标很多，在中国就已经有5000多个，全球指数一般都只选择几个关键领域和少数既能说明问题又容易获得信息的指标。例如联合国性别不平等指数包括生殖健康、赋权和劳动力市场参与度三个维度，性别发展指数衡量女性和男性在三个人类发展领域中的差异：寿命、教育和收入的差距，世界经济论坛性别差距指数综合经济地位、教育机会、政治参与及卫生福利四个范畴中的性别差距。</p>
+    <p>“社会制度与性别指数”所收集的信息并非与其他指数体系全然不同。但它所覆盖的五个妇女生活领域，不仅包括经济和公共参与，也包括私领域：区别对待的家庭准则；对身体自主性的限制；男孩偏好；对资源和财产的限制；对公民权的限制。它不仅关注状况和行为，也关注态度，包括妇女的态度；不仅收集数字信息，也根据消歧公约评估等收集定性信息。这些让它能够评估法律文本之外的实践。</p>
+    <p>“只有它提供制度性歧视的关键信息，”经合组织发展中心的政策分析专家Keiko Nowacka博士在接受女声采访时说。</p>
+    <p>但在性别不平等的运作中，哪些能算是根源，哪些只是现象？一个例子是，性别化的结婚年龄是教育不平等的根源，因为结婚年龄低于男性，特别是童婚，会影响妇女的受教育程度。所以“社会制度与性别指数”不统计妇女教育水平，统计妇女的结婚年龄和童婚率。</p>
+    <p>但评估仍受制于信息的可获得性，Keiko Nowacka说，在公民权领域中，能体现公共参与水平的，不仅有常用的议员性别比，也可以有NGO的活动，但这方面的统计很少，所以至今还不能列入指标。</p>
+    <h3>不平等与不均衡</h3>
+    <p>2009年启动，上一次“社会性别制度与性别指数”的发布是在2012年。这几年中，该指数瞄准的五个领域不变，具体指标逐次扩展，在五个领域下有14类27个具体指标。覆盖的国家数增加。到2014年，列入排名的国家达到108个。</p>
+    <p>以“0”为毫无歧视，以“1”为彻底歧视，该指数给各地区、各国的五种制度分别打分，分为五级：很少歧视；少歧视；中等歧视；高歧视；严重歧视。将这五个领域中的得分综合起来，呈现为“雷达图”，就直观地刻画出制度性歧视的概观。</p>
+    <p>2014年“社会制度与性别指数”的全球性发现包括：</p>
+    <p>——妇女用于无酬劳动的时间是男性的三倍；</p>
+    <p>——160个国家中只有55个在法律和实践中都给予妇女平等的继承权；</p>
+    <p>——有35%的妇女相信在某些情况下家庭暴力是合理的；</p>
+    <p>——有102个国家的法律或实践拒绝给予妇女平等土地权。</p>
+    <p>无法否认，这仍是一个严重性别不平等的世界。</p>
+    <p>2014年，16%的国家被评为严重歧视，15%的国家很少歧视——这又是一个不均衡的世界。</p>
+    <p>五个方面综合起来，对妇女制度性歧视最少的国家是：比利时、法国、斯洛文尼亚、西班牙和塞班，不过前提是一些公认的高平等国家例如冰岛、芬兰没有被打出综合分。最严重的国家是：也门、苏丹、冈比亚、马里、乍得。</p>
+    <p>亚洲地区制度性歧视最少的国家是蒙古。蒙古虽然也有1/3妇女报告遭受家庭暴力，女议员只占14.9%，但该国实行男女相同的法定结婚年龄，保障男女同等继承权，2011年的性别平等促进法已经提出要将40%的政府管理岗位给妇女。</p>
+    <p>中国被列为中等歧视国家，排名第42位。中等歧视国家得到的评价是：性别法律体系自相矛盾；歧视性习俗严重；缺少政治参与配额；应对妇女暴力的法律不足。中国在男孩偏好领域被列为“严重歧视”。</p>
+    <h3>国家意愿最重要</h3>
+    <p>在统计之余进一步分析，Keiko Nowacka说，“社会制度与性别指数”在2014年再次证明，制度层面的差异会转化为成果分享的差异，消除男女的权利差别能直接促进妇女的福祉。至于能否消除歧视，首先取决于国家是否有强烈意愿并贯彻，而不是GDP和经济增长。更具体地说，实行所谓“性别中立”的法律和政策，或者仅在条文中声称平等是无力的，达成平等需要敏感性的政策来处理结构性的障碍。</p>
+    <p>而平等是如此紧密相关于发展。例如，填平性别差距可能会将发展中国家的农业产量平均提高2.5%－4%，在妇女参与农业较多和性别差距较为严重的国家，收益可能会更高。</p>
+    <p>“将制度性问题置于核心”，这是“社会制度与性别指数”发出的信息，虽然，治标不治本永远是更便宜的选择。</p>
+
+    <p class="back" lang="en"><a href="writings.html">Writing Archive</a></p>
+
+  </main>
+
+</div>
+</body>
+</html>

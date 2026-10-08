@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>要不要“内爆”，如何“内爆” &mdash; 吕频</title>
+<meta name="description" content="吕频，要不要“内爆”，如何“内爆”，2014年3月17日。">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="canonical" href="https://lupin.phd/2014-0317.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="要不要“内爆”，如何“内爆” — 吕频">
+<meta property="og:description" content="吕频，要不要“内爆”，如何“内爆”，2014年3月17日。">
+<meta property="og:url" content="https://lupin.phd/2014-0317.html">
+<meta property="og:image" content="https://lupin.phd/photo-full.jpg">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600&display=swap" rel="stylesheet">
+<style>
+/* ---------------------------------------------------------------
+   Shared styles.
+   Layout:  narrow sidebar (identity + navigation) beside a single
+            reading column set to a bibliographic measure.
+   Palette: cool paper, ink, one deep teal used sparingly.
+   Type:    Source Serif 4 for reading, Archivo for labels and nav.
+   --------------------------------------------------------------- */
+
+:root {
+  --paper:      #F2F3F0;
+  --ink:        #161C1A;
+  --ink-quiet:  #5E6863;
+  --rule:       #D5D9D2;
+  --accent:     #145A3C;
+  --accent-mid: #3E8A63;
+  --accent-pale:#BFD6C6;
+
+  --serif: "Source Serif 4", Georgia, "Songti SC", serif;
+  --sans:  "Archivo", -apple-system, "Helvetica Neue", "PingFang SC", Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 17px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  border-top: 3px solid var(--accent);
+}
+
+a {
+  color: var(--accent-mid);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  text-decoration-color: rgba(62, 138, 99, 0.4);
+}
+a:hover {
+  color: var(--accent);
+  text-decoration-color: var(--accent);
+}
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+/* ---------- page frame ---------- */
+
+.page {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 3rem 2rem 4rem;
+  display: grid;
+  grid-template-columns: 13rem minmax(0, 41rem);
+  gap: 4rem;
+}
+
+/* ---------- sidebar ---------- */
+
+.sidebar {
+  position: sticky;
+  top: 3.5rem;
+  align-self: start;
+}
+
+.sidebar .name {
+  font-family: var(--sans);
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  margin: 0 0 1.5rem;
+  line-height: 1.35;
+}
+.sidebar .name a { color: var(--ink); text-decoration: none; }
+.sidebar .name a:hover { color: var(--accent-mid); }
+
+.sidebar nav {
+  font-family: var(--sans);
+  font-size: 0.84rem;
+  border-top: 1px solid var(--rule);
+  padding-top: 0.9rem;
+}
+.sidebar nav a {
+  display: block;
+  padding: 0.28rem 0 0.28rem 0.85rem;
+  margin-left: -0.85rem;
+  border-left: 2px solid transparent;
+  color: var(--ink-quiet);
+  text-decoration: none;
+}
+.sidebar nav a:hover { color: var(--ink); }
+.sidebar nav a.current { color: var(--ink); border-left-color: var(--accent); }
+
+/* ---------- headings ---------- */
+
+h1 {
+  color: var(--accent);
+  font-family: var(--serif);
+  font-size: 1.9rem;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -0.012em;
+  margin: 0 0 1.3rem;
+  text-wrap: balance;
+}
+
+h2 {
+  font-family: var(--sans);
+  font-size: 0.74rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 2rem 0 0.85rem;
+  padding-bottom: 0.45rem;
+  border-bottom: 1px solid var(--accent-pale);
+}
+
+h3 {
+  font-family: var(--serif);
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.35;
+  margin: 1.4rem 0 0.4rem;
+}
+
+/* ---------- text ---------- */
+
+p { margin: 0 0 0.85rem; }
+
+p.lede { font-size: 1.16rem; line-height: 1.6; margin-bottom: 1.5rem; }
+
+.note { font-size: 0.92rem; color: var(--ink-quiet); }
+.at { color: var(--ink-quiet); font-style: italic; }
+.cn {
+  font-family: "Noto Serif SC", "Songti SC", "SimSun", serif;
+  color: inherit;
+  font-weight: 400;
+  font-size: 0.88em;
+  margin-left: 0.34em;
+}
+
+
+
+.status {
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  letter-spacing: 0.02em;
+  color: var(--ink-quiet);
+}
+
+/* ---------- lists ---------- */
+
+/* Bibliographic hanging indent, as in a reference list. */
+ul.entries { list-style: none; margin: 0 0 1.15rem; padding: 0; }
+ul.entries li {
+  padding-left: 1.5rem;
+  text-indent: -1.5rem;
+  margin-bottom: 0.8rem;
+}
+ul.entries li .note,
+ul.entries li .status { display: block; text-indent: 0; }
+
+ul.plain { margin: 0 0 1.15rem; padding-left: 1.1rem; }
+ul.plain li { margin-bottom: 0.25rem; }
+
+/* ---------- contact list ---------- */
+
+dl.info { margin: 0; }
+dl.info dt {
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-quiet);
+  margin-top: 0.9rem;
+}
+dl.info dd { margin: 0.15rem 0 0; }
+
+/* ---------- portrait (home page sidebar) ---------- */
+
+.portrait {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border: 1px solid var(--accent-pale);
+  margin: 0 0 0.55rem;
+  background: #E4EAE6;
+}
+.portrait-note {
+  font-family: var(--sans);
+  font-size: 0.86rem;
+  line-height: 1.5;
+  margin: 0 0 1.8rem;
+}
+.portrait-note a {
+  display: block;
+  padding: 0.3rem 0;
+  text-decoration: none;
+  color: var(--ink);
+}
+.portrait-note a:hover { color: var(--accent); }
+.portrait-note a::before {
+  content: "\2193";
+  display: inline-block;
+  width: 1em;
+  color: var(--accent);
+}
+
+@media (max-width: 860px) {
+  .portrait { width: 8.5rem; aspect-ratio: 4 / 5; float: left; margin: 0 1.1rem 0.6rem 0; }
+  .portrait-note { clear: both; margin-bottom: 1.1rem; }
+}
+
+/* ---------- news (home page) ---------- */
+
+ul.news { list-style: none; margin: 0 0 1.5rem; padding: 0; }
+ul.news li {
+  display: grid;
+  grid-template-columns: 5.75rem minmax(0, 1fr);
+  gap: 1rem;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+ul.news li:first-child { border-top: 1px solid var(--accent-pale); }
+ul.news .date {
+  font-family: var(--sans);
+  font-size: 0.74rem;
+  letter-spacing: 0.05em;
+  color: var(--accent-mid);
+  padding-top: 0.3rem;
+}
+ul.news .item { margin: 0; }
+ul.news .item .note { display: block; margin-top: 0.15rem; }
+
+/* older news, collapsed by default (no JavaScript) */
+details.more { margin: 0 0 1.5rem; }
+details.more > summary {
+  list-style: none;
+  cursor: pointer;
+  font-family: var(--sans);
+  font-size: 0.9rem;
+  letter-spacing: 0.02em;
+  color: var(--accent-mid);
+  padding: 0.85rem 0;
+}
+details.more > summary::-webkit-details-marker { display: none; }
+details.more > summary::before {
+  content: "\002B";
+  display: inline-block;
+  width: 1.1em;
+  color: var(--accent-mid);
+}
+details.more[open] > summary::before { content: "\2212"; }
+details.more > summary:hover { color: var(--accent); }
+details.more .label-less { display: none; }
+details.more[open] .label-more { display: none; }
+details.more[open] .label-less { display: inline; }
+details.more ul.news,
+details.more ul.entries { margin-bottom: 0; }
+details.more > p:first-of-type { margin-top: 0.35rem; }
+details.more > p:last-of-type { margin-bottom: 0.35rem; }
+details.more ul.news li:first-child { border-top: 0; }
+details.more > summary { margin-top: -0.35rem; }
+
+@media (max-width: 640px) {
+  ul.news li { grid-template-columns: minmax(0, 1fr); gap: 0.15rem; }
+  ul.news .date { padding-top: 0; }
+}
+
+/* ---------- footer ---------- */
+
+main > footer {
+  margin-top: 2.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--rule);
+}
+main > footer p {
+  margin: 0;
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  color: var(--ink-quiet);
+}
+main > footer a { color: var(--ink-quiet); text-decoration-color: var(--rule); }
+main > footer a:hover { color: var(--accent); }
+
+/* ---------- responsive ---------- */
+
+@media (max-width: 860px) {
+  .page {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2.25rem;
+    padding: 2.25rem 1.5rem 4rem;
+    max-width: 42rem;
+  }
+  .sidebar { position: static; }
+  .sidebar .name { margin-bottom: 1.1rem; }
+  .sidebar nav {
+    border-top: 0;
+    padding-top: 0;
+  }
+  .sidebar nav a {
+    display: inline-block;
+    margin: 0 1.1rem 0.3rem 0;
+    padding: 0 0 0.2rem;
+    border-left: 0;
+    border-bottom: 2px solid transparent;
+  }
+  .sidebar nav a.current { border-bottom-color: var(--accent); }
+  h1 { font-size: 1.6rem; }
+}
+
+@media (max-width: 460px) {
+  body { font-size: 16px; }
+  .page { padding: 2rem 1.15rem 3.5rem; }
+}
+
+/* ---------- print ---------- */
+
+@media print {
+  body { background: #fff; border-top: 0; }
+  .page { display: block; max-width: none; padding: 0; }
+  .sidebar nav { display: none; }
+  a { color: #000; text-decoration: none; }
+}
+
+.zh { font-family: "Noto Serif SC", "Songti SC", "SimSun", serif; }
+ul.entries li .zh-title { font-family: "Noto Serif SC", "Songti SC", "SimSun", serif; font-weight: 600; }
+ul.entries li .meta { display: block; text-indent: 0; font-family: "Noto Serif SC", "Songti SC", "SimSun", serif; font-size: 0.92rem; color: var(--ink-quiet); }
+
+.article h1 { font-family: "Noto Serif SC", "Songti SC", "SimSun", serif; font-weight: 600; font-size: 1.6rem; line-height: 1.5; }
+.article .meta-line { color: var(--ink-quiet); margin: 0 0 2rem; }
+.article p { font-family: "Noto Serif SC", "Songti SC", "SimSun", serif; line-height: 1.95; text-align: justify; }
+.article .back { font-size: 0.92rem; margin-top: 2.5rem; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header class="sidebar">
+    <p class="name"><a href="index.html">Lü Pin</a></p>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="public.html">Public scholarship</a>
+      <a href="writings.html" class="current">Writing Archive</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="article" lang="zh-Hans">
+
+    <h1>要不要“内爆”，如何“内爆”</h1>
+    <p class="meta-line">吕频　2014年3月17日</p>
+
+    <p>@酷拉时报刊布的《为什么吵架很重要》一文中说：</p>
+    <p>“同志运动中针对一些重要分歧的‘吵架’，时常会……因为不容质疑/不愿反思而很难发展成真正有效的辩论，且逐渐形成了一种将运动实践与思辨论述对立起来的反智倾向：‘运动需要智慧’的论争初中往往被‘不接低气’的指责打败。运动参与者无法在这样的氛围中形成思辨的习惯和愿望，更缺少在就事论事的理性辩论中锻炼论述能力的机会。”</p>
+    <p>“吵架”？这大概是在“讨论”和“攻击”之间半开玩笑的折中说法。虽然文章看起来已经表明了立场：“吵架”是必要的。</p>
+    <p>我想用“内爆”一词代替“吵架”，以划清和私人恩怨之间的区别，只谈与组织和运动有关的相对重要的，公开化的争论，而且从头开始：第一个问题是要不要“内爆”。然后才是“如何内爆”。</p>
+    <p>关于“要不要‘内爆’”，我不想停留在任一角度的轻易结论上。例如，有人会主张“埋头做实事”，有人会主张“尊重不同观点表达的权利”，之类。虽然每个人都可以自由表达是前提，但是，从运动的角度看，“内爆”的合法性需要在实践中论证，尤其考虑到在中国实践的艰难和探索性质，我不认为可以不假思索地站出“内爆”是或非的立场。</p>
+    <p>我相信NGO需要更多诚实、开放、深入的，关于运动策略和理念的碰撞讨论。背后窃窃私语是人之常情，在所难免，甚至有的时候是必要的——人总有一些情绪和观点需要安全地宣泄。但外部合作的现实需要，人情世故，隐蔽的权力关系，却让太多问题滞留于不正式的同人谈话，身在其中越久，可能体会就越深。当听到一位朋友说“NGO就是个盛行牢骚和八卦的小圈子”时，欢乐之余有点无奈。不见光地议论的问题之一是，不引入不同角度，认知可能会在这过程中太偏于自我强化。</p>
+    <p>但不可否认的是，公开的讨论，务虚倒也罢了，如果是针对性的辩驳，在实际情况中，很可能会带来不快甚至后患和创伤。消极影响的可能是广泛的，甚至始料未及。我们不能指望运动内外的人都有广大胸怀，特别是在自己都未必能做到的时候。而且，“意气”是难免的——我不想把“意气”简单负面化，我们得承认、关怀、理解讨论会感染情绪，不应该期待以“理性”切割情绪。</p>
+    <p>以及，我们有没有条件“内爆”？“我们‘内爆’不起。”多年前听说过的这句话，曾引起我许多思绪。为什么“内爆”不起，第二是运动太小，分裂会让力量削弱到太萎靡。考虑到这个层面，活动家——那些希望为运动发展助力的人，特别需要考虑参与争论所造成的影响，其他更多人，也多少需要意识到，传播是有后果的，正如我们对大众媒体的批评总在强调的：要对传播可能产生的影响负责。第二，如果没有足够丰富的运动实践，那么就不能产生有营养的“内爆”。在这种前提下，为“吵架”赋予“内爆”的意义可能是自我夸张的。</p>
+    <p>首先需要考虑的是还是我们希望达到的目的是什么。从希望运动在争论中多元发展，到只想打击别人，在这其间有一系列的动机可能。要不要开始最好是慎重的决定，每个人都可能有不安全感、焦虑、自尊和自我防御、控制欲会被激发出来。——在总是遗憾于女性很少参与公共辩论的同时，因为一些教训，我开始意识到审慎甚至沉默在保护和避免消极后果方面的意义。</p>
+    <p>进一步，想引用一位NGO负责人的话：“有时候大家会对不同（权利）群体之间的利益分歧特别感兴趣。其实共同点可能远远多于分歧，但分歧是吸引人的，共同点是不吸引人的。吵架是吸引人的。人的‘自然’状态就是经常吵架，但我们结成公民社会的目的就是要避免这种‘自然’状况，以及它带来的困扰。”</p>
+    <p>TA还说：“争议不造成实际问题的时候，不妨先搁置。”</p>
+    <p>将这两个看法联系起来，让我想到：需要警惕，争议所带来的思想力及价值感体验可能是虚幻的，专指相对于运动发展和解决问题的需要而言。可能存在这种现象：高蹈的批判会因正确和绝然而有力，却很难接轨到运动议程，因此可能会让人不知所措。运动和人总是在变化，以公开争议固定其中的问题时，需要意识到这种可能：没有留出进步的余地，甚至争议所抛出的问题是否只是自己的局限所致。另外，没有足够时间和能力去厘清是一个现实的困难，在这种情况下，“不造成实际问题的时候不妨先搁置”，是自制及负责的管理方案。——终究只有时间才能给出答案。</p>
+    <p>直接将质疑搬上公开场合的做法，会给大家都带来压力，可能主要来自被围观——“不明真相”的参与者，会让讨论产生歧义；大家都得给其他人交代，因此不能专注于彼此间的理解，也不容易让步。这是如何发生的？或许是此前没有缓冲的对话空间。有必要反思我们是否创造和善用了内部沟通机制。NGO拥有多种沟通机制，邮件组、QQ群、各种会议和论坛，这类机制可以被用为直接对话，解决疑问甚至矛盾的安全空间，但我们往往在其中只发布各自的信息却不对话。如果呼吁坦诚，那或许应该首先从内部沟通和线下直接互动的坦诚做起。</p>
+    <p>“你又做了什么实事？”这是质疑者经常被问到的问题，女权主义者颇多这类经历。然而，这很容易被理解为是在抵制批评。尝试理解，我意识到拥有解决社群现实需求的工作和成就，会大大增强自己的论辩合法性。倡导组织即使不提供日常服务，也有介入个案的机会，如果自己一概不回应个案，则以社群需求问责他人的底气未免不足。实务工作确实难免折中，不能否认的是，确实存在不做事的人、身处主流者说话轻松的现象，所以，倡导组织批评社区和服务组织确实需要慎重。</p>
+    <p>此外还想到的几点是：</p>
+    <p>全称判断太危险，评判会让人火冒三丈。所谓反思，从论证的节制开始体现，毕竟每个人所知都是有限的。</p>
+    <p>慎重引用，私下谈话、不公开会议上的言论，可能会引起争议的，未经允许不应该公开。</p>
+    <p>抛出问题无妨，但就此开始探讨会更有“建设性”，毕竟其他人也未必有义务答问。</p>
+    <p>慎用寻章摘句式的辩论法——肢解对方言论，挑错，找碴。语言从来都充满错误，这种做法总会有收获，但不友好。</p>
+    <p>皮里阳秋式地讽刺，说怪话，似乎目的只是为了让别人现丑，很没有诚意。实际上这种做法近乎网络尾行，然而对方完全可以采用最简易的方法处理：完全忽略。</p>
+    <p>将争议摆到资助者面前是禁忌，往往这只能扩大问题。</p>
+    <p>比只做批评者更有利的方法是兼做给予者——为改进提供支持，特别是在资源方面。</p>
+    <p>所以貌似该遵循的仍多是一般的公共表达原则。最终通过这些规范，还是关照原点：我们希望运动往何处去。运动越大，歧见越多，决裂很畅快，但若都身在运动中，谁跟谁都很难彻底决裂，所以，“内爆”本身并不是可寻求的终结——“内爆”之后如何往何处去可能才是最棘手的，从这一点看，“内爆”并不值得迷恋。我怀疑那些“内爆”促成运动发育的爽利传说没有说完全部故事，至少其中的挣扎和代价被缩水了。</p>
+    <p>既然如此，早就开始处理歧见是非常需要智慧的事，不以揭露、排斥或压倒为目标，给自己也给别人机会。和思想力一样，我认为“内爆”终究是个关乎道德勇气的课题。</p>
+
+    <p class="back" lang="en"><a href="writings.html">Writing Archive</a></p>
+
+  </main>
+
+</div>
+</body>
+</html>

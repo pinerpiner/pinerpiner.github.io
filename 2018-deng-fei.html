@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>米兔，从邓飞的误判说起 &mdash; 吕频</title>
+<meta name="description" content="吕频关于邓飞事件与米兔运动的评论，2018年8月。">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="canonical" href="https://lupin.phd/2018-deng-fei.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="米兔，从邓飞的误判说起 — 吕频">
+<meta property="og:description" content="吕频关于邓飞事件与米兔运动的评论，2018年8月。">
+<meta property="og:url" content="https://lupin.phd/2018-deng-fei.html">
+<meta property="og:image" content="https://lupin.phd/photo-full.jpg">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600&display=swap" rel="stylesheet">
+<style>
+/* ---------------------------------------------------------------
+   Shared styles.
+   Layout:  narrow sidebar (identity + navigation) beside a single
+            reading column set to a bibliographic measure.
+   Palette: cool paper, ink, one deep teal used sparingly.
+   Type:    Source Serif 4 for reading, Archivo for labels and nav.
+   --------------------------------------------------------------- */
+
+:root {
+  --paper:      #F2F3F0;
+  --ink:        #161C1A;
+  --ink-quiet:  #5E6863;
+  --rule:       #D5D9D2;
+  --accent:     #145A3C;
+  --accent-mid: #3E8A63;
+  --accent-pale:#BFD6C6;
+
+  --serif: "Source Serif 4", Georgia, "Songti SC", serif;
+  --sans:  "Archivo", -apple-system, "Helvetica Neue", "PingFang SC", Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 17px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  border-top: 3px solid var(--accent);
+}
+
+a {
+  color: var(--accent-mid);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  text-decoration-color: rgba(62, 138, 99, 0.4);
+}
+a:hover {
+  color: var(--accent);
+  text-decoration-color: var(--accent);
+}
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+/* ---------- page frame ---------- */
+
+.page {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 3rem 2rem 4rem;
+  display: grid;
+  grid-template-columns: 13rem minmax(0, 41rem);
+  gap: 4rem;
+}
+
+/* ---------- sidebar ---------- */
+
+.sidebar {
+  position: sticky;
+  top: 3.5rem;
+  align-self: start;
+}
+
+.sidebar .name {
+  font-family: var(--sans);
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  margin: 0 0 1.5rem;
+  line-height: 1.35;
+}
+.sidebar .name a { color: var(--ink); text-decoration: none; }
+.sidebar .name a:hover { color: var(--accent-mid); }
+
+.sidebar nav {
+  font-family: var(--sans);
+  font-size: 0.84rem;
+  border-top: 1px solid var(--rule);
+  padding-top: 0.9rem;
+}
+.sidebar nav a {
+  display: block;
+  padding: 0.28rem 0 0.28rem 0.85rem;
+  margin-left: -0.85rem;
+  border-left: 2px solid transparent;
+  color: var(--ink-quiet);
+  text-decoration: none;
+}
+.sidebar nav a:hover { color: var(--ink); }
+.sidebar nav a.current { color: var(--ink); border-left-color: var(--accent); }
+
+/* ---------- headings ---------- */
+
+h1 {
+  color: var(--accent);
+  font-family: var(--serif);
+  font-size: 1.9rem;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -0.012em;
+  margin: 0 0 1.3rem;
+  text-wrap: balance;
+}
+
+h2 {
+  font-family: var(--sans);
+  font-size: 0.74rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 2rem 0 0.85rem;
+  padding-bottom: 0.45rem;
+  border-bottom: 1px solid var(--accent-pale);
+}
+
+h3 {
+  font-family: var(--serif);
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.35;
+  margin: 1.4rem 0 0.4rem;
+}
+
+/* ---------- text ---------- */
+
+p { margin: 0 0 0.85rem; }
+
+p.lede { font-size: 1.16rem; line-height: 1.6; margin-bottom: 1.5rem; }
+
+.note { font-size: 0.92rem; color: var(--ink-quiet); }
+.at { color: var(--ink-quiet); font-style: italic; }
+.cn {
+  font-family: "Noto Serif SC", "Songti SC", "SimSun", serif;
+  color: inherit;
+  font-weight: 400;
+  font-size: 0.88em;
+  margin-left: 0.34em;
+}
+
+
+
+.status {
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  letter-spacing: 0.02em;
+  color: var(--ink-quiet);
+}
+
+/* ---------- lists ---------- */
+
+/* Bibliographic hanging indent, as in a reference list. */
+ul.entries { list-style: none; margin: 0 0 1.15rem; padding: 0; }
+ul.entries li {
+  padding-left: 1.5rem;
+  text-indent: -1.5rem;
+  margin-bottom: 0.8rem;
+}
+ul.entries li .note,
+ul.entries li .status { display: block; text-indent: 0; }
+
+ul.plain { margin: 0 0 1.15rem; padding-left: 1.1rem; }
+ul.plain li { margin-bottom: 0.25rem; }
+
+/* ---------- contact list ---------- */
+
+dl.info { margin: 0; }
+dl.info dt {
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-quiet);
+  margin-top: 0.9rem;
+}
+dl.info dd { margin: 0.15rem 0 0; }
+
+/* ---------- portrait (home page sidebar) ---------- */
+
+.portrait {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border: 1px solid var(--accent-pale);
+  margin: 0 0 0.55rem;
+  background: #E4EAE6;
+}
+.portrait-note {
+  font-family: var(--sans);
+  font-size: 0.86rem;
+  line-height: 1.5;
+  margin: 0 0 1.8rem;
+}
+.portrait-note a {
+  display: block;
+  padding: 0.3rem 0;
+  text-decoration: none;
+  color: var(--ink);
+}
+.portrait-note a:hover { color: var(--accent); }
+.portrait-note a::before {
+  content: "\2193";
+  display: inline-block;
+  width: 1em;
+  color: var(--accent);
+}
+
+@media (max-width: 860px) {
+  .portrait { width: 8.5rem; aspect-ratio: 4 / 5; float: left; margin: 0 1.1rem 0.6rem 0; }
+  .portrait-note { clear: both; margin-bottom: 1.1rem; }
+}
+
+/* ---------- news (home page) ---------- */
+
+ul.news { list-style: none; margin: 0 0 1.5rem; padding: 0; }
+ul.news li {
+  display: grid;
+  grid-template-columns: 5.75rem minmax(0, 1fr);
+  gap: 1rem;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+ul.news li:first-child { border-top: 1px solid var(--accent-pale); }
+ul.news .date {
+  font-family: var(--sans);
+  font-size: 0.74rem;
+  letter-spacing: 0.05em;
+  color: var(--accent-mid);
+  padding-top: 0.3rem;
+}
+ul.news .item { margin: 0; }
+ul.news .item .note { display: block; margin-top: 0.15rem; }
+
+/* older news, collapsed by default (no JavaScript) */
+details.more { margin: 0 0 1.5rem; }
+details.more > summary {
+  list-style: none;
+  cursor: pointer;
+  font-family: var(--sans);
+  font-size: 0.9rem;
+  letter-spacing: 0.02em;
+  color: var(--accent-mid);
+  padding: 0.85rem 0;
+}
+details.more > summary::-webkit-details-marker { display: none; }
+details.more > summary::before {
+  content: "\002B";
+  display: inline-block;
+  width: 1.1em;
+  color: var(--accent-mid);
+}
+details.more[open] > summary::before { content: "\2212"; }
+details.more > summary:hover { color: var(--accent); }
+details.more .label-less { display: none; }
+details.more[open] .label-more { display: none; }
+details.more[open] .label-less { display: inline; }
+details.more ul.news,
+details.more ul.entries { margin-bottom: 0; }
+details.more > p:first-of-type { margin-top: 0.35rem; }
+details.more > p:last-of-type { margin-bottom: 0.35rem; }
+details.more ul.news li:first-child { border-top: 0; }
+details.more > summary { margin-top: -0.35rem; }
+
+@media (max-width: 640px) {
+  ul.news li { grid-template-columns: minmax(0, 1fr); gap: 0.15rem; }
+  ul.news .date { padding-top: 0; }
+}
+
+/* ---------- footer ---------- */
+
+main > footer {
+  margin-top: 2.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--rule);
+}
+main > footer p {
+  margin: 0;
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  color: var(--ink-quiet);
+}
+main > footer a { color: var(--ink-quiet); text-decoration-color: var(--rule); }
+main > footer a:hover { color: var(--accent); }
+
+/* ---------- responsive ---------- */
+
+@media (max-width: 860px) {
+  .page {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2.25rem;
+    padding: 2.25rem 1.5rem 4rem;
+    max-width: 42rem;
+  }
+  .sidebar { position: static; }
+  .sidebar .name { margin-bottom: 1.1rem; }
+  .sidebar nav {
+    border-top: 0;
+    padding-top: 0;
+  }
+  .sidebar nav a {
+    display: inline-block;
+    margin: 0 1.1rem 0.3rem 0;
+    padding: 0 0 0.2rem;
+    border-left: 0;
+    border-bottom: 2px solid transparent;
+  }
+  .sidebar nav a.current { border-bottom-color: var(--accent); }
+  h1 { font-size: 1.6rem; }
+}
+
+@media (max-width: 460px) {
+  body { font-size: 16px; }
+  .page { padding: 2rem 1.15rem 3.5rem; }
+}
+
+/* ---------- print ---------- */
+
+@media print {
+  body { background: #fff; border-top: 0; }
+  .page { display: block; max-width: none; padding: 0; }
+  .sidebar nav { display: none; }
+  a { color: #000; text-decoration: none; }
+}
+
+.zh { font-family: "Noto Serif SC", "Songti SC", "SimSun", serif; }
+ul.entries li .zh-title { font-family: "Noto Serif SC", "Songti SC", "SimSun", serif; font-weight: 600; }
+ul.entries li .meta { display: block; text-indent: 0; font-family: "Noto Serif SC", "Songti SC", "SimSun", serif; font-size: 0.92rem; color: var(--ink-quiet); }
+
+.article h1 { font-family: "Noto Serif SC", "Songti SC", "SimSun", serif; font-weight: 600; font-size: 1.6rem; line-height: 1.5; }
+.article .meta-line { color: var(--ink-quiet); margin: 0 0 2rem; }
+.article p { font-family: "Noto Serif SC", "Songti SC", "SimSun", serif; line-height: 1.95; text-align: justify; }
+.article .back { font-size: 0.92rem; margin-top: 2.5rem; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header class="sidebar">
+    <p class="name"><a href="index.html">Lü Pin</a></p>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="public.html">Public scholarship</a>
+      <a href="writings.html" class="current">Writing Archive</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="article" lang="zh-Hans">
+
+    <h1>米兔，从邓飞的误判说起</h1>
+    <p class="meta-line">吕频　2018年8月</p>
+
+    <p>“指控还在模糊阶段时，邓（飞）身边几位诤友就合力相劝，早公开早认错。可惜邓采纳了另一种建言，扛。判断迷兔将会被上面压制，单等风头一过。”</p>
+    <p>以上摘自８月１日的一则微博。其实，邓飞并没有真正改变他的应对策略。在他的声明里，强奸未遂指控只是‘传言“、”私人事宜“。声明退出公益项目，貌似只是为了紧急止损。所谓“会同律师进行处理”，更像是对举报者的威胁，。总的来说，他这份声明仍是拖延和抵制。</p>
+    <p>与邓飞的误判相应成趣的是，有章文的圈中好友已经几乎明说了：米兔是被布置和有步骤的（针对“公知”的？）抹黑战。这种观点和邓飞一样，妄想总体性权力的绝对强大，却小瞧了米兔。他们自信了然于这个国家的权力规则，然而米兔的机制却在其想象之外。</p>
+    <p>“米兔是无法被封杀的，因为没有人知道下一个站出来的是谁。”我的一个朋友说。其实就是这么简单。今日之通讯其实没什么秘密可言，如果能锁定一个或哪怕几个台前领袖或者幕后黑手，那除掉米兔就太简单了，可惜真没有。这一波米兔是完全无中心的，没有人在操控，因此也无法按照既有的维稳方案被轻易消声。当然，迄今已经有一些动作，某些“敏感“的个案控诉直接被全网删除，在纵向上标出了米兔不可顶撞的天花板所在；而封杀微博标签则是在横面上不让人们轻易形成网络连接。</p>
+    <p>但是这两种动作都遏制不了一件事情，就是有力个案的传播能力极强。言论被封杀其实没那么重要，因为今日之米兔不是言论战，其震撼力靠的是一个个实名指控，而这些指控勿庸多说，自行携带判断，诉求，动员，微博上贴一张主持人的照片，已经尽在不言中，在照片也被封杀之前，传播已经尽其势能。个案相互呼应却各不相同，只能个别处置，而这种个别处置并不能预先控制更多个案的曝出。</p>
+    <p>个案，很多个案，更多个案，这就像是打地鼠游戏，没有人知道下一只地鼠在哪里露头。</p>
+    <p>大众媒体不报道，但显然这已经不再重要，人们已惯于通过社交媒体创造和参与属于他们自己的另类、平行的“公共议程“——在大众媒体之外，在正式话语之下，在微博评论区，通过种种比喻性的语言，在微信。可以被压缩和扭曲，但是并不会停止，而且，人们也已经自觉地把记忆当成了一种责任——你还记得”北电侯亮平“吗？而最近这些天，每天都会迸出一个新的类似的关键词。</p>
+    <p>这是前所未有之事，没有人能预料到在线上线下的紧密控制之下，还能有发声扩展到如此规模。其实它自有脉络，只是此前未被主导的和主流的，两种权力者所见。关键在于它的组织形态——它不是基于什么政治理念的自上而下的号召，而是以共同的被压迫经验为中心所建立的在地连接。其中几乎一直都没有什么“名人”，其实这正是它的特性所决定的，我指的是它的路径从来不是什么大Ｖ指挥下的”改变中国“。不过，硬核式的组织者是少不了的，尤其是在早期阶段，那些就是有组织背景的女权运动者。但是，我视2018年3月“女权之声”的被封禁，为这些秉承套路的硬核女权势力退出主持的最后的象征性时刻，说是象征性的，是因为女声本来也没有如被指责的那样在2018年1月至2018年3月为高校反性骚扰机制倡议做什么幕后操控。自３月中旬以后，整个中国社交媒体上“女权”一词迅即敏感化，至今人们还在默契地代用‘平权主义“这个生造词或用’女性平权运动”做稀释。这当然是很严重的问题，但另一方面，组织的消沉，高校机制建设的踟蹰，恰恰是另一波更大规模的起点所在。我指的是，恰恰是在没有核心组织者、并失焦于整体性的制度性诉求的时候，运动才变得如此广大——关键在于其进一步的非建制化。</p>
+    <p>这不是说其中不再有组织性的工作，相反，这种工作分布到更多自发的站点，并卷入更多富有责任心和行动力的人。在此需要强调的是，由于极度缺系统性的支持资源，米兔十分依赖高度密集的志愿劳动，无数来自各行各业各地，不计名利的人们的倾情投入是支持这一波米兔的最大能量。最近有看一个微博叫做“我是落生“，看头像是个年轻女生。她发起了“摇滚圈米兔”——针对摇滚音乐界性骚扰现象的揭发，并代发了一则指向迷笛音乐节的性侵害指控，却因此成为第一个因米兔而收律师函的博主。她和迷笛事件当事人一直保持联系，并接收和处理大量倾诉性骚扰的私信——但她刚刚宣布关闭私信，因为人间地狱一般的负能量让她承受不住。我不知道这个女生的身份背景，她是否认同女权主义也对我不那么重要，我看到的是，她为米兔付出了这许多劳动，甚至许多情感，令人敬重。而她只是从倾听开始支持的很多很多人当中的一个，米兔之所以有那么多勇敢现身的当事者，绝对离不了这些人。</p>
+    <p>单一的议程，追随者有限；执着于特定阶段的特定目标，就会有财匮力绌的焦灼。而这一阶段的米兔，以无中心的广泛参与实现了能量的持续，并且也化解了风险——没有人能背起整个米兔的锅。</p>
+    <p>当风潮高涨，简直是第一次不觉得杀机将至，因为没有人被卷在中心，有被拎出来“杀一儆百”的价值。我不知道接下来还会发生什么。所以这才是一段特别珍贵的时间，因为有更多的女人可以说话。</p>
+    <p>从这个角度看，就“运动应有的走势”所做的那些理中客风的指点，恼人却不重要，因为，重复一下，米兔不是言论战，既然理中客没办法对质到那一桩桩个案，他们也就不可能实现其“降维打击“，顶多刷刷存在感却无碍大势。另外一种不重要的现象就是所谓”男性表态“——以名人、男性的身份表白其对米兔和女性遭遇的理解。我认为这些人的站队只是米兔造成的余波，而无关米兔内在的势能——这真让人开心！既有话语权者终于不再是重点，也影响不了什么。何况，大家还都看到了，有那么多从来没刻意标榜过自己“做男人而支持女权”的男人，正和女人们一起默默为米兔做许多事，对我来说，这样的女男结盟非常有启发性——大家都回到地上做工，停用自己的特权性身份，因此运动增值却不会被收割。而这还是因为米兔是这样非建制化地起飞——前所未有地不假权力。</p>
+
+    <p class="back" lang="en"><a href="writings.html">Writing Archive</a></p>
+
+  </main>
+
+</div>
+</body>
+</html>
