@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>中国崛起的性别代价与女权运动 &mdash; 吕频</title>
+<meta name="description" content="吕频关于中国经济崛起的性别代价与女权运动的讲演稿。">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="canonical" href="https://lupin.phd/2016-gender-cost-of-rise.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="中国崛起的性别代价与女权运动 — 吕频">
+<meta property="og:description" content="吕频关于中国经济崛起的性别代价与女权运动的讲演稿。">
+<meta property="og:url" content="https://lupin.phd/2016-gender-cost-of-rise.html">
+<meta property="og:image" content="https://lupin.phd/photo-full.jpg">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600&display=swap" rel="stylesheet">
+<style>
+/* ---------------------------------------------------------------
+   Shared styles.
+   Layout:  narrow sidebar (identity + navigation) beside a single
+            reading column set to a bibliographic measure.
+   Palette: cool paper, ink, one deep teal used sparingly.
+   Type:    Source Serif 4 for reading, Archivo for labels and nav.
+   --------------------------------------------------------------- */
+
+:root {
+  --paper:      #F2F3F0;
+  --ink:        #161C1A;
+  --ink-quiet:  #5E6863;
+  --rule:       #D5D9D2;
+  --accent:     #145A3C;
+  --accent-mid: #3E8A63;
+  --accent-pale:#BFD6C6;
+
+  --serif: "Source Serif 4", Georgia, "Songti SC", serif;
+  --sans:  "Archivo", -apple-system, "Helvetica Neue", "PingFang SC", Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 17px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  border-top: 3px solid var(--accent);
+}
+
+a {
+  color: var(--accent-mid);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  text-decoration-color: rgba(62, 138, 99, 0.4);
+}
+a:hover {
+  color: var(--accent);
+  text-decoration-color: var(--accent);
+}
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+/* ---------- page frame ---------- */
+
+.page {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 3rem 2rem 4rem;
+  display: grid;
+  grid-template-columns: 13rem minmax(0, 41rem);
+  gap: 4rem;
+}
+
+/* ---------- sidebar ---------- */
+
+.sidebar {
+  position: sticky;
+  top: 3.5rem;
+  align-self: start;
+}
+
+.sidebar .name {
+  font-family: var(--sans);
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  margin: 0 0 1.5rem;
+  line-height: 1.35;
+}
+.sidebar .name a { color: var(--ink); text-decoration: none; }
+.sidebar .name a:hover { color: var(--accent-mid); }
+
+.sidebar nav {
+  font-family: var(--sans);
+  font-size: 0.84rem;
+  border-top: 1px solid var(--rule);
+  padding-top: 0.9rem;
+}
+.sidebar nav a {
+  display: block;
+  padding: 0.28rem 0 0.28rem 0.85rem;
+  margin-left: -0.85rem;
+  border-left: 2px solid transparent;
+  color: var(--ink-quiet);
+  text-decoration: none;
+}
+.sidebar nav a:hover { color: var(--ink); }
+.sidebar nav a.current { color: var(--ink); border-left-color: var(--accent); }
+
+/* ---------- headings ---------- */
+
+h1 {
+  color: var(--accent);
+  font-family: var(--serif);
+  font-size: 1.9rem;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -0.012em;
+  margin: 0 0 1.3rem;
+  text-wrap: balance;
+}
+
+h2 {
+  font-family: var(--sans);
+  font-size: 0.74rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 2rem 0 0.85rem;
+  padding-bottom: 0.45rem;
+  border-bottom: 1px solid var(--accent-pale);
+}
+
+h3 {
+  font-family: var(--serif);
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.35;
+  margin: 1.4rem 0 0.4rem;
+}
+
+/* ---------- text ---------- */
+
+p { margin: 0 0 0.85rem; }
+
+p.lede { font-size: 1.16rem; line-height: 1.6; margin-bottom: 1.5rem; }
+
+.note { font-size: 0.92rem; color: var(--ink-quiet); }
+.at { color: var(--ink-quiet); font-style: italic; }
+.cn {
+  font-family: "Noto Serif SC", "Songti SC", "SimSun", serif;
+  color: inherit;
+  font-weight: 400;
+  font-size: 0.88em;
+  margin-left: 0.34em;
+}
+
+
+
+.status {
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  letter-spacing: 0.02em;
+  color: var(--ink-quiet);
+}
+
+/* ---------- lists ---------- */
+
+/* Bibliographic hanging indent, as in a reference list. */
+ul.entries { list-style: none; margin: 0 0 1.15rem; padding: 0; }
+ul.entries li {
+  padding-left: 1.5rem;
+  text-indent: -1.5rem;
+  margin-bottom: 0.8rem;
+}
+ul.entries li .note,
+ul.entries li .status { display: block; text-indent: 0; }
+
+ul.plain { margin: 0 0 1.15rem; padding-left: 1.1rem; }
+ul.plain li { margin-bottom: 0.25rem; }
+
+/* ---------- contact list ---------- */
+
+dl.info { margin: 0; }
+dl.info dt {
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-quiet);
+  margin-top: 0.9rem;
+}
+dl.info dd { margin: 0.15rem 0 0; }
+
+/* ---------- portrait (home page sidebar) ---------- */
+
+.portrait {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border: 1px solid var(--accent-pale);
+  margin: 0 0 0.55rem;
+  background: #E4EAE6;
+}
+.portrait-note {
+  font-family: var(--sans);
+  font-size: 0.86rem;
+  line-height: 1.5;
+  margin: 0 0 1.8rem;
+}
+.portrait-note a {
+  display: block;
+  padding: 0.3rem 0;
+  text-decoration: none;
+  color: var(--ink);
+}
+.portrait-note a:hover { color: var(--accent); }
+.portrait-note a::before {
+  content: "\2193";
+  display: inline-block;
+  width: 1em;
+  color: var(--accent);
+}
+
+@media (max-width: 860px) {
+  .portrait { width: 8.5rem; aspect-ratio: 4 / 5; float: left; margin: 0 1.1rem 0.6rem 0; }
+  .portrait-note { clear: both; margin-bottom: 1.1rem; }
+}
+
+/* ---------- news (home page) ---------- */
+
+ul.news { list-style: none; margin: 0 0 1.5rem; padding: 0; }
+ul.news li {
+  display: grid;
+  grid-template-columns: 5.75rem minmax(0, 1fr);
+  gap: 1rem;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+ul.news li:first-child { border-top: 1px solid var(--accent-pale); }
+ul.news .date {
+  font-family: var(--sans);
+  font-size: 0.74rem;
+  letter-spacing: 0.05em;
+  color: var(--accent-mid);
+  padding-top: 0.3rem;
+}
+ul.news .item { margin: 0; }
+ul.news .item .note { display: block; margin-top: 0.15rem; }
+
+/* older news, collapsed by default (no JavaScript) */
+details.more { margin: 0 0 1.5rem; }
+details.more > summary {
+  list-style: none;
+  cursor: pointer;
+  font-family: var(--sans);
+  font-size: 0.9rem;
+  letter-spacing: 0.02em;
+  color: var(--accent-mid);
+  padding: 0.85rem 0;
+}
+details.more > summary::-webkit-details-marker { display: none; }
+details.more > summary::before {
+  content: "\002B";
+  display: inline-block;
+  width: 1.1em;
+  color: var(--accent-mid);
+}
+details.more[open] > summary::before { content: "\2212"; }
+details.more > summary:hover { color: var(--accent); }
+details.more .label-less { display: none; }
+details.more[open] .label-more { display: none; }
+details.more[open] .label-less { display: inline; }
+details.more ul.news,
+details.more ul.entries { margin-bottom: 0; }
+details.more > p:first-of-type { margin-top: 0.35rem; }
+details.more > p:last-of-type { margin-bottom: 0.35rem; }
+details.more ul.news li:first-child { border-top: 0; }
+details.more > summary { margin-top: -0.35rem; }
+
+@media (max-width: 640px) {
+  ul.news li { grid-template-columns: minmax(0, 1fr); gap: 0.15rem; }
+  ul.news .date { padding-top: 0; }
+}
+
+/* ---------- footer ---------- */
+
+main > footer {
+  margin-top: 2.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--rule);
+}
+main > footer p {
+  margin: 0;
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  color: var(--ink-quiet);
+}
+main > footer a { color: var(--ink-quiet); text-decoration-color: var(--rule); }
+main > footer a:hover { color: var(--accent); }
+
+/* ---------- responsive ---------- */
+
+@media (max-width: 860px) {
+  .page {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2.25rem;
+    padding: 2.25rem 1.5rem 4rem;
+    max-width: 42rem;
+  }
+  .sidebar { position: static; }
+  .sidebar .name { margin-bottom: 1.1rem; }
+  .sidebar nav {
+    border-top: 0;
+    padding-top: 0;
+  }
+  .sidebar nav a {
+    display: inline-block;
+    margin: 0 1.1rem 0.3rem 0;
+    padding: 0 0 0.2rem;
+    border-left: 0;
+    border-bottom: 2px solid transparent;
+  }
+  .sidebar nav a.current { border-bottom-color: var(--accent); }
+  h1 { font-size: 1.6rem; }
+}
+
+@media (max-width: 460px) {
+  body { font-size: 16px; }
+  .page { padding: 2rem 1.15rem 3.5rem; }
+}
+
+/* ---------- print ---------- */
+
+@media print {
+  body { background: #fff; border-top: 0; }
+  .page { display: block; max-width: none; padding: 0; }
+  .sidebar nav { display: none; }
+  a { color: #000; text-decoration: none; }
+}
+
+.zh { font-family: "Noto Serif SC", "Songti SC", "SimSun", serif; }
+ul.entries li .zh-title { font-family: "Noto Serif SC", "Songti SC", "SimSun", serif; font-weight: 600; }
+ul.entries li .meta { display: block; text-indent: 0; font-family: "Noto Serif SC", "Songti SC", "SimSun", serif; font-size: 0.92rem; color: var(--ink-quiet); }
+
+.article h1 { font-family: "Noto Serif SC", "Songti SC", "SimSun", serif; font-weight: 600; font-size: 1.6rem; line-height: 1.5; }
+.article .meta-line { color: var(--ink-quiet); margin: 0 0 2rem; }
+.article p { font-family: "Noto Serif SC", "Songti SC", "SimSun", serif; line-height: 1.95; text-align: justify; }
+.article .back { font-size: 0.92rem; margin-top: 2.5rem; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header class="sidebar">
+    <p class="name"><a href="index.html">Lü Pin</a></p>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="public.html">Public scholarship</a>
+      <a href="writings.html" class="current">Writing Archive</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="article" lang="zh-Hans">
+
+    <h1>中国崛起的性别代价与女权运动</h1>
+    <p class="meta-line">吕频　2016年讲演稿</p>
+
+    <p>很高兴和大家在此分享。我的讲演将分为几个部分。首先我将回顾和分析中国是如何构建了它以性别不平等为基础的经济发展的；其次我将介绍当下的女权行动主义者向社会和政府发起的挑战；第三我将讨论女权主义在中国的权力结构中遭遇的利用和抵梧。我并非学者，我的介绍来自我在运动中的体验和观察以及与朋友们的交谈。我将展示一些简单的照片作为例子，并播放一则大约5分钟长的视频。最后我也有一个问题希望得到大家的解答。</p>
+    <p>我出生在上世纪70年代初期，文化大革命期间，中国北方一个小县城的郊区。虽然我的父母都是受过高等教育的工程师，但我的童年和少年时代的日常生活记忆的关键词仍然是物质的贫困与精神的匮乏。以及政治上的恐惧和压抑。</p>
+    <p>1995年我作为一名年轻记者参与世界妇女大会的报道。中国政府相当重视那次会议，然而，似乎并非出于对妇女问题的关切，而是希望借主办此次会议突破1989年后的外交困境，以及加入全球政治与经济社区，摆脱列宁式社会主义国家政治孤立、经济落后的“他者”境遇。也就是说，从政府的角度说，主办世界妇女大会是所谓“改革开放”的重要一步。</p>
+    <p>世界妇女大会的海报，主题是“平等、发展、和平”。海报中有一台笔记本电脑。然而当时在中国电脑还是少见的，我们这些记者没有任何人会用电脑。我从未接触过同性恋文化，有一天晚上，在一个会场上，我听到台上的表演者发出阵阵呻吟，我意识到那是与女同性恋的性有关的演出。我身边没有一个中国人。我心想：“天哪到底有没有人发现这个人在演什么？”</p>
+    <p>世界妇女大会上的另一个重要记忆是，可口可乐的赞助，记者和正式代表可以无限饮用那好几种清凉透明带泡沫的饮料——不同口味的雪碧。在会议结束的最后一天，按动饮料机的时候，它嘶嘶做响——机器已经空了。</p>
+    <p>是的，世界妇女大会让中国人第一次知道了NGO这个词，让非政府组织第一次可以集体公开和高调地活动（虽然大多数重要的妇女组织都是在那之后成立的），也促使中国人开拓了许多最基本的妇女权利议题，例如家庭暴力。同时，资本、市场、跨国公司，也在那时来到中国，而中国政府的兴奋迎接背后是提升其权力自信的企图。从那时候兴起的中国民间妇女运动，从女权主义的脉络而言，是本土对全球的响应，而在我看来更重要的是，我们的运动始终侧翼纠缠于政治始终保持威权而经济部分市场化的国家治理。</p>
+    <p>我们的政府不再像我的童年时那样无时无刻不令人恐惧。它始终强大，但放松了对经济和社会生活的管制。它自己也做垄断生意并大发其财。但在公民政治权利领域还是充满禁区，而且人们都知道它从来都可以随意扩张自己的权力。</p>
+    <p>过去这么多年，我想不起来我接触到的中国女权主义者，谁赞美过中国经济的市场化。相反，她们总是忧心忡忡，为这个过程中对妇女的利用、剥削和抛弃。</p>
+    <p>但首先必须承认一点，那就是，中国毕竟实现了大规模的减贫。那些在国有企业改革中失去工作的女人，因为征收土地而失去家和财产的女人，因为卖血而染病的女人，因为医药费昂贵而死去的女人……的生命故事，都是被努力遗忘的时代代价。至于幸存者，绝对生活状况总要比过去好。以及，今天人们有了更多样的迁居，就业的机会，更丰富的信息获取和生活方式的不同选择，虽然仍然有很大的局限。</p>
+    <p>当然，这不是什么恩赐，而是应得的。而且在这个过程中，有些人付出得多，得到的却少。几个简单的事实：中国女性的总劳动时间高于男性，而且其中多是无酬劳动。中国女性创造了40%的GDP。在20年间，中国女性的收入从男性的80%下降到了60%。</p>
+    <p>下面我想进一步谈谈经济发展如何与性别不平等同时实施。我所选择的第一个观察角度是对性别差异的重新伸张。</p>
+    <p>社会主义年代，国家告诉它的人民：“时代不同了，男女都一样，男同志能做的事情，女同志也能做。”在公共生活（生产和革命）方面，国家反对性别差异，主张女性应该而且能够与男性作出同样的贡献和承受同样的负担。</p>
+    <p>从“改革开放”之初起，承认和实践男女不一样就被当作“人性解放”的标志。从市场的角度看，这直接带来了消费，因为“女人味”是要通过消费来提升的。所以中国的商业广告充斥性别刻板印象。强调性别差异的另一个好处是，将就业性别隔离和就业歧视合理化。一些行业大量雇佣女性，利用她们顺从、勤劳、忍耐的社会性别气质，创造制造业和服务业的繁荣，但是雇主并不需要给她们和男人平等的待遇，因为“男女不一样”。我的意思是，从经济扩张的需求来说，在消费和生产两个方面，强调和维持性别差异都是非常划算和有效的。</p>
+    <p>第二个观察角度是私领域的重新划设。社会主义的另一个特点是不承认家庭私领域的神圣性，不承认家庭是自治单位，甚至挑衅家庭内部的等级秩序，鼓励家人相互斗争。我举一个例子：当时国家给城市居民的粮食定额是按人而不是以家庭为单位来分配的。因此家庭内部因为食物问题发生矛盾的并不罕见。</p>
+    <p>后社会主义年代的国家重新承认私领域的边界。我想给予私人情感、欲望、关系一定的隐私空间，对不致民怨、维护统治非常重要。而而对国家做大股东的经济市场化来说，情感与欲望都是消费的重要动力。为了追求和建设爱情、婚姻与家庭，人们买买买。</p>
+    <p>这是一则食用油的广告。这种日常用品的消费被与家庭幸福的陶冶联系在一起，而这种家庭是中国式的主流城市扩展家庭：一夫一妻一个孩子，与男方父母生活在一起。</p>
+    <p>私领域将女性的无酬劳动情感化。女人做家务是爱的必要表达。毫无疑问这对男性有利，因为男性可以更多地休息、社交和谋求职业发展。这对国家和市场也有利，因为国家长期拒绝为民众提供基本的社会福利，而女性承担起来了。生产也不会被再生产拖累，能够持续运转。</p>
+    <p>所以，可见女性对其社会性别角色的履行，对这种经济发展的模式来说是多么重要。女性是忠诚的劳动者，国家、市场、家庭的运作，都仰赖于妇女的贡献，女性也是忠诚的消费者，维持“女人味”和性魅力成为女性的生存义务，因此消费成为缓解不安全感和提升自信的方法。</p>
+    <p>中国的女权主义者始终对女性地位忧心忡忡并不断呼吁。然而虽然她们非常努力，却影响甚小。中国的女权主义社群是由资深的知识者为主组成的，她们受尊重，但一般来说并不拥有能影响到国家政策的力量。我们没办法阻止或者纠正这个不公正的“发展”过程。</p>
+    <p>如果女人能够安于这样的位置，那么对大家都有好处，除了对她们自己。</p>
+    <p>然而，不平在积聚，开始可能是莫以名状，迷朦模糊的，继而逐渐清晰，正如上面所提到的，上世纪90年代之后，人们开始知道家庭暴力这个概念。被压抑的女人会有许多的自我冲突，然而，当她们觉察到许多事情并非己错，冲突就开始发生在她们和外界之间。</p>
+    <p>女性的教育程度正在提高，大学女生的数量已经超过男性。大城市提供就业机会，迁居到大城市之后个人生活比较少受到原生家庭和社区的制约。通过互联网可以获取更多信息和建立社交关系。——这些也是“改革开放”的另一面，它惠及到城市家庭的独生女们，也惠及到农村妇女。我曾认识一些家政工，她们为逃离家庭暴力而从农村到了大城市。</p>
+    <p>大约在2008年我第一次接触到一个网上的女权小组。一些年轻女孩在其中发表各种不平的评论，对家庭、社会和职场上的性别歧视。她们也相互传播一些女权主义有关的读物和资源。2009年我创办了一份女权主题的电子周刊，一些妇女活动家的朋友协助转发它，在头两年里我几乎每周都会收到读者来信，告诉我她们的感想和她们希望讨论的问题。2011年，我和朋友在北京建立了一个小小的活动中心，它是一个30多平米的房间，在好几年里它是北京地区公民间女权活动的中心。一些认同女权主义的年轻人在那里相互结识。她们都受过高等教育，大部分是城市家庭出身的独生女，有不少人是酷儿。她们当中一些人是NGO的志愿者，另一些人在大学毕业后开始为NGO工作。</p>
+    <p>2010年9月的一个晚上，我在网上读到了一个美国女人的自述，她丈夫是一位在中国很出名的亿万富翁，他当着孩子的面殴打她。后来她提出离婚，要求分割财产并得到三个孩子的抚养权。这个案子当时轰动了全国，许多人在网上表示家庭暴力是不可容忍的，然而我们的法律并不能够给家庭暴力的受害者提供多少保护。</p>
+    <p>我的年轻朋友们一次次到法庭前集体声援她。这是2012年8月的一次视频。</p>
+    <p>这个视频的目的并不是纪录，而是为了进一步动员。很快就有将近20万人在网上看了视频，媒体也报道了这些年轻人的表演。——大家可以看到她们的表演滑稽和具有戏剧性，这是有意的，她们希望能通过这种方式吸引人们的注意。</p>
+    <p>这里是更多的声援照片，照片中的年轻人穿着带血的婚纱，这是反对家庭暴力的象征。他们谴责施暴者并呼吁给受害者颁发保护令。</p>
+    <p>2013年2月初这个案件判决，那位亿万富翁被判处给妻子大约8000美元的家庭暴力赔偿。也许大家觉得这很少，但在中国我们从未听说过这么高额的赔偿。法庭也发布了保护令，这是北京第一份公开的家庭暴力保护令。</p>
+    <p>这只是一个例子，反映我的这些年轻朋友，中国青年女权行动主义者的活动。她们非常大胆，敢于在媒体和公众面前现身，并且采用创意性的手法，激励舆论讨论妇女权利的问题。虽然人数并不多，但通过传播，她们放大了自己的力量，因此制造了不少热点事件。她们并不孤立，与资深的性别研究者、女权组织、草根的女性维权者都相互支持。</p>
+    <p>这些年轻人的活动在一定程度上改变了女权主义主张的边缘境遇，迫使社会和政府承认妇女权利议题的重要，并做出一些改变。我们一起促使教育部取消了大部分在大学录取中提高女性分数线的政策（原因是“女生太多”）。我们使最高法院取消了对一名杀死丈夫的家庭暴力受害者的死刑判决。中国最大的招聘网站不敢再刊登“不招女性”的招聘广告，因为会被举报甚至起诉。随着所有这些话题不断被讨论，越来越多的年轻人在网上自称为女权主义者，女权主义拥有了一个规模空前的社群。</p>
+    <p>我的这些年轻朋友有以激进和另类为荣的倾向，在压抑与犬儒的社会里，另类的生活选择首先意味着放弃既得利益，因此才有了感召他人的魅力和道德力量。激进则意味着持续的批判和自我批判。她们不接受“男人或女人理应如此”的规则，也不服从被强加的责任。但另一方面，她们是特别有责任心的一群人。每当有不平的事情发生，她们总会问：我能做什么？这其实就是行动主义的精髓。女权主义从来都有行动主义的倾向，因为它是要求社会向公正改变的。但是，当你目睹一起权利侵害事件，你的选择是督促一个相关的立法，还是当即去帮助受害者，这还是很不相同的。我不是说立法不重要，而是说，在那之前，我们不能忽略个人的遭遇，要尽量帮助人解决当下的痛苦。直接行动主义的原则就是立即行动，采取尽可能快和有效的手法。</p>
+    <p>在2015年3月，这些人当中的五位，突然被捕并被关押了37天，原因是她们策划一次反对公交性骚扰的活动。直到今年4月，她们的犯罪嫌疑人待遇才被解除。这一案件无疑是一起错案，是一个人权迫害事件，而且是从2014年以来发生的一系列此类事件中的一个。在事件发生之初和一段事件之后，人们对案件感到困惑：女权主义对国家有危害吗？</p>
+    <p>泛泛地说，女权主义当然是正义和有益的事业。而且中国的女权主义者也不从事直接反政府的活动。</p>
+    <p>但是，不能否认女权主义者的活动有可能对政府的治理产生公开和潜在的挑战。例如，问责于政府对妇女权利的不作为甚至其本身的性别歧视，通过发起公共舆论，促使政府让步。扩大言论和思想空间，建设公民自治，提升社会活跃。这些都削弱了政府的威权。更进一步说，如上所述，如果接受女权主义者的要价，就意味着要给女性资源和救济，最终将意味着放弃以性别不平等为代价的发展模式，然而政府已经将其既得利益捆绑在这种模式上。</p>
+    <p>所以第一政府不想让权，第二政府不想让利。</p>
+    <p>例如：为什么教育部同意大学限制女生入学？有更多的女生接受高等教育不好吗？问题是：女生入学比例高同时意味着男性比例低。男性将失去其优势地位。优秀的女人如同进入男性王国的移民，难免对这个王国的等级秩序产生干扰。然而，这个王国希望稳定——在不平等的基础上持续下去。</p>
+    <p>另外还有一点，就是，政府所希望女性扮演的角色，与女权行动主义者的示范是完全相反的。我们的主席在2013年曾发表过一个流传甚广的讲话，主题是希望妇女扮演维护家庭和谐稳定的角色。所以这就和上文所谈的性别差异和私领域有关了。家庭和私领域是维稳单元，而妇女应替国家负担在这单元层面上维稳的责任。而女权行动主义者发出的信息是相反的。她们质疑家庭制度并反对女性安于服务和照顾。</p>
+    <p>她们曾发起过一个在我看来非常有意思的活动：母亲节，母亲罢工。停止履行母职一天。这个活动的含义是通过非暴力不合作来抽空家庭制度。家庭的瓦解，妇女的不安分，必然指向父权国家治理的危机。</p>
+    <p>故事还没有讲完。事后看，政府抓捕五个女生，不是针对她们个人，而是警告整个女权主义的行动群体。随后，对这个群体的核心成员的监控、骚扰、限制成为常态。但她们仍然在坚持活动，而之所以能做到这一点，是因为她们仍然拥有相当大，甚至比以往更大的广泛社群。</p>
+    <p>今天社交媒体上已经出现N多各有专长，相互呼应的女权账号。侵犯妇女权利的事件收到比以往更强烈的关注和谴责。4月初，一名年轻女性在北京的一个酒店里遭陌生男人挟持，虽然她逃脱了，但酒店和当地派出所的反应却是麻木不仁。事件在微博披露后，短短两天之内，相关的标签有超过8000万个点击。虽然许多信息遭到删除，但这个事件已经表现了前所未有的大规模的女性愤怒。</p>
+    <p>如我刚才讲到的，中国成规模的女权主义，在某种意义上是“改革开放”的无意的副产品。在这个前提下，怀有忧国忧民之心，为女权而工作的女权主义者，和那些希望借助女权主义来应对生活问题的普通女性，对女权主义的理解和运用是有区别的。我从来不相信女权主义会被利用、被挟持，也不觉得女权主义的分化可怕或令人失望。只是想指出，今天的中国泛女权主义存在阶级化的成分，性别的冲突有些时候被用来确认阶级的安全感：女性确信靠家庭的投资和自己的秉赋能够独立生存，因此有资格拒绝成为男人的附属品。但是，她们对自己所拥有的性别和阶级红利比较少反思，对广大国家的社会和政治议题也所知不多，我并不想去指责任何女人，该对社会的区隔和冷漠负责的并不是她们，而且运用女权主义去促进精英式的个人发展，在这个男权社会里并不是一种过错，虽然女权主义对这种取向有许多内部讨论，但我不认为应该在男人仍然占优势的时候，就去收缴女人的竞争上进的武器。我只是想重复一点：女权主义的故事并非孤立地发生在道德乌托邦之中，它是对社会主流的纠缠和回应。</p>
+    <p>今天我们怎么做女人？各种不同的力量在这里。例如市场：在互联网上有一种“网红经济”据说已经达到千亿的规模，其内涵就是一些年轻美貌善于拍照和修图的女孩，在不断展示自己光鲜的生活，吸引了许多粉丝之后，向她们推销商品。“网红”现象几乎是彻底否定了女性劳动的价值，完全将女性消费化，女性不需要努力工作，年轻、美貌、拥有许多物品就是价值。这种现象实际上是女性失败——不再相信能够靠工作树立自身价值和女性焦虑——担忧性魅力丧失的镜像。</p>
+    <p>另一种力量还是国家。最近几天，一些地方出现洪水，一些军人被派去救灾。于是，一些由官方机构经营的社交媒体就发起了这样一个活动：恋慕军人的年轻女孩在互联网上向救灾军人表白：我愿意替你洗衣服。我的一个朋友问：他们没有洗衣机吗？哈哈哈。实际上洗衣之所以构成一种爱情的表白，是因为它表示女人愿意为男人提供无酬劳动，多么忠诚的好女人。但在这种有组织的集体宣示中，爱并不是给哪个具体的军人的，是给军队、给国家的。女人的传统社会性别角色在此被公开表扬，并收缴成为爱国主义的祭品。</p>
+    <p>是追随女权主义，还是化妆购物梦想做公主，还是加入爱国女青年？这是挺有意思的对立。女权主义正因此而重要。如果女性能够拥有真正的自由选择，那她们就不会成为客体、供品或自我他者化。中国社会有许多危机而且非常需要变化，但许多有识之士正在越来越失望，然而，如果有什么希望，愿人们能看到，是在于女权主义，因为它有女性的愤怒作为变革的力量，而且它所要求的变革是当下开始，而又十分深远的。虽然女权主义本身也仍然面临种种压力与挑战。</p>
+    <p>那么，这些发生在中国的故事，与其他国家有什么关系？这是我的问题。</p>
+
+    <p class="back" lang="en"><a href="writings.html">Writing Archive</a></p>
+
+  </main>
+
+</div>
+</body>
+</html>
