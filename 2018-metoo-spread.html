@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>中国“Me Too”是如何传播的 &mdash; 吕频</title>
+<meta name="description" content="吕频关于中国米兔运动如何传播的文章，2018年。">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="canonical" href="https://lupin.phd/2018-metoo-spread.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="中国“Me Too”是如何传播的 — 吕频">
+<meta property="og:description" content="吕频关于中国米兔运动如何传播的文章，2018年。">
+<meta property="og:url" content="https://lupin.phd/2018-metoo-spread.html">
+<meta property="og:image" content="https://lupin.phd/photo-full.jpg">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600&display=swap" rel="stylesheet">
+<style>
+/* ---------------------------------------------------------------
+   Shared styles.
+   Layout:  narrow sidebar (identity + navigation) beside a single
+            reading column set to a bibliographic measure.
+   Palette: cool paper, ink, one deep teal used sparingly.
+   Type:    Source Serif 4 for reading, Archivo for labels and nav.
+   --------------------------------------------------------------- */
+
+:root {
+  --paper:      #F2F3F0;
+  --ink:        #161C1A;
+  --ink-quiet:  #5E6863;
+  --rule:       #D5D9D2;
+  --accent:     #145A3C;
+  --accent-mid: #3E8A63;
+  --accent-pale:#BFD6C6;
+
+  --serif: "Source Serif 4", Georgia, "Songti SC", serif;
+  --sans:  "Archivo", -apple-system, "Helvetica Neue", "PingFang SC", Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 17px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  border-top: 3px solid var(--accent);
+}
+
+a {
+  color: var(--accent-mid);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  text-decoration-color: rgba(62, 138, 99, 0.4);
+}
+a:hover {
+  color: var(--accent);
+  text-decoration-color: var(--accent);
+}
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+/* ---------- page frame ---------- */
+
+.page {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 3rem 2rem 4rem;
+  display: grid;
+  grid-template-columns: 13rem minmax(0, 41rem);
+  gap: 4rem;
+}
+
+/* ---------- sidebar ---------- */
+
+.sidebar {
+  position: sticky;
+  top: 3.5rem;
+  align-self: start;
+}
+
+.sidebar .name {
+  font-family: var(--sans);
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  margin: 0 0 1.5rem;
+  line-height: 1.35;
+}
+.sidebar .name a { color: var(--ink); text-decoration: none; }
+.sidebar .name a:hover { color: var(--accent-mid); }
+
+.sidebar nav {
+  font-family: var(--sans);
+  font-size: 0.84rem;
+  border-top: 1px solid var(--rule);
+  padding-top: 0.9rem;
+}
+.sidebar nav a {
+  display: block;
+  padding: 0.28rem 0 0.28rem 0.85rem;
+  margin-left: -0.85rem;
+  border-left: 2px solid transparent;
+  color: var(--ink-quiet);
+  text-decoration: none;
+}
+.sidebar nav a:hover { color: var(--ink); }
+.sidebar nav a.current { color: var(--ink); border-left-color: var(--accent); }
+
+/* ---------- headings ---------- */
+
+h1 {
+  color: var(--accent);
+  font-family: var(--serif);
+  font-size: 1.9rem;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -0.012em;
+  margin: 0 0 1.3rem;
+  text-wrap: balance;
+}
+
+h2 {
+  font-family: var(--sans);
+  font-size: 0.74rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 2rem 0 0.85rem;
+  padding-bottom: 0.45rem;
+  border-bottom: 1px solid var(--accent-pale);
+}
+
+h3 {
+  font-family: var(--serif);
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.35;
+  margin: 1.4rem 0 0.4rem;
+}
+
+/* ---------- text ---------- */
+
+p { margin: 0 0 0.85rem; }
+
+p.lede { font-size: 1.16rem; line-height: 1.6; margin-bottom: 1.5rem; }
+
+.note { font-size: 0.92rem; color: var(--ink-quiet); }
+.at { color: var(--ink-quiet); font-style: italic; }
+.cn {
+  font-family: "Noto Serif SC", "Songti SC", "SimSun", serif;
+  color: inherit;
+  font-weight: 400;
+  font-size: 0.88em;
+  margin-left: 0.34em;
+}
+
+
+
+.status {
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  letter-spacing: 0.02em;
+  color: var(--ink-quiet);
+}
+
+/* ---------- lists ---------- */
+
+/* Bibliographic hanging indent, as in a reference list. */
+ul.entries { list-style: none; margin: 0 0 1.15rem; padding: 0; }
+ul.entries li {
+  padding-left: 1.5rem;
+  text-indent: -1.5rem;
+  margin-bottom: 0.8rem;
+}
+ul.entries li .note,
+ul.entries li .status { display: block; text-indent: 0; }
+
+ul.plain { margin: 0 0 1.15rem; padding-left: 1.1rem; }
+ul.plain li { margin-bottom: 0.25rem; }
+
+/* ---------- contact list ---------- */
+
+dl.info { margin: 0; }
+dl.info dt {
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-quiet);
+  margin-top: 0.9rem;
+}
+dl.info dd { margin: 0.15rem 0 0; }
+
+/* ---------- portrait (home page sidebar) ---------- */
+
+.portrait {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border: 1px solid var(--accent-pale);
+  margin: 0 0 0.55rem;
+  background: #E4EAE6;
+}
+.portrait-note {
+  font-family: var(--sans);
+  font-size: 0.86rem;
+  line-height: 1.5;
+  margin: 0 0 1.8rem;
+}
+.portrait-note a {
+  display: block;
+  padding: 0.3rem 0;
+  text-decoration: none;
+  color: var(--ink);
+}
+.portrait-note a:hover { color: var(--accent); }
+.portrait-note a::before {
+  content: "\2193";
+  display: inline-block;
+  width: 1em;
+  color: var(--accent);
+}
+
+@media (max-width: 860px) {
+  .portrait { width: 8.5rem; aspect-ratio: 4 / 5; float: left; margin: 0 1.1rem 0.6rem 0; }
+  .portrait-note { clear: both; margin-bottom: 1.1rem; }
+}
+
+/* ---------- news (home page) ---------- */
+
+ul.news { list-style: none; margin: 0 0 1.5rem; padding: 0; }
+ul.news li {
+  display: grid;
+  grid-template-columns: 5.75rem minmax(0, 1fr);
+  gap: 1rem;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+ul.news li:first-child { border-top: 1px solid var(--accent-pale); }
+ul.news .date {
+  font-family: var(--sans);
+  font-size: 0.74rem;
+  letter-spacing: 0.05em;
+  color: var(--accent-mid);
+  padding-top: 0.3rem;
+}
+ul.news .item { margin: 0; }
+ul.news .item .note { display: block; margin-top: 0.15rem; }
+
+/* older news, collapsed by default (no JavaScript) */
+details.more { margin: 0 0 1.5rem; }
+details.more > summary {
+  list-style: none;
+  cursor: pointer;
+  font-family: var(--sans);
+  font-size: 0.9rem;
+  letter-spacing: 0.02em;
+  color: var(--accent-mid);
+  padding: 0.85rem 0;
+}
+details.more > summary::-webkit-details-marker { display: none; }
+details.more > summary::before {
+  content: "\002B";
+  display: inline-block;
+  width: 1.1em;
+  color: var(--accent-mid);
+}
+details.more[open] > summary::before { content: "\2212"; }
+details.more > summary:hover { color: var(--accent); }
+details.more .label-less { display: none; }
+details.more[open] .label-more { display: none; }
+details.more[open] .label-less { display: inline; }
+details.more ul.news,
+details.more ul.entries { margin-bottom: 0; }
+details.more > p:first-of-type { margin-top: 0.35rem; }
+details.more > p:last-of-type { margin-bottom: 0.35rem; }
+details.more ul.news li:first-child { border-top: 0; }
+details.more > summary { margin-top: -0.35rem; }
+
+@media (max-width: 640px) {
+  ul.news li { grid-template-columns: minmax(0, 1fr); gap: 0.15rem; }
+  ul.news .date { padding-top: 0; }
+}
+
+/* ---------- footer ---------- */
+
+main > footer {
+  margin-top: 2.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--rule);
+}
+main > footer p {
+  margin: 0;
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  color: var(--ink-quiet);
+}
+main > footer a { color: var(--ink-quiet); text-decoration-color: var(--rule); }
+main > footer a:hover { color: var(--accent); }
+
+/* ---------- responsive ---------- */
+
+@media (max-width: 860px) {
+  .page {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2.25rem;
+    padding: 2.25rem 1.5rem 4rem;
+    max-width: 42rem;
+  }
+  .sidebar { position: static; }
+  .sidebar .name { margin-bottom: 1.1rem; }
+  .sidebar nav {
+    border-top: 0;
+    padding-top: 0;
+  }
+  .sidebar nav a {
+    display: inline-block;
+    margin: 0 1.1rem 0.3rem 0;
+    padding: 0 0 0.2rem;
+    border-left: 0;
+    border-bottom: 2px solid transparent;
+  }
+  .sidebar nav a.current { border-bottom-color: var(--accent); }
+  h1 { font-size: 1.6rem; }
+}
+
+@media (max-width: 460px) {
+  body { font-size: 16px; }
+  .page { padding: 2rem 1.15rem 3.5rem; }
+}
+
+/* ---------- print ---------- */
+
+@media print {
+  body { background: #fff; border-top: 0; }
+  .page { display: block; max-width: none; padding: 0; }
+  .sidebar nav { display: none; }
+  a { color: #000; text-decoration: none; }
+}
+
+.zh { font-family: "Noto Serif SC", "Songti SC", "SimSun", serif; }
+ul.entries li .zh-title { font-family: "Noto Serif SC", "Songti SC", "SimSun", serif; font-weight: 600; }
+ul.entries li .meta { display: block; text-indent: 0; font-family: "Noto Serif SC", "Songti SC", "SimSun", serif; font-size: 0.92rem; color: var(--ink-quiet); }
+
+.article h1 { font-family: "Noto Serif SC", "Songti SC", "SimSun", serif; font-weight: 600; font-size: 1.6rem; line-height: 1.5; }
+.article .meta-line { color: var(--ink-quiet); margin: 0 0 2rem; }
+.article p { font-family: "Noto Serif SC", "Songti SC", "SimSun", serif; line-height: 1.95; text-align: justify; }
+.article .back { font-size: 0.92rem; margin-top: 2.5rem; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header class="sidebar">
+    <p class="name"><a href="index.html">Lü Pin</a></p>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="public.html">Public scholarship</a>
+      <a href="writings.html" class="current">Writing Archive</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="article" lang="zh-Hans">
+
+    <h1>中国“Me Too”是如何传播的</h1>
+    <p class="meta-line">吕频　2018年</p>
+
+    <p>众所周知，美国“Me Too”运动兴起的触发点，是2017年10月媒体曝光好莱坞大佬韦恩斯坦的性骚扰丑闻。继而有人在推特上设置““Me Too””标签，发起一场基于社交媒体的巨大讨论，更多性骚扰因此被揭发出来，而讨论又得到进一步促进，最终成为一场全民性的社会运动。</p>
+    <p>在中国，“Me Too”运动同样由实名举报引爆，即2018年1月1日北京航天航空大学博士罗茜茜对其前导师陈小武的揭发。其实受害者们的帖子早几个月已经发布并在知乎和微博引起了一些议论，但没有得到校方和大众舆论的重视。而当罗茜茜以实名再次发布长篇控告，一日之内传遍互联网。实名使公众对指控的信任大增，名校与女博士的标签也有促进传播。而这一起始也使中国“Me Too”至今聚焦于高校性骚扰，以及制度性的建设。后来的事实证明，高校正是中国反性骚扰的突破点所在，因为校园内有一群群正直勇敢的年轻人关心学校的制度建设，青年学生的身份使他们即使面对风潮也能保有正当性，而在校园外，对母校的认同也能汇聚起校友的支持。更强的倡导取向，是对当下中国制度性缺失的必要回应，也保证了，在整个文化氛围仍不那么友好前提下，性骚扰议题仍能通过集体性的行动得到推进。</p>
+    <p>“这就是今天我表达对西安外国语大学的信任、自豪和爱的方式。”1月2日，西安外国语大学学生何息公布一封向校长提议建设性骚扰防治机制的公开信。1月4日，罗茜茜发起给北航的联名信，将诉求从处理陈小武扩大到制度性诉求。1月5日，住在广州的女权活动者张累累发出“万人致信母校反性骚扰“倡议，虽然最早的倡议书和微博标签都很快”消失“，但北京师范大学，南华大学，北京邮电大学，中山大学……越来越多学校的倡议书发布在网上。”滚雪球“式的效应开始出现，新人不断涌入张累累所建的微信群：”我看到其他学校学生发出的公开信，我也想给自己的学校写，谁可以给我一些建议？“。志愿者们相互指点，很快，张累累的发起角色变得不那么重要，这是一场无中心的、自我组织的运动。</p>
+    <p>如果说微信群是聚集，微博就是扩散，一封联署信发出去，常有惊喜：发起人们第一次体会到，原来有那么多陌生的校友也关注性骚扰议题。早期的联署信可能只有几十个学生校友签名，后期则普遍增加到数百人甚至近千人。</p>
+    <p>这始终是一个与审查搏斗的过程，删除文章，删除标签，关键词限制发布，发布后禁止转发，只有自己可见……种种把戏，活动参与者都经历了。他们也开始发展出自己的策略，例如文字转图片，使用谐音字和拼音，注册多个小号……。就这样顽强地传递信息。另一种阻力在线下，一些学校的管理者向学生发出信息，或软硬兼施，或不惜威胁恐吓，核心主题只有一个：把联署信从网上删掉。有些联署信被迫删除了，但更多学生选择了将整个过程披露，例如他们会发布这样的微信公号文章：“导员打电话叫我撤回联名，我该怎么做？急，在线等！”</p>
+    <p>在最艰难的日子里，志愿者们非常希望得到声援，一些记者加入了志愿者组织的微信群，但没有任何大众媒体报道这一活动，只有整个社交媒体都在看。闾丘露薇加入了复旦大学的联名，像她这样的知名人士确实给了大家特别的鼓励。1月11日晚，北航宣认定陈小武性骚扰并停止其教职，1月14日，教育部通过澎湃表态将“研究制定预防性骚扰长效机制‘，尽管只字未提高校联名活动，但毫无疑问，这是对学生们的回应和安抚。至此，学生们在线上和线下遭遇到的压力有所缓和，到寒假结束前，共有94所大学的8000多名校友和学生参与了致信母校反性骚扰活动。</p>
+    <p>继而，活动走向更广泛和深入，1月22日40余名高校教师实名发布性骚扰宣言，给学生的活动以极大鼓舞，并进一步增强了整个倡议的合法性。１月底，海外中国学生学者联署信上线，提出教育部和各高校应该为制定性骚扰防治机制设置时间表，并纳入学生和教师的参与。多所学校的志愿者开始组织校内性骚扰现状与需求调查，以俾未来进一步倡议立论有据。至今，中国“Me Too”仍在持续当中，尽管“三八“节“女权之声“平台在发布”反性骚扰宣言“倡议之后被微博和微信封禁，年轻人的努力仍没有停止。</p>
+    <p>中国“Me Too”无疑受到美国“Me Too”的巨大感召，但中美之间不是翻版关系，而是理念共享，目标与策略分治。美国“Me Too”是个案问责加文化大辩论，其前提是反性骚扰制度早有却并没有尽用，因此有必要做挑战权力及提高意识的社会改造。中国“Me Too”，则是在制度缺位，意识不彰的条件下起步的倡导，并且深受言论与行动不自由的困扰。但正因如此，人们可以仔细观察到，在这日益逼仄的社会环境中，这一运动如何因一个看似偶然的时机而起，并在集体的智慧和勇气下，实现了成规模的卷入，并最终敲响了政策之门。在这个过程中，有意无意地，倡导者对社交媒体的运用十分策略化。因此它也提供了一个窗口，供人们观察对社交媒体的控制和反控制所互动创造的饱含戏剧性的节目。终究，社会不会死亡，人们总能找到机会发出渴望的声音。[图片包含 屏幕截图 已生成极高可信度的说明]</p>
+
+    <p class="back" lang="en"><a href="writings.html">Writing Archive</a></p>
+
+  </main>
+
+</div>
+</body>
+</html>
