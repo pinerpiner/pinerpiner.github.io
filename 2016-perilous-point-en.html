@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Critical Mass? On the Perilous Point &mdash; Lü Pin</title>
+<meta name="description" content="Lü Pin’s speech at the opening of an exhibition on Chinese young feminist activism, January 2016. Translated by Yidi Li.">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="canonical" href="https://lupin.phd/2016-perilous-point-en.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Critical Mass? On the Perilous Point — Lü Pin">
+<meta property="og:description" content="Lü Pin’s speech at the opening of an exhibition on Chinese young feminist activism, January 2016. Translated by Yidi Li.">
+<meta property="og:url" content="https://lupin.phd/2016-perilous-point-en.html">
+<meta property="og:image" content="https://lupin.phd/photo-full.jpg">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600&display=swap" rel="stylesheet">
+<style>
+/* ---------------------------------------------------------------
+   Shared styles.
+   Layout:  narrow sidebar (identity + navigation) beside a single
+            reading column set to a bibliographic measure.
+   Palette: cool paper, ink, one deep teal used sparingly.
+   Type:    Source Serif 4 for reading, Archivo for labels and nav.
+   --------------------------------------------------------------- */
+
+:root {
+  --paper:      #F2F3F0;
+  --ink:        #161C1A;
+  --ink-quiet:  #5E6863;
+  --rule:       #D5D9D2;
+  --accent:     #145A3C;
+  --accent-mid: #3E8A63;
+  --accent-pale:#BFD6C6;
+
+  --serif: "Source Serif 4", Georgia, "Songti SC", serif;
+  --sans:  "Archivo", -apple-system, "Helvetica Neue", "PingFang SC", Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 17px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  border-top: 3px solid var(--accent);
+}
+
+a {
+  color: var(--accent-mid);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  text-decoration-color: rgba(62, 138, 99, 0.4);
+}
+a:hover {
+  color: var(--accent);
+  text-decoration-color: var(--accent);
+}
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+/* ---------- page frame ---------- */
+
+.page {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 3rem 2rem 4rem;
+  display: grid;
+  grid-template-columns: 13rem minmax(0, 41rem);
+  gap: 4rem;
+}
+
+/* ---------- sidebar ---------- */
+
+.sidebar {
+  position: sticky;
+  top: 3.5rem;
+  align-self: start;
+}
+
+.sidebar .name {
+  font-family: var(--sans);
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  margin: 0 0 1.5rem;
+  line-height: 1.35;
+}
+.sidebar .name a { color: var(--ink); text-decoration: none; }
+.sidebar .name a:hover { color: var(--accent-mid); }
+
+.sidebar nav {
+  font-family: var(--sans);
+  font-size: 0.84rem;
+  border-top: 1px solid var(--rule);
+  padding-top: 0.9rem;
+}
+.sidebar nav a {
+  display: block;
+  padding: 0.28rem 0 0.28rem 0.85rem;
+  margin-left: -0.85rem;
+  border-left: 2px solid transparent;
+  color: var(--ink-quiet);
+  text-decoration: none;
+}
+.sidebar nav a:hover { color: var(--ink); }
+.sidebar nav a.current { color: var(--ink); border-left-color: var(--accent); }
+
+/* ---------- headings ---------- */
+
+h1 {
+  color: var(--accent);
+  font-family: var(--serif);
+  font-size: 1.9rem;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -0.012em;
+  margin: 0 0 1.3rem;
+  text-wrap: balance;
+}
+
+h2 {
+  font-family: var(--sans);
+  font-size: 0.74rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 2rem 0 0.85rem;
+  padding-bottom: 0.45rem;
+  border-bottom: 1px solid var(--accent-pale);
+}
+
+h3 {
+  font-family: var(--serif);
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.35;
+  margin: 1.4rem 0 0.4rem;
+}
+
+/* ---------- text ---------- */
+
+p { margin: 0 0 0.85rem; }
+
+p.lede { font-size: 1.16rem; line-height: 1.6; margin-bottom: 1.5rem; }
+
+.note { font-size: 0.92rem; color: var(--ink-quiet); }
+.at { color: var(--ink-quiet); font-style: italic; }
+.cn {
+  font-family: "Noto Serif SC", "Songti SC", "SimSun", serif;
+  color: inherit;
+  font-weight: 400;
+  font-size: 0.88em;
+  margin-left: 0.34em;
+}
+
+
+
+.status {
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  letter-spacing: 0.02em;
+  color: var(--ink-quiet);
+}
+
+/* ---------- lists ---------- */
+
+/* Bibliographic hanging indent, as in a reference list. */
+ul.entries { list-style: none; margin: 0 0 1.15rem; padding: 0; }
+ul.entries li {
+  padding-left: 1.5rem;
+  text-indent: -1.5rem;
+  margin-bottom: 0.8rem;
+}
+ul.entries li .note,
+ul.entries li .status { display: block; text-indent: 0; }
+
+ul.plain { margin: 0 0 1.15rem; padding-left: 1.1rem; }
+ul.plain li { margin-bottom: 0.25rem; }
+
+/* ---------- contact list ---------- */
+
+dl.info { margin: 0; }
+dl.info dt {
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-quiet);
+  margin-top: 0.9rem;
+}
+dl.info dd { margin: 0.15rem 0 0; }
+
+/* ---------- portrait (home page sidebar) ---------- */
+
+.portrait {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border: 1px solid var(--accent-pale);
+  margin: 0 0 0.55rem;
+  background: #E4EAE6;
+}
+.portrait-note {
+  font-family: var(--sans);
+  font-size: 0.86rem;
+  line-height: 1.5;
+  margin: 0 0 1.8rem;
+}
+.portrait-note a {
+  display: block;
+  padding: 0.3rem 0;
+  text-decoration: none;
+  color: var(--ink);
+}
+.portrait-note a:hover { color: var(--accent); }
+.portrait-note a::before {
+  content: "\2193";
+  display: inline-block;
+  width: 1em;
+  color: var(--accent);
+}
+
+@media (max-width: 860px) {
+  .portrait { width: 8.5rem; aspect-ratio: 4 / 5; float: left; margin: 0 1.1rem 0.6rem 0; }
+  .portrait-note { clear: both; margin-bottom: 1.1rem; }
+}
+
+/* ---------- news (home page) ---------- */
+
+ul.news { list-style: none; margin: 0 0 1.5rem; padding: 0; }
+ul.news li {
+  display: grid;
+  grid-template-columns: 5.75rem minmax(0, 1fr);
+  gap: 1rem;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+ul.news li:first-child { border-top: 1px solid var(--accent-pale); }
+ul.news .date {
+  font-family: var(--sans);
+  font-size: 0.74rem;
+  letter-spacing: 0.05em;
+  color: var(--accent-mid);
+  padding-top: 0.3rem;
+}
+ul.news .item { margin: 0; }
+ul.news .item .note { display: block; margin-top: 0.15rem; }
+
+/* older news, collapsed by default (no JavaScript) */
+details.more { margin: 0 0 1.5rem; }
+details.more > summary {
+  list-style: none;
+  cursor: pointer;
+  font-family: var(--sans);
+  font-size: 0.9rem;
+  letter-spacing: 0.02em;
+  color: var(--accent-mid);
+  padding: 0.85rem 0;
+}
+details.more > summary::-webkit-details-marker { display: none; }
+details.more > summary::before {
+  content: "\002B";
+  display: inline-block;
+  width: 1.1em;
+  color: var(--accent-mid);
+}
+details.more[open] > summary::before { content: "\2212"; }
+details.more > summary:hover { color: var(--accent); }
+details.more .label-less { display: none; }
+details.more[open] .label-more { display: none; }
+details.more[open] .label-less { display: inline; }
+details.more ul.news,
+details.more ul.entries { margin-bottom: 0; }
+details.more > p:first-of-type { margin-top: 0.35rem; }
+details.more > p:last-of-type { margin-bottom: 0.35rem; }
+details.more ul.news li:first-child { border-top: 0; }
+details.more > summary { margin-top: -0.35rem; }
+
+@media (max-width: 640px) {
+  ul.news li { grid-template-columns: minmax(0, 1fr); gap: 0.15rem; }
+  ul.news .date { padding-top: 0; }
+}
+
+/* ---------- footer ---------- */
+
+main > footer {
+  margin-top: 2.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--rule);
+}
+main > footer p {
+  margin: 0;
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  color: var(--ink-quiet);
+}
+main > footer a { color: var(--ink-quiet); text-decoration-color: var(--rule); }
+main > footer a:hover { color: var(--accent); }
+
+/* ---------- responsive ---------- */
+
+@media (max-width: 860px) {
+  .page {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2.25rem;
+    padding: 2.25rem 1.5rem 4rem;
+    max-width: 42rem;
+  }
+  .sidebar { position: static; }
+  .sidebar .name { margin-bottom: 1.1rem; }
+  .sidebar nav {
+    border-top: 0;
+    padding-top: 0;
+  }
+  .sidebar nav a {
+    display: inline-block;
+    margin: 0 1.1rem 0.3rem 0;
+    padding: 0 0 0.2rem;
+    border-left: 0;
+    border-bottom: 2px solid transparent;
+  }
+  .sidebar nav a.current { border-bottom-color: var(--accent); }
+  h1 { font-size: 1.6rem; }
+}
+
+@media (max-width: 460px) {
+  body { font-size: 16px; }
+  .page { padding: 2rem 1.15rem 3.5rem; }
+}
+
+/* ---------- print ---------- */
+
+@media print {
+  body { background: #fff; border-top: 0; }
+  .page { display: block; max-width: none; padding: 0; }
+  .sidebar nav { display: none; }
+  a { color: #000; text-decoration: none; }
+}
+
+.zh { font-family: "Noto Serif SC", "Songti SC", "SimSun", serif; }
+ul.entries li .zh-title { font-family: "Noto Serif SC", "Songti SC", "SimSun", serif; font-weight: 600; }
+ul.entries li .meta { display: block; text-indent: 0; font-family: "Noto Serif SC", "Songti SC", "SimSun", serif; font-size: 0.92rem; color: var(--ink-quiet); }
+
+.article h1 { font-family: "Noto Serif SC", "Songti SC", "SimSun", serif; font-weight: 600; font-size: 1.6rem; line-height: 1.5; }
+.article .meta-line { color: var(--ink-quiet); margin: 0 0 2rem; }
+.article p { font-family: "Noto Serif SC", "Songti SC", "SimSun", serif; line-height: 1.95; text-align: justify; }
+.article .back { font-size: 0.92rem; margin-top: 2.5rem; }
+.article-en h1, .article-en p { font-family: inherit; text-align: left; }
+.article-en p { line-height: 1.7; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header class="sidebar">
+    <p class="name"><a href="index.html">Lü Pin</a></p>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="public.html">Public scholarship</a>
+      <a href="writings.html" class="current">Writing Archive</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="article article-en" lang="en">
+
+    <h1>Critical Mass? On the Perilous Point</h1>
+    <p class="meta-line">Lü Pin, January 26, 2016. Translated by Yidi Li.</p>
+
+    <p>I want to start with an email from January 28th, 2015. That email was a review of conversations I had with the sender.</p>
+    <p>“Feminist activism has almost reached the ‘critical mass’, the point in an evolving situation that leads to new and irreversible development.</p>
+    <p>“Critical mass theory in gender politics and collective political action is defined as the critical number of personnel needed to affect policy and make a change not as the token but as an influential body.</p>
+    <p>“……The spring of Chinese feminist activism may come soon …… However, this critical mass is also a double-edged sword. Outsiders will cheer for the progress of feminism, but insiders will feel more and more pressured. The main pressure is the pressure from the government. The government has noticed the subversive and organizational features feminist activists use to mobilize people, so they have already focused on some of them.</p>
+    <p>“So this becomes a more crucial moment. We have to fight as much as possible to gain more people to identify with feminism or even feminist activism, making our experience more replicable so that more people can refer to. So in that way, even if we are accidentally suppressed, the organization can be suppressed, but people's minds have been enlightened by feminism and the government cannot suppress that thought. ”</p>
+    <p>I’d like to explain the background of this anticipation. I want to push the time back to February 14th, 2012, Valentine’s Day. In a freezing cold winter day, at the busiest section of Beijing City, there were three girls in their wedding dress. Their wedding dress was smeared by “blood stains”. They waved signs to remind people to oppose domestic violence. This was later known as the first public appearance of “China’s Youth Feminist Activists”.</p>
+    <p>I want to particularly point out the location of this activity, so I use the map. It was located at the central axis of Beijing City, the Qianmen Street. Next to Tiananmen Square, the political center of China, this place was used to be famous for the local cultural tradition of Beijing, and was later transformed into a tourist-oriented business district. This is a place that has a symbolic significance in the political, cultural and economic aspects of China. The defense initiated by these young people on this site, from my perspective, was aimed at these different aspects.</p>
+    <p>And the issue of domestic violence raised by them, in itself, is able to touch these three angles. The issue in China has accumulated more than a decade of work. And like women's movement in many other countries, Chinese civil women's movement attaches great importance to the issue of domestic violence and has organized a fairly active alliance around this issue in the past. But in my opinion, at that time, it cannot be considered as a movement because movement is a large-scale physical aggregation. China’s civil women’s movement was originated and developed by intellectuals. They paid a lot for it, but how to reach a wider range of ordinary people is a bottleneck problem. Another bottleneck is how to understand the relationship between the state and women’s rights. We hope that the state can fulfill its responsibility to protect people’s rights, but we ignore the point that the state itself is extremely patriarchal in nature and uncompromising. When we want to persuade the state to implement a partial justice on women's rights, we are not able to get an adequate response due to marginalization and lack of power.</p>
+    <p>Therefore, I think the activity on February 14, 2012, is a coming out. These brides were all very young. They got to know feminism and identified with it through books and the Internet. They became acquainted with NGOs and became employees or volunteers. They had a strong experience of gender inequality, and were hoping to do something. But they hardly had any social capital: they were not scholars or veterans, so they could not take the way early activists took, and they did not have any chance to offer advice or consultation to the government. But could they use their own subjectivity to make their demands? That was what this event was made of: It made people notice the issue that these young people raised for the society, especially for the state. And in order to make people notice them, they looked for some kind of drama and visuality, so that they put on the bloody wedding dress. – They made people “had to” notice them.</p>
+    <p>That’s why this was a story about VISIBILITY from the very beginning. First of all, they wanted people to have to notice this issue. Second, they wanted people to have to notice this group of people. “Noticing the issue” was not just about making the issue of women’s rights become well-known, more importantly, it meant that the issue had to be accepted as a public issue that the society would acknowledge as something that was very important. This was not something for women, or something private. Next, as we all considered this was an important matter, the government had to respond. Thus, in this process, communication or media was very crucial, because it could amplify the power of the unknown. So you see that all of the information was condensed into a photograph (like this). And when we take a look at this photograph, we know what it is without any explanation. This is the easiest way to communicate or spread out the information. Looking at them, they are coming out with no obscuration.</p>
+    <p>Since then, these young people have done lots of activities around China, and have collected tons of photos as a result of that. And the image of the “injured bride” has been constantly replicated. Of course, we can say this is all about performance, creating influence. But we do not understand why Chinese people always have a lot of bias for media campaigns, the so-called grandstanding. So the problem is: taking photos and posting them on the Internet, but the issue has not been addressed. However, we should know that behind these photos, these young people have attempted many continuous and deep follow-ups though cooperation with other NGOs and experts. For example, we really saved the life of a woman who had been sentenced to death because she killed her violent husband. We promoted the Department of Education to cancel the discriminational policy in admission of university.</p>
+    <p>For these young people, and their supports, that was a period full of excitement. But at the same time, they had been constantly feeling nervous and anxious. It was because the police had always been monitoring and blocking their activities since the very beginning. Demonstrations and rallies are prohibited in China. The photograph cannot reflect the breathtaking experience created by that moment. A young friend of mine once told me that when she was at the event, after seeing the police, her two labia were scared to jitter. Yes, this is what they have undertaken for their own country. Thus, the activities of civil society are always being dealt with, but whether the deal can be successful or not, is something that does not depend on our own. However, in order to avoid stigmatization, this part of the plot was not disclosed for a very long time.</p>
+    <p>Once, I thought I knew or at least knew that all feminists in China, suggesting how small the circle was at that time. Later, I got to know these young people and realized that a new community of feminist activism was on the rise. Next, because they continued to put in events and topics, which successfully grabbed media attention and also made more people recognize that making the sad tone in private become the public roar was such an important matter. Further, when you started to try, you would find that changes might be easier to make than expected. As a result, more and more people began to join. They even spontaneously felt angry, trying to do something by themselves. It's like throwing stones into stagnant water, when you throw and throw, the storm started to brew up. That's what I mentioned at the beginning, a critical mass to anticipate.</p>
+    <p>But this is actually the time that Chinese government is shrinking the space of civil society. I think that the government is not interested in feminism, most importantly, it does not want to be held accountable. It really does not want to see that there are powers that are organizing and mobilizing people. The spontaneity and autonomy of the society is the most dangerous aspect for rulers. I do not think that feminist activities have been strong enough to shake the ruling government. It also does not have a clear political agenda, that is, it does not see anti-government as their goal.</p>
+    <p>However, whether it is anti-government (or not) is not a decision made by us. Although the “Feminist Five” case happening in March 2015 has a certain level of occasionality, it in fact, is considered a collision that becomes inevitable. I agree with Dr. Wang Zheng’s point of view that this case has a profound impact on Chinese feminist movement. As Chinese government has torn the veil of socialist equality, feminism has to face the fate of being politicized. Between the state and the women's movement, there is not much ambiguity and vagueness that can be allowed.</p>
+    <p>The release of the “Feminist Five” is definitely not the ending of the crackdown. It is not just because they have not truly received their freedom. More broadly speaking, the entire space of feminist activism has been largely reduced, during a time of fear and confusion. Street activities were stopped, some lectures and seminars were also halted. Some participants withdrew from the campaign, some people no longer dared to join the NGO. Chinese feminist activism has experienced a decline.</p>
+    <p>This makes us understand that our country is so powerful. It is powerful because it has no baseline and discipline. And our strength is still too weak. In addition, our organization and our people still lack capital and resources to get through this period of difficulties.</p>
+    <p>But on the other hand, feminism in China has continued to thrive, almost unaffected by all these. Because many people do not even know about this case. So they continue to passionately discuss all issues related to gender discrimination online. Those who dare to call themselves as feminists are far more than ever before, and are very young; some of them are junior high school students. All of these are unimaginable in the past. The power they own to denounce collectively on the Internet is strong enough to make male celebrities and pop stars ashamed.</p>
+    <p>Our government is very powerful, but it cannot suffocate all voices. The society is still trying to struggle, and many women are already awakening. It is not that easy to let them pretend to fall asleep again. However, when social progress happens, the price becomes the sacrifice or oblivion of the pioneer. Does the story have to repeat?</p>
+    <p>I firmly believe that our society, women's movement, is still in need of hardcore activists; otherwise, the debate is just a bubble. People need physical acts, get their hands dirty, go to the forefront and the most dangerous frontline, in order to make social progress.</p>
+    <p>This is our ultimate purpose to organize this exhibition of Chinese feminist activism. We would like to record and present in recognition of the contributions and achievements of these people in the past few years - this is their deserved glory. By providing a case from China, we would also like to make contributions to the archives of social movement activism worldwide. We also want to demonstrate the legitimacy of activism to help restore the space of domestic Chinese feminist activism. Of course, we also want to let more people know about what has happened in China. I must say that the persecution of human rights in China is not only a danger for Chinese people, it should also trigger enough vigilance worldwide. But on the other hand, in the dark, the most important thing is that people always keep fighting.</p>
+    <p>In terms of the critical mass, I want to say - I guessed the beginning of it but not the ending of it – because we have never experienced any of these in China. Once again, I realize that there is no such thing called partial justice; the critical mass of feminist activism cannot possibly be the critical mass of its own – it must be a part of the entire social change. “Feminist Five” case was another accidental chance of coming out which attracting eyes around the world. Now we are looking for new coming out once again. I wish my young friends can step up to a wider stage.</p>
+
+    <p class="back"><a href="2016-perilous-point.html" lang="zh-Hans">中文原文</a> · <a href="writings.html">Writing Archive</a></p>
+
+  </main>
+
+</div>
+</body>
+</html>
