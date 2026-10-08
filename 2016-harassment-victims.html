@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>性骚扰受害者所经历的一切 &mdash; 吕频</title>
+<meta name="description" content="吕频关于性骚扰受害者处境的文章，2016年。">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="canonical" href="https://lupin.phd/2016-harassment-victims.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="性骚扰受害者所经历的一切 — 吕频">
+<meta property="og:description" content="吕频关于性骚扰受害者处境的文章，2016年。">
+<meta property="og:url" content="https://lupin.phd/2016-harassment-victims.html">
+<meta property="og:image" content="https://lupin.phd/photo-full.jpg">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600&display=swap" rel="stylesheet">
+<style>
+/* ---------------------------------------------------------------
+   Shared styles.
+   Layout:  narrow sidebar (identity + navigation) beside a single
+            reading column set to a bibliographic measure.
+   Palette: cool paper, ink, one deep teal used sparingly.
+   Type:    Source Serif 4 for reading, Archivo for labels and nav.
+   --------------------------------------------------------------- */
+
+:root {
+  --paper:      #F2F3F0;
+  --ink:        #161C1A;
+  --ink-quiet:  #5E6863;
+  --rule:       #D5D9D2;
+  --accent:     #145A3C;
+  --accent-mid: #3E8A63;
+  --accent-pale:#BFD6C6;
+
+  --serif: "Source Serif 4", Georgia, "Songti SC", serif;
+  --sans:  "Archivo", -apple-system, "Helvetica Neue", "PingFang SC", Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 17px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  border-top: 3px solid var(--accent);
+}
+
+a {
+  color: var(--accent-mid);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  text-decoration-color: rgba(62, 138, 99, 0.4);
+}
+a:hover {
+  color: var(--accent);
+  text-decoration-color: var(--accent);
+}
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+/* ---------- page frame ---------- */
+
+.page {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 3rem 2rem 4rem;
+  display: grid;
+  grid-template-columns: 13rem minmax(0, 41rem);
+  gap: 4rem;
+}
+
+/* ---------- sidebar ---------- */
+
+.sidebar {
+  position: sticky;
+  top: 3.5rem;
+  align-self: start;
+}
+
+.sidebar .name {
+  font-family: var(--sans);
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  margin: 0 0 1.5rem;
+  line-height: 1.35;
+}
+.sidebar .name a { color: var(--ink); text-decoration: none; }
+.sidebar .name a:hover { color: var(--accent-mid); }
+
+.sidebar nav {
+  font-family: var(--sans);
+  font-size: 0.84rem;
+  border-top: 1px solid var(--rule);
+  padding-top: 0.9rem;
+}
+.sidebar nav a {
+  display: block;
+  padding: 0.28rem 0 0.28rem 0.85rem;
+  margin-left: -0.85rem;
+  border-left: 2px solid transparent;
+  color: var(--ink-quiet);
+  text-decoration: none;
+}
+.sidebar nav a:hover { color: var(--ink); }
+.sidebar nav a.current { color: var(--ink); border-left-color: var(--accent); }
+
+/* ---------- headings ---------- */
+
+h1 {
+  color: var(--accent);
+  font-family: var(--serif);
+  font-size: 1.9rem;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -0.012em;
+  margin: 0 0 1.3rem;
+  text-wrap: balance;
+}
+
+h2 {
+  font-family: var(--sans);
+  font-size: 0.74rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 2rem 0 0.85rem;
+  padding-bottom: 0.45rem;
+  border-bottom: 1px solid var(--accent-pale);
+}
+
+h3 {
+  font-family: var(--serif);
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.35;
+  margin: 1.4rem 0 0.4rem;
+}
+
+/* ---------- text ---------- */
+
+p { margin: 0 0 0.85rem; }
+
+p.lede { font-size: 1.16rem; line-height: 1.6; margin-bottom: 1.5rem; }
+
+.note { font-size: 0.92rem; color: var(--ink-quiet); }
+.at { color: var(--ink-quiet); font-style: italic; }
+.cn {
+  font-family: "Noto Serif SC", "Songti SC", "SimSun", serif;
+  color: inherit;
+  font-weight: 400;
+  font-size: 0.88em;
+  margin-left: 0.34em;
+}
+
+
+
+.status {
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  letter-spacing: 0.02em;
+  color: var(--ink-quiet);
+}
+
+/* ---------- lists ---------- */
+
+/* Bibliographic hanging indent, as in a reference list. */
+ul.entries { list-style: none; margin: 0 0 1.15rem; padding: 0; }
+ul.entries li {
+  padding-left: 1.5rem;
+  text-indent: -1.5rem;
+  margin-bottom: 0.8rem;
+}
+ul.entries li .note,
+ul.entries li .status { display: block; text-indent: 0; }
+
+ul.plain { margin: 0 0 1.15rem; padding-left: 1.1rem; }
+ul.plain li { margin-bottom: 0.25rem; }
+
+/* ---------- contact list ---------- */
+
+dl.info { margin: 0; }
+dl.info dt {
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-quiet);
+  margin-top: 0.9rem;
+}
+dl.info dd { margin: 0.15rem 0 0; }
+
+/* ---------- portrait (home page sidebar) ---------- */
+
+.portrait {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border: 1px solid var(--accent-pale);
+  margin: 0 0 0.55rem;
+  background: #E4EAE6;
+}
+.portrait-note {
+  font-family: var(--sans);
+  font-size: 0.86rem;
+  line-height: 1.5;
+  margin: 0 0 1.8rem;
+}
+.portrait-note a {
+  display: block;
+  padding: 0.3rem 0;
+  text-decoration: none;
+  color: var(--ink);
+}
+.portrait-note a:hover { color: var(--accent); }
+.portrait-note a::before {
+  content: "\2193";
+  display: inline-block;
+  width: 1em;
+  color: var(--accent);
+}
+
+@media (max-width: 860px) {
+  .portrait { width: 8.5rem; aspect-ratio: 4 / 5; float: left; margin: 0 1.1rem 0.6rem 0; }
+  .portrait-note { clear: both; margin-bottom: 1.1rem; }
+}
+
+/* ---------- news (home page) ---------- */
+
+ul.news { list-style: none; margin: 0 0 1.5rem; padding: 0; }
+ul.news li {
+  display: grid;
+  grid-template-columns: 5.75rem minmax(0, 1fr);
+  gap: 1rem;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+ul.news li:first-child { border-top: 1px solid var(--accent-pale); }
+ul.news .date {
+  font-family: var(--sans);
+  font-size: 0.74rem;
+  letter-spacing: 0.05em;
+  color: var(--accent-mid);
+  padding-top: 0.3rem;
+}
+ul.news .item { margin: 0; }
+ul.news .item .note { display: block; margin-top: 0.15rem; }
+
+/* older news, collapsed by default (no JavaScript) */
+details.more { margin: 0 0 1.5rem; }
+details.more > summary {
+  list-style: none;
+  cursor: pointer;
+  font-family: var(--sans);
+  font-size: 0.9rem;
+  letter-spacing: 0.02em;
+  color: var(--accent-mid);
+  padding: 0.85rem 0;
+}
+details.more > summary::-webkit-details-marker { display: none; }
+details.more > summary::before {
+  content: "\002B";
+  display: inline-block;
+  width: 1.1em;
+  color: var(--accent-mid);
+}
+details.more[open] > summary::before { content: "\2212"; }
+details.more > summary:hover { color: var(--accent); }
+details.more .label-less { display: none; }
+details.more[open] .label-more { display: none; }
+details.more[open] .label-less { display: inline; }
+details.more ul.news,
+details.more ul.entries { margin-bottom: 0; }
+details.more > p:first-of-type { margin-top: 0.35rem; }
+details.more > p:last-of-type { margin-bottom: 0.35rem; }
+details.more ul.news li:first-child { border-top: 0; }
+details.more > summary { margin-top: -0.35rem; }
+
+@media (max-width: 640px) {
+  ul.news li { grid-template-columns: minmax(0, 1fr); gap: 0.15rem; }
+  ul.news .date { padding-top: 0; }
+}
+
+/* ---------- footer ---------- */
+
+main > footer {
+  margin-top: 2.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--rule);
+}
+main > footer p {
+  margin: 0;
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  color: var(--ink-quiet);
+}
+main > footer a { color: var(--ink-quiet); text-decoration-color: var(--rule); }
+main > footer a:hover { color: var(--accent); }
+
+/* ---------- responsive ---------- */
+
+@media (max-width: 860px) {
+  .page {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2.25rem;
+    padding: 2.25rem 1.5rem 4rem;
+    max-width: 42rem;
+  }
+  .sidebar { position: static; }
+  .sidebar .name { margin-bottom: 1.1rem; }
+  .sidebar nav {
+    border-top: 0;
+    padding-top: 0;
+  }
+  .sidebar nav a {
+    display: inline-block;
+    margin: 0 1.1rem 0.3rem 0;
+    padding: 0 0 0.2rem;
+    border-left: 0;
+    border-bottom: 2px solid transparent;
+  }
+  .sidebar nav a.current { border-bottom-color: var(--accent); }
+  h1 { font-size: 1.6rem; }
+}
+
+@media (max-width: 460px) {
+  body { font-size: 16px; }
+  .page { padding: 2rem 1.15rem 3.5rem; }
+}
+
+/* ---------- print ---------- */
+
+@media print {
+  body { background: #fff; border-top: 0; }
+  .page { display: block; max-width: none; padding: 0; }
+  .sidebar nav { display: none; }
+  a { color: #000; text-decoration: none; }
+}
+
+.zh { font-family: "Noto Serif SC", "Songti SC", "SimSun", serif; }
+ul.entries li .zh-title { font-family: "Noto Serif SC", "Songti SC", "SimSun", serif; font-weight: 600; }
+ul.entries li .meta { display: block; text-indent: 0; font-family: "Noto Serif SC", "Songti SC", "SimSun", serif; font-size: 0.92rem; color: var(--ink-quiet); }
+
+.article h1 { font-family: "Noto Serif SC", "Songti SC", "SimSun", serif; font-weight: 600; font-size: 1.6rem; line-height: 1.5; }
+.article .meta-line { color: var(--ink-quiet); margin: 0 0 2rem; }
+.article p { font-family: "Noto Serif SC", "Songti SC", "SimSun", serif; line-height: 1.95; text-align: justify; }
+.article .back { font-size: 0.92rem; margin-top: 2.5rem; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header class="sidebar">
+    <p class="name"><a href="index.html">Lü Pin</a></p>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="public.html">Public scholarship</a>
+      <a href="writings.html" class="current">Writing Archive</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="article" lang="zh-Hans">
+
+    <h1>性骚扰受害者所经历的一切</h1>
+    <p class="meta-line">吕频　2016年</p>
+
+    <p>一个当年的高中同学，在2002-2016年间，从短信时代到微信时代，断断续续变着法子骚扰我。我拒绝加他的微信，他就借其他男同学的手机给我发消息，在同学群里各种“赞美”希望我看见。因为他在，我从没在那个群中说过一句话，最终无声退群。我讲给别人听，得到的最多的第一反应是： ”他结婚了吗？”——似乎如果他是单身情有可原。我跟关系最好的高中同学讲，她直接说：”我觉得他没什么坏心，他就是很欣赏你。”</p>
+    <p>就微信上的这么两句话，把我气得发疯，当时虽然是打字，却感觉自己是在近乎叫喊：“我不需要他的“欣赏”……你看不见他给我造成了什么影响吗？！“</p>
+    <p>好友可能为我激烈的态度震惊，再也没说什么，但让我沮丧的是，我并不相信她理解了。这一骚扰从未超出试图对话更严重的程度，然而在那漫长的时间里它给我造成的压力是无人所知的。有一年，我被提议去参加一个NGO圈的活动，却赫然在通知上看到这位骚扰者是嘉宾讲者之一。那一刻我的身体呆滞在电脑前，心脏却狂跳……当然我没去那个活动。我经历了被骚扰者的普遍遭遇：退出工作任务或社会活动，主动被动的社会隔离，被否认、被质疑，压抑、恐惧、愤怒，当然，不能和那些因为校园和职场性骚扰而失学、失业、抑郁、自残、自杀……的悲剧相比。</p>
+    <p>我没有办法责怪好友不站在我一边，是对她背后那整个大社会的预料和想象，让我沮丧无力。无须刻意表现恶意，只要若无其事的几句话，甚至就是沉默，都已经足够召唤出一个对受害者压制乃至迫害性的结构，而这个无物之阵，甚至在性骚扰发生之始，不用等到受害者试图维权，就已经配合地开始摧残她的自我。这指的是，每个受害者都仿佛是所有其他受害者的记忆与遭遇的继承者，像晶体簇中的每一粒都相互反射一样，能从被骚扰的那一刻起，开始唤出和重复所有其他人受过的内心折磨，像画外音一样在她心中强行播放着的：“为什么不是别人而是我？”“我什么时候做错了什么才会这样？”“为什么我没能这样做或那样做？”……这些带着羞耻的自审自责，是被骚扰者内在囚笼的起源，然而当然不是她们自己想不开，而是她们知道，在这个社会里被骚扰者将被置于什么样的无人负责的境遇当中。</p>
+    <p>有人把性骚扰受害者的应对模式分为三种：脱离，回避性协商，寻求支持。我的反应属于第一种，至于“回避性协商”，20年前自杀的某北大女学生高岩要求和侵犯她的教授建立“恋爱关系”就是一个例子。第三种模式中，首选寻求朋友或同事的个人帮助，只有极少数人能对质和提告。遗憾是，就这最后一种选择，有美国的研究显示，“正面杠”的勇敢并不能让受害者更多免于持续身心创痛，而被曝光的一些案例例如甘肃庆阳中学生自杀事件却在警告，“勇敢维权”的后果可能有多惨烈。如果聚焦于与性骚扰有关的文化与态度及其如何作用于受害者，可以识别出四种系列运作：羞耻；归咎；孤立；惩罚。女性因性骚扰而在这四个方面的遭遇是在性与性别方面被规范为二等公民的反应，而性骚扰又凸显和恶化了她们的弱势。</p>
+    <p>羞耻出于人类对性欲望的觉察和管理，《圣经》故事说人类因羞于裸体而穿上了衣服，这并非真实历史，而是反映了社会已经形成之后的羞耻感。在两性之间，不平等使羞耻更多成为女性的专属负担，阻止女性获取性教育知识，否定她们的性欲，贬低女性的性自主活动……这些广泛存在的教育与传播操作形塑出害怕，羞愧，不知所措，不能言说的女性社会性别特质，保证了男权社会及其成员对女性的性与身体的宰制，使性成为男性对女性控制与剥削性的使用。因此异性恋－男权体制下的性羞耻与性骚扰及其他类型的性暴力具有根本性的连接。今天的中国女性还远不能广泛享受到去羞耻的性文化，虽然以女性性感为卖点营销司空见惯，然而却是建立在女性为男性性对象的逻辑之上。女权主义者曾试图论述性骚扰不是性，并不是说性骚扰与性无关，而是反对用“自发”的男性性欲将性骚扰合理化并凸显其侵权属性，并也有助于受害者解脱与性有关的羞耻。但是主流文化仍然将性性骚扰铺陈在异性恋－男权体制的，以男性欲望为主女性身体为客的性传说中，将性骚扰的发生视为男性“好色”“风流”，无法自控地被女性的性魅力吸引，将性骚扰的后果视为女性的失贞丑事。而女性被羞耻造就的面对性时的冻结与无能，则埋下她们自责的伏笔。</p>
+    <p>谁应该为性骚扰的发生、经过和后果负责，无论是就常理还是就个案，都不是那么容易说清楚和有共识的问题。借用“公正世界理论”来说明，如果认可现存的男权社会是一个“公正世界”，以及内含侵略性的男性欲望是不能及不需被管理的，那么性骚扰的罪错方就是被骚扰者。“公正世界理论”是由各群体既得利益、不安全感和不自信合作支持的心态，通过归咎于受害者，剥夺她们的正当性，权力者和看客均获得笃定的满足。而且这种归咎总能成功，因为没有人能完美预防、应对和处理，这首先是因为性骚扰出于权力不对等就意味着减少了受害者的选择，其次如前所述，社会性别规范早已深刻损害女性的应对能力。还必须提出的是，即使没有前两个条件，也没有人能够做到保证完美应对种种意外遭遇。因此受害者总是能被找出错误，而这又反过来强化了基于“公正世界理论”的性别归咎。还有两个因素强化了这个问题，第一，校园和职场性骚扰多是陷阱式布置，骚扰者在既有的人际关系的包装下试探进攻，步步为营，但又可以随时否认和抵赖，在心理和情感上操控受害者，逐步解除她们的武装，最终达到侵犯的目的。而在这个过程中，受害者可能迷惑犹疑，不断“错失”说“不”的机会，最终陷于懊恼和自责。第二，女权主义认为女性和其他被压迫群体存在所谓“双重意识”，即她们会掌握男权和压迫者的认知角度，并以之对自己作镜照审查和调整。受害者会有种种对骚扰者猜疑与谅解的内心戏：“也许我误解了他，也许他真的只是关心我？”而相应地，她们的自我认知，也可能是混乱不清与自相矛盾的，她们并不能够完全澄清自己的意愿并坚决依其行事。总之，对受害者的归咎总能成功，甚至也能被她们自己所承认。</p>
+    <p>性骚扰受害者的孤立并不是单独存在的，而同样是女性的社会性境况的表现。男人女人谁更容易孤立？如果将社会网络视为资本与地位的表现，那么男性的社会网络应该更强，但另一方面，女性更多用情感劳动为人际关系付出，虽然回报未必对等。不幸的是，还有一种角度是，男权体制会促使男性结成利益共同体休戚相关，而女性则相互竞争并附属于男性网络，在这种境况下，她们容易因失去价值或冒犯男权而被抛弃及孤立。因此性骚扰受害者的维权对她的社会网络是一个很大的考验，而许多人并不真正就性骚扰“三观”正确，就导致了她们得不到足够支持，远近的谴责与质疑则进一步加重她们的孤立，这些言论因此可以被视为与性骚扰有意无意的配合，因为当受害者孤立无援，责任者就可以放心遁逃。</p>
+    <p>我们可以将性骚扰及其文化支持均视为对女性的惩罚，其潜在的功能是在女性走出内闱进入公共和职业领域之后，仍然通过不断的打击和羞辱，限制她们的活动范围和能量，阻止她们的发展，保证她们不至完全摆脱男权的桎梏。这一观点可以支持前述“性骚扰不是性”的观点：就作为一种现象的性骚扰而言，不受约束的男性个体欲望可以被理解为是一种完成性别权力的手段，或者说，性骚扰是个人出面代表男权社会向现代女性开具的变相“税收”。性骚扰具有“寒蝉效应”，即使自己没有遭遇性骚扰，其他女性的遭遇的警告也会消耗女性的能量。另外，女性不能不能上夜班，不能出差，不能与男性领导单独相处——种种以预防和保护为名的父爱主义隔离法也使她们不能平等竞争。不过，“惩罚”这一角度首先应该更具体地用来理解试图抗争的受害者的遭遇，即所谓“荡妇羞辱”，就针对受害者的以儆效尤而言，非常有效。于是，也就可以理解，为何最近两位知名公益人士雷闯和冯永锋被迫承认有性骚扰行为之后，和这两位相关的微信群里发出了一些针对受害者的恶毒咒骂和死亡威胁——不仅是共振性的情绪宣泄，而是一种集体的暴力再宣示，在雷和冯屈尊道歉的时候，仍然要让受害者付出心理的代价，并且阻止更多曝光来威胁到他们的同盟。</p>
+    <p>如何预防性骚扰？有两种好心的手段比较没有效益，一是教育女性，二是改造骚扰者，这方面的实证证明与前文的论述一致，尤其是，须知女性没有足够的资源和权力使自己成为完美行动者去预防受害。研究也证明针对女性的预防性教育并不能提高她们临场反应的“正确率”。性骚扰发生的首要关键，在于机构和社区的意志——是有罪不罚，还是严惩不怠。研究指出，最重要的职场性骚扰单一预防措施是加强机构管理。这不是说个人行为因素不存在，而是说，严格管理可以在相当程度上有效阻止潜在的骚扰者。至于文化态度，是与制度互为表里，相互作用的，因此就文化所做的识别和辩论同样非常重要，虽然如果没有制度性的进展可能就未免泡沫。美国ＭeToo运动以个案解决和公共教育弥补了反性骚扰法律制度的不力，而又正在相当实用地促进制度的改良，而在中国，一场洗礼还只是刚刚开始，无数曾付出代价的女性，仍在等待被偿还。</p>
+
+    <p class="back" lang="en"><a href="writings.html">Writing Archive</a></p>
+
+  </main>
+
+</div>
+</body>
+</html>
