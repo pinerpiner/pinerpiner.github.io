@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>从“公正世界假设”看性骚扰争议 &mdash; 吕频</title>
+<meta name="description" content="吕频从“公正世界假设”讨论性骚扰揭发争议的评论，2015年。">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="canonical" href="https://lupin.phd/2015-just-world.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="从“公正世界假设”看性骚扰争议 — 吕频">
+<meta property="og:description" content="吕频从“公正世界假设”讨论性骚扰揭发争议的评论，2015年。">
+<meta property="og:url" content="https://lupin.phd/2015-just-world.html">
+<meta property="og:image" content="https://lupin.phd/photo-full.jpg">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600&display=swap" rel="stylesheet">
+<style>
+/* ---------------------------------------------------------------
+   Shared styles.
+   Layout:  narrow sidebar (identity + navigation) beside a single
+            reading column set to a bibliographic measure.
+   Palette: cool paper, ink, one deep teal used sparingly.
+   Type:    Source Serif 4 for reading, Archivo for labels and nav.
+   --------------------------------------------------------------- */
+
+:root {
+  --paper:      #F2F3F0;
+  --ink:        #161C1A;
+  --ink-quiet:  #5E6863;
+  --rule:       #D5D9D2;
+  --accent:     #145A3C;
+  --accent-mid: #3E8A63;
+  --accent-pale:#BFD6C6;
+
+  --serif: "Source Serif 4", Georgia, "Songti SC", serif;
+  --sans:  "Archivo", -apple-system, "Helvetica Neue", "PingFang SC", Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 17px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  border-top: 3px solid var(--accent);
+}
+
+a {
+  color: var(--accent-mid);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  text-decoration-color: rgba(62, 138, 99, 0.4);
+}
+a:hover {
+  color: var(--accent);
+  text-decoration-color: var(--accent);
+}
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+/* ---------- page frame ---------- */
+
+.page {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 3rem 2rem 4rem;
+  display: grid;
+  grid-template-columns: 13rem minmax(0, 41rem);
+  gap: 4rem;
+}
+
+/* ---------- sidebar ---------- */
+
+.sidebar {
+  position: sticky;
+  top: 3.5rem;
+  align-self: start;
+}
+
+.sidebar .name {
+  font-family: var(--sans);
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  margin: 0 0 1.5rem;
+  line-height: 1.35;
+}
+.sidebar .name a { color: var(--ink); text-decoration: none; }
+.sidebar .name a:hover { color: var(--accent-mid); }
+
+.sidebar nav {
+  font-family: var(--sans);
+  font-size: 0.84rem;
+  border-top: 1px solid var(--rule);
+  padding-top: 0.9rem;
+}
+.sidebar nav a {
+  display: block;
+  padding: 0.28rem 0 0.28rem 0.85rem;
+  margin-left: -0.85rem;
+  border-left: 2px solid transparent;
+  color: var(--ink-quiet);
+  text-decoration: none;
+}
+.sidebar nav a:hover { color: var(--ink); }
+.sidebar nav a.current { color: var(--ink); border-left-color: var(--accent); }
+
+/* ---------- headings ---------- */
+
+h1 {
+  color: var(--accent);
+  font-family: var(--serif);
+  font-size: 1.9rem;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -0.012em;
+  margin: 0 0 1.3rem;
+  text-wrap: balance;
+}
+
+h2 {
+  font-family: var(--sans);
+  font-size: 0.74rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 2rem 0 0.85rem;
+  padding-bottom: 0.45rem;
+  border-bottom: 1px solid var(--accent-pale);
+}
+
+h3 {
+  font-family: var(--serif);
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.35;
+  margin: 1.4rem 0 0.4rem;
+}
+
+/* ---------- text ---------- */
+
+p { margin: 0 0 0.85rem; }
+
+p.lede { font-size: 1.16rem; line-height: 1.6; margin-bottom: 1.5rem; }
+
+.note { font-size: 0.92rem; color: var(--ink-quiet); }
+.at { color: var(--ink-quiet); font-style: italic; }
+.cn {
+  font-family: "Noto Serif SC", "Songti SC", "SimSun", serif;
+  color: inherit;
+  font-weight: 400;
+  font-size: 0.88em;
+  margin-left: 0.34em;
+}
+
+
+
+.status {
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  letter-spacing: 0.02em;
+  color: var(--ink-quiet);
+}
+
+/* ---------- lists ---------- */
+
+/* Bibliographic hanging indent, as in a reference list. */
+ul.entries { list-style: none; margin: 0 0 1.15rem; padding: 0; }
+ul.entries li {
+  padding-left: 1.5rem;
+  text-indent: -1.5rem;
+  margin-bottom: 0.8rem;
+}
+ul.entries li .note,
+ul.entries li .status { display: block; text-indent: 0; }
+
+ul.plain { margin: 0 0 1.15rem; padding-left: 1.1rem; }
+ul.plain li { margin-bottom: 0.25rem; }
+
+/* ---------- contact list ---------- */
+
+dl.info { margin: 0; }
+dl.info dt {
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-quiet);
+  margin-top: 0.9rem;
+}
+dl.info dd { margin: 0.15rem 0 0; }
+
+/* ---------- portrait (home page sidebar) ---------- */
+
+.portrait {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border: 1px solid var(--accent-pale);
+  margin: 0 0 0.55rem;
+  background: #E4EAE6;
+}
+.portrait-note {
+  font-family: var(--sans);
+  font-size: 0.86rem;
+  line-height: 1.5;
+  margin: 0 0 1.8rem;
+}
+.portrait-note a {
+  display: block;
+  padding: 0.3rem 0;
+  text-decoration: none;
+  color: var(--ink);
+}
+.portrait-note a:hover { color: var(--accent); }
+.portrait-note a::before {
+  content: "\2193";
+  display: inline-block;
+  width: 1em;
+  color: var(--accent);
+}
+
+@media (max-width: 860px) {
+  .portrait { width: 8.5rem; aspect-ratio: 4 / 5; float: left; margin: 0 1.1rem 0.6rem 0; }
+  .portrait-note { clear: both; margin-bottom: 1.1rem; }
+}
+
+/* ---------- news (home page) ---------- */
+
+ul.news { list-style: none; margin: 0 0 1.5rem; padding: 0; }
+ul.news li {
+  display: grid;
+  grid-template-columns: 5.75rem minmax(0, 1fr);
+  gap: 1rem;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+ul.news li:first-child { border-top: 1px solid var(--accent-pale); }
+ul.news .date {
+  font-family: var(--sans);
+  font-size: 0.74rem;
+  letter-spacing: 0.05em;
+  color: var(--accent-mid);
+  padding-top: 0.3rem;
+}
+ul.news .item { margin: 0; }
+ul.news .item .note { display: block; margin-top: 0.15rem; }
+
+/* older news, collapsed by default (no JavaScript) */
+details.more { margin: 0 0 1.5rem; }
+details.more > summary {
+  list-style: none;
+  cursor: pointer;
+  font-family: var(--sans);
+  font-size: 0.9rem;
+  letter-spacing: 0.02em;
+  color: var(--accent-mid);
+  padding: 0.85rem 0;
+}
+details.more > summary::-webkit-details-marker { display: none; }
+details.more > summary::before {
+  content: "\002B";
+  display: inline-block;
+  width: 1.1em;
+  color: var(--accent-mid);
+}
+details.more[open] > summary::before { content: "\2212"; }
+details.more > summary:hover { color: var(--accent); }
+details.more .label-less { display: none; }
+details.more[open] .label-more { display: none; }
+details.more[open] .label-less { display: inline; }
+details.more ul.news,
+details.more ul.entries { margin-bottom: 0; }
+details.more > p:first-of-type { margin-top: 0.35rem; }
+details.more > p:last-of-type { margin-bottom: 0.35rem; }
+details.more ul.news li:first-child { border-top: 0; }
+details.more > summary { margin-top: -0.35rem; }
+
+@media (max-width: 640px) {
+  ul.news li { grid-template-columns: minmax(0, 1fr); gap: 0.15rem; }
+  ul.news .date { padding-top: 0; }
+}
+
+/* ---------- footer ---------- */
+
+main > footer {
+  margin-top: 2.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--rule);
+}
+main > footer p {
+  margin: 0;
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  color: var(--ink-quiet);
+}
+main > footer a { color: var(--ink-quiet); text-decoration-color: var(--rule); }
+main > footer a:hover { color: var(--accent); }
+
+/* ---------- responsive ---------- */
+
+@media (max-width: 860px) {
+  .page {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2.25rem;
+    padding: 2.25rem 1.5rem 4rem;
+    max-width: 42rem;
+  }
+  .sidebar { position: static; }
+  .sidebar .name { margin-bottom: 1.1rem; }
+  .sidebar nav {
+    border-top: 0;
+    padding-top: 0;
+  }
+  .sidebar nav a {
+    display: inline-block;
+    margin: 0 1.1rem 0.3rem 0;
+    padding: 0 0 0.2rem;
+    border-left: 0;
+    border-bottom: 2px solid transparent;
+  }
+  .sidebar nav a.current { border-bottom-color: var(--accent); }
+  h1 { font-size: 1.6rem; }
+}
+
+@media (max-width: 460px) {
+  body { font-size: 16px; }
+  .page { padding: 2rem 1.15rem 3.5rem; }
+}
+
+/* ---------- print ---------- */
+
+@media print {
+  body { background: #fff; border-top: 0; }
+  .page { display: block; max-width: none; padding: 0; }
+  .sidebar nav { display: none; }
+  a { color: #000; text-decoration: none; }
+}
+
+.zh { font-family: "Noto Serif SC", "Songti SC", "SimSun", serif; }
+ul.entries li .zh-title { font-family: "Noto Serif SC", "Songti SC", "SimSun", serif; font-weight: 600; }
+ul.entries li .meta { display: block; text-indent: 0; font-family: "Noto Serif SC", "Songti SC", "SimSun", serif; font-size: 0.92rem; color: var(--ink-quiet); }
+
+.article h1 { font-family: "Noto Serif SC", "Songti SC", "SimSun", serif; font-weight: 600; font-size: 1.6rem; line-height: 1.5; }
+.article .meta-line { color: var(--ink-quiet); margin: 0 0 2rem; }
+.article p { font-family: "Noto Serif SC", "Songti SC", "SimSun", serif; line-height: 1.95; text-align: justify; }
+.article .back { font-size: 0.92rem; margin-top: 2.5rem; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header class="sidebar">
+    <p class="name"><a href="index.html">Lü Pin</a></p>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="public.html">Public scholarship</a>
+      <a href="writings.html" class="current">Writing Archive</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="article" lang="zh-Hans">
+
+    <h1>从“公正世界假设”看性骚扰争议</h1>
+    <p class="meta-line">吕频　2015年</p>
+
+    <p>律师在代理案件的过程中对当事人的家属和朋友性骚扰？日前的这一曝光首先在社交媒体上震动了一个小圈子，因为所有卷入者都是女权主义者，而性骚扰本是女权主义的重要议题之一；而且，这位律师所代理的当事人，本是在3月初因计划组织反对性骚扰的公开活动而被刑事拘留的，联系到这一前情，知情者未免遗憾甚至唏嘘。</p>
+    <p>在此不想分辨事件本身的具体细节，甚至不想借机普及性骚扰的基本知识，而是想讨论一个相关的感悟，即许多人“害怕”性骚扰揭露。</p>
+    <p>被质疑是性骚扰揭发要面对的巨大挑战。首先是事件性质能否被确认。人们会提出：他（作者注：性骚扰不限性别，本文均以“他”代称）的动机可能并没有恶意，或许他只是想开个玩笑，或许他并不知道已经冒犯到你，或许是你没有及时坚决阻止才导致他误解，或许你们其实是调情而你却事后诬告？——出现许多对揭发者多方考察质询的“侦探”和“法官”，带着十分“理性”的潜台词：“我不能轻易相信你说的任何话。”</p>
+    <p>接下来还有一系列问题，例如揭发的动机、时机、方式是否合理得当，诉求是否过分，等等。于是揭发者发现自己深陷道德危机，需要竭力辩白，这是一个令人精疲力尽的过程，她们愤怒、失望，并开始自我怀疑甚至内疚：难道我真的错了，我不该说出来吗？我已经把骚扰者害惨了吗？……</p>
+    <p>事件还没有正式处理，就已经双输，骚扰者颜面扫地，受害者的日子也不好过，从她们的角度看，种种警惕和质询已经在客观上构成一种惩罚。</p>
+    <p>对性骚扰揭发的警惕性如此之高，未必能用“客观”和“审慎”来解释。女性对性侵害的控告一向受到超常怀疑，虽然没有证据显示在这类控告中诬陷更多。我认为更直接的解释是：有人潜意识里就不愿相信这种揭发，因此将重点放在向揭发者抛出一个接一个的问题，而因为他们不愿相信，所以答案几乎注定无法令他们信服。</p>
+    <p>有些性骚扰者拥有受人尊重的公共形象和职业纪录，以及良好的一般人际关系。因此，难以接受他们原来另有不堪一面。友谊和同盟的分裂也令人痛惜，有时难免会想：如果没有发生这种事情该多好。这都是正常的心理反应。但只是如此吗？</p>
+    <p>有心理学家提出“公正世界假设”，解释责备受害者现象。一则介绍说：“正常人在生活中，需要维持一个良好的自我感觉，但正常人又常常会得知身边的人、报纸上的人、各种各样的人遭受不幸。这样的事虽然很多，但大多数人并没有陷入恐慌，原因便在于我们都多多少少有些公正世界的假设，认为这些人之所以遭受不幸，一定是因为他们做了什么错事。”</p>
+    <p>公正世界假设出于卑微个体的心理安全需要，选择顺应现实的理解框架，以求尽量呆得舒服。但是，关键是世界其实并不公正。这种心理让人失去同理心，固化受害者的困顿，让她们在直接受害者之后还要承受道德谴责，进而，它让人们更难反抗，而不公正更难改变。这种假设是不公正的再生产运作的一部分。</p>
+    <p>公正世界假设在性与性别权利领域司空见惯，十分强大，被性骚扰是因为穿着太暴露、被家庭暴力是因为没做好妻子好母亲、被强奸是因为深夜独自外出，同性恋被霸凌是因为不够低调。这一类的笃信既不会因情感——对受害者的同情，也不会因理智——研究证据显示性侵害与衣着无关等等，而轻易改变。在这个领域与此种假设辩论和抗衡非常困难。</p>
+    <p>因为这个世界充斥着性与性别的不平等，因此在这个角度上持公正世界假设，本身就是显著的悖谬，于是必然难沟通。这种假设也受到法律的支持，法律从未能有力地支持受害者维权和倡导者发声，而是检查、限制甚至打击。</p>
+    <p>恰恰就是这种环境凸显出女权主义的道德勇气，性骚扰和家庭暴力这类概念的发明，是对解释权以及道德合法性的争夺，是试图重新指认问题并改造人们认识问题的价值标准。女权主义是从极少数派开始的艰难抗辩，它既试图讲道理，呼吁倾听和理解，同样重要的是它召唤人们反思自己的成见与权力位置，这是正义重启之始。</p>
+    <p>在其中能够学到的功课之一就是不怀疑受害者并且坚定地和她们在一起。这不是说她们所说的一切都是在客观上“真实”的，或者她们所做的一切都是对的，而是说，只有充分理解她们站出来有多艰难，相信她们不需要完美才有资格维权，才能帮助她们澄清困惑和迷茫，纠偏式的道德立场是必要的，因为在这个现有的世界上，绝大多数骚扰者受到的惩罚远远不够，而受害者不应该再受更多惩罚。</p>
+    <p>可以乐观的是世界正在起变化，最能激荡变化的恰恰是冲突，例如，反性骚扰活动被侦查的荒谬让更多人意识了到女权倡导的重要性，三年前“我可以骚你不能扰”的主张在媒体调查中得到的支持只有20%，今天，普遍的支持率是否有所提高不清楚，但这一口号已经拥有了一大群支持者。然而这不会是一个线性的进程，律师性骚扰的曝光就是一次预见不到的顿挫，它给了人们一个具体的考验：或许没有人会说性骚扰有理，但当一个事件降临，看法纷纭就说明还需要进一步提高意识，泛泛地说男女应该平等只是一种廉价的政治正确，真正的立场应该通过每个具体事件中展示。</p>
+    <p>每一次揭发都令“和谐”与“正常”，以及公正世界假设破裂，意味着或大或小的危机，所以令人焦虑，不受欢迎。然而不受欢迎的发声对大到社会进步、小到人际规则的重整都可以很重要。我并不太替那位被指控的律师担心，没有人有能力判他社会死刑，有很多人愿意给他帮助，何况，他心理强大。我也不太替揭发者担心，因为她们亲身实验了一次自己的理念，一定也会更强大的。我更关心围观者能不能成长甚至自我改造——放下公正世界假设，看到人性的情境，学习用道义去关怀人。因为发现还有这么多功课，应该感谢揭发者令我们走出舒适圈。</p>
+
+    <p class="back" lang="en"><a href="writings.html">Writing Archive</a></p>
+
+  </main>
+
+</div>
+</body>
+</html>
