@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Finding a Voice &mdash; Lü Pin</title>
+<meta name="description" content="English translation of Lü Pin’s essay on nine years of Feminist Voices and China’s feminist movement.">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="canonical" href="https://lupin.phd/2018-feminist-voices-nine-years-en.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Finding a Voice — Lü Pin">
+<meta property="og:description" content="English translation of Lü Pin’s essay on nine years of Feminist Voices and China’s feminist movement.">
+<meta property="og:url" content="https://lupin.phd/2018-feminist-voices-nine-years-en.html">
+<meta property="og:image" content="https://lupin.phd/photo-full.jpg">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600&display=swap" rel="stylesheet">
+<style>
+/* ---------------------------------------------------------------
+   Shared styles.
+   Layout:  narrow sidebar (identity + navigation) beside a single
+            reading column set to a bibliographic measure.
+   Palette: cool paper, ink, one deep teal used sparingly.
+   Type:    Source Serif 4 for reading, Archivo for labels and nav.
+   --------------------------------------------------------------- */
+
+:root {
+  --paper:      #F2F3F0;
+  --ink:        #161C1A;
+  --ink-quiet:  #5E6863;
+  --rule:       #D5D9D2;
+  --accent:     #145A3C;
+  --accent-mid: #3E8A63;
+  --accent-pale:#BFD6C6;
+
+  --serif: "Source Serif 4", Georgia, "Songti SC", serif;
+  --sans:  "Archivo", -apple-system, "Helvetica Neue", "PingFang SC", Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 17px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  border-top: 3px solid var(--accent);
+}
+
+a {
+  color: var(--accent-mid);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  text-decoration-color: rgba(62, 138, 99, 0.4);
+}
+a:hover {
+  color: var(--accent);
+  text-decoration-color: var(--accent);
+}
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+/* ---------- page frame ---------- */
+
+.page {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 3rem 2rem 4rem;
+  display: grid;
+  grid-template-columns: 13rem minmax(0, 41rem);
+  gap: 4rem;
+}
+
+/* ---------- sidebar ---------- */
+
+.sidebar {
+  position: sticky;
+  top: 3.5rem;
+  align-self: start;
+}
+
+.sidebar .name {
+  font-family: var(--sans);
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  margin: 0 0 1.5rem;
+  line-height: 1.35;
+}
+.sidebar .name a { color: var(--ink); text-decoration: none; }
+.sidebar .name a:hover { color: var(--accent-mid); }
+
+.sidebar nav {
+  font-family: var(--sans);
+  font-size: 0.84rem;
+  border-top: 1px solid var(--rule);
+  padding-top: 0.9rem;
+}
+.sidebar nav a {
+  display: block;
+  padding: 0.28rem 0 0.28rem 0.85rem;
+  margin-left: -0.85rem;
+  border-left: 2px solid transparent;
+  color: var(--ink-quiet);
+  text-decoration: none;
+}
+.sidebar nav a:hover { color: var(--ink); }
+.sidebar nav a.current { color: var(--ink); border-left-color: var(--accent); }
+
+/* ---------- headings ---------- */
+
+h1 {
+  color: var(--accent);
+  font-family: var(--serif);
+  font-size: 1.9rem;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -0.012em;
+  margin: 0 0 1.3rem;
+  text-wrap: balance;
+}
+
+h2 {
+  font-family: var(--sans);
+  font-size: 0.74rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 2rem 0 0.85rem;
+  padding-bottom: 0.45rem;
+  border-bottom: 1px solid var(--accent-pale);
+}
+
+h3 {
+  font-family: var(--serif);
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.35;
+  margin: 1.4rem 0 0.4rem;
+}
+
+/* ---------- text ---------- */
+
+p { margin: 0 0 0.85rem; }
+
+p.lede { font-size: 1.16rem; line-height: 1.6; margin-bottom: 1.5rem; }
+
+.note { font-size: 0.92rem; color: var(--ink-quiet); }
+.at { color: var(--ink-quiet); font-style: italic; }
+.cn {
+  font-family: "Noto Serif SC", "Songti SC", "SimSun", serif;
+  color: inherit;
+  font-weight: 400;
+  font-size: 0.88em;
+  margin-left: 0.34em;
+}
+
+
+
+.status {
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  letter-spacing: 0.02em;
+  color: var(--ink-quiet);
+}
+
+/* ---------- lists ---------- */
+
+/* Bibliographic hanging indent, as in a reference list. */
+ul.entries { list-style: none; margin: 0 0 1.15rem; padding: 0; }
+ul.entries li {
+  padding-left: 1.5rem;
+  text-indent: -1.5rem;
+  margin-bottom: 0.8rem;
+}
+ul.entries li .note,
+ul.entries li .status { display: block; text-indent: 0; }
+
+ul.plain { margin: 0 0 1.15rem; padding-left: 1.1rem; }
+ul.plain li { margin-bottom: 0.25rem; }
+
+/* ---------- contact list ---------- */
+
+dl.info { margin: 0; }
+dl.info dt {
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-quiet);
+  margin-top: 0.9rem;
+}
+dl.info dd { margin: 0.15rem 0 0; }
+
+/* ---------- portrait (home page sidebar) ---------- */
+
+.portrait {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border: 1px solid var(--accent-pale);
+  margin: 0 0 0.55rem;
+  background: #E4EAE6;
+}
+.portrait-note {
+  font-family: var(--sans);
+  font-size: 0.86rem;
+  line-height: 1.5;
+  margin: 0 0 1.8rem;
+}
+.portrait-note a {
+  display: block;
+  padding: 0.3rem 0;
+  text-decoration: none;
+  color: var(--ink);
+}
+.portrait-note a:hover { color: var(--accent); }
+.portrait-note a::before {
+  content: "\2193";
+  display: inline-block;
+  width: 1em;
+  color: var(--accent);
+}
+
+@media (max-width: 860px) {
+  .portrait { width: 8.5rem; aspect-ratio: 4 / 5; float: left; margin: 0 1.1rem 0.6rem 0; }
+  .portrait-note { clear: both; margin-bottom: 1.1rem; }
+}
+
+/* ---------- news (home page) ---------- */
+
+ul.news { list-style: none; margin: 0 0 1.5rem; padding: 0; }
+ul.news li {
+  display: grid;
+  grid-template-columns: 5.75rem minmax(0, 1fr);
+  gap: 1rem;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+ul.news li:first-child { border-top: 1px solid var(--accent-pale); }
+ul.news .date {
+  font-family: var(--sans);
+  font-size: 0.74rem;
+  letter-spacing: 0.05em;
+  color: var(--accent-mid);
+  padding-top: 0.3rem;
+}
+ul.news .item { margin: 0; }
+ul.news .item .note { display: block; margin-top: 0.15rem; }
+
+/* older news, collapsed by default (no JavaScript) */
+details.more { margin: 0 0 1.5rem; }
+details.more > summary {
+  list-style: none;
+  cursor: pointer;
+  font-family: var(--sans);
+  font-size: 0.9rem;
+  letter-spacing: 0.02em;
+  color: var(--accent-mid);
+  padding: 0.85rem 0;
+}
+details.more > summary::-webkit-details-marker { display: none; }
+details.more > summary::before {
+  content: "\002B";
+  display: inline-block;
+  width: 1.1em;
+  color: var(--accent-mid);
+}
+details.more[open] > summary::before { content: "\2212"; }
+details.more > summary:hover { color: var(--accent); }
+details.more .label-less { display: none; }
+details.more[open] .label-more { display: none; }
+details.more[open] .label-less { display: inline; }
+details.more ul.news,
+details.more ul.entries { margin-bottom: 0; }
+details.more > p:first-of-type { margin-top: 0.35rem; }
+details.more > p:last-of-type { margin-bottom: 0.35rem; }
+details.more ul.news li:first-child { border-top: 0; }
+details.more > summary { margin-top: -0.35rem; }
+
+@media (max-width: 640px) {
+  ul.news li { grid-template-columns: minmax(0, 1fr); gap: 0.15rem; }
+  ul.news .date { padding-top: 0; }
+}
+
+/* ---------- footer ---------- */
+
+main > footer {
+  margin-top: 2.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--rule);
+}
+main > footer p {
+  margin: 0;
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  color: var(--ink-quiet);
+}
+main > footer a { color: var(--ink-quiet); text-decoration-color: var(--rule); }
+main > footer a:hover { color: var(--accent); }
+
+/* ---------- responsive ---------- */
+
+@media (max-width: 860px) {
+  .page {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2.25rem;
+    padding: 2.25rem 1.5rem 4rem;
+    max-width: 42rem;
+  }
+  .sidebar { position: static; }
+  .sidebar .name { margin-bottom: 1.1rem; }
+  .sidebar nav {
+    border-top: 0;
+    padding-top: 0;
+  }
+  .sidebar nav a {
+    display: inline-block;
+    margin: 0 1.1rem 0.3rem 0;
+    padding: 0 0 0.2rem;
+    border-left: 0;
+    border-bottom: 2px solid transparent;
+  }
+  .sidebar nav a.current { border-bottom-color: var(--accent); }
+  h1 { font-size: 1.6rem; }
+}
+
+@media (max-width: 460px) {
+  body { font-size: 16px; }
+  .page { padding: 2rem 1.15rem 3.5rem; }
+}
+
+/* ---------- print ---------- */
+
+@media print {
+  body { background: #fff; border-top: 0; }
+  .page { display: block; max-width: none; padding: 0; }
+  .sidebar nav { display: none; }
+  a { color: #000; text-decoration: none; }
+}
+
+.zh { font-family: "Noto Serif SC", "Songti SC", "SimSun", serif; }
+ul.entries li .zh-title { font-family: "Noto Serif SC", "Songti SC", "SimSun", serif; font-weight: 600; }
+ul.entries li .meta { display: block; text-indent: 0; font-family: "Noto Serif SC", "Songti SC", "SimSun", serif; font-size: 0.92rem; color: var(--ink-quiet); }
+
+.article h1 { font-family: "Noto Serif SC", "Songti SC", "SimSun", serif; font-weight: 600; font-size: 1.6rem; line-height: 1.5; }
+.article .meta-line { color: var(--ink-quiet); margin: 0 0 2rem; }
+.article p { font-family: "Noto Serif SC", "Songti SC", "SimSun", serif; line-height: 1.95; text-align: justify; }
+.article .back { font-size: 0.92rem; margin-top: 2.5rem; }
+.article-en h1, .article-en p { font-family: inherit; text-align: left; }
+.article-en p { line-height: 1.7; }
+.article-en h3 { font-family: inherit; font-weight: 600; font-size: 1.05rem; margin: 1.8rem 0 0.6rem; }
+.article blockquote { margin: 1rem 0 1rem 1.5rem; padding-left: 1rem; border-left: 2px solid var(--rule); color: var(--ink-quiet); }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header class="sidebar">
+    <p class="name"><a href="index.html">Lü Pin</a></p>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="public.html">Public scholarship</a>
+      <a href="writings.html" class="current">Writing Archive</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="article article-en" lang="en">
+
+    <h1>Finding a Voice</h1>
+    <p class="meta-line">Lü Pin, September 29, 2018</p>
+
+    <p>Losing Feminist Voices was like losing a loved one, or even like having a part of myself die before my eyes. I must put this story into words, in the first person, because people should know that online censorship and persecution do not only erase information; they cause psychological and physical pain to real people. Another important reason to write this is to prevent the memory of Feminist Voices from being erased entirely. To preserve and spread the intellectual contributions that it has created—that is the real purpose of this article.</p>
+    <h3>Starting Out</h3>
+    <p>In September 2009, I founded the magazine that would become Feminist Voices. At first, I called it Women's Voices—a less confrontational name. I was the only editor. I had resigned from my job as a journalist several years earlier and was working with women's NGOs. My goal was to help spread feminist activism and ideas. In the introduction to the first issue of Women's Voices, I explained that I wanted to “provide a critical gender perspective in the media and help popularize China’s feminist movement."</p>
+    <p>At the time, Women's Voices was an e-magazine in the .doc file format, which was distributed by email and also available for download from several websites. It came out once a week. Every issue contained was a roundup of social and cultural news as well as feminist actions. The form was very rudimentary. I had no money to hire a designer, and I didn’t think design was important. Many people suggested that I convert the .doc files into PDF documents to appear more "advanced." I refused, because most readers didn't have PDF reading software on their computers. I wanted Women's Voices to be able to reach the most readers possible in the cheapest and simplest possible way.</p>
+    <p>I also wanted to get readers to participate in the project. At the time, I had about 1,000 subscribers, many of whom had expressed their enthusiasm for the feminist movement by reading this e-magazine. I urged them to suggest topics and opinions, published their letters and contributions, and devised simple ways to interview them and compile their insights. For instance, I used a group text to send messages on Chinese New Year's Eve to ask readers about their views on CCTV’s coverage of the upcoming Spring Festival, which many feminists thought was sexist. And I relied on readers to help disseminate the e-magazine: to forward it to their relatives, friends, classmates, students...</p>
+    <p>The mother of one of our readers told us that she was surprised by Women's Voices. She had never read anything like it before. Before our magazine, the conversation among feminists in China was quite academic and aimed only at a small audience. For the first time, Women's Voices made many people recognize that feminist ideas could address China's current social reality and give many people new, critical ideas. Women's Voices had no intention of producing a "classic" or eternal discourse. Rather, we wanted to work with our readers to better understand contemporary issues and events. I hoped that our efforts would help illuminate the situation of feminists in China and strengthen our movement.</p>
+    <p>It was not possible to build a women’s movement solely through electronic media, due to the simplicity and constraints of the medium. However, through Women's Voices, I got to know young people who were interested in feminism. Many of them were only children, daughters, women who had gotten higher education, and were living in big cities. They were not only reluctant to live a life of conformity; they were reluctant to tolerate gender inequality.</p>
+    <p>By 2010, social media had become widespread in China. That April, Women's Voices set up an account on the microblogging site Sina Weibo—the Chinese equivalent of Twitter. Initially, we used it to publish our own original content. In April 2011, at a reader's suggestion, the Women's Voices microblog changed its name to Feminist Voices and became the first public platform on Chinese social media that had “feminist” in its name. From this time onward, our focus shifted to social media. Within the network structure of Weibo, we began to establish a feminist community online.</p>
+    <p>At that time, the word "feminism" was still taboo in China. I used to search for accounts tagged with "feminism" on Weibo, but I couldn't find any that were really oriented around feminism besides ours. So when Women's Voices began publishing the Feminist Voices microblog, my friends worried we would scare people away. However, the opposite happened. Feminist Voices began to take off. It grew as Weibo grew. At the same time, we established our own, independent channels.</p>
+    <h3>Into the Streets</h3>
+    <p>On Valentine's Day 2012, under the direction of Feminist Voices, a group of young activists organized a public event at the Beijing City Center. The purpose was to call for the passage of anti-domestic violence laws—there were none on the books—and the theme was “injured bride.” Dressed in white wedding gowns with fake blood smeared on the front, women walked through downtown Beijing holding signs that read "Violence Is Not Love" and “Hitting Is Not Intimacy.”</p>
+    <p>This was the first time that the new Chinese feminism appeared in public, bringing a significant strategic update of the feminist movement with youth as the subject. It was also the beginning of a new strategy at Feminist Voices: we started to coordinate online communication with offline organizations. Ten days later, feminists organized a public event called "Occupy the Men's Bathroom,” which demanded more female public toilets to make the ratio of male to female toilets equal. (A young college student began the movement when she and a group of other protesters held signs outside men's public restrooms in Beijing saying, "Men, please let women use the bathroom first,” and asking men to let women in line use the men's bathroom. The campaign spread across the country and was successful in Guangzhou, where the city government promised to build more female toilets.)</p>
+    <p>The “Occupy the Men's Bathroom” action earned sensationalist coverage from the Chinese media and quickly became one of the top ten trending topics on Weibo. However, the keyword associated with the event was quickly banned from Weibo searches. The feminist topics emerging on social media immediately ran into trouble with censorship.</p>
+    <p>More feminist actions continued in the following months. In June 2012, a public post by Shanghai Metro on their Weibo account encouraging female passengers to “dress appropriately to avoid harassment” sparked a major debate on sexual harassment. On June 24th, a group of anonymous protesters demonstrated in the Shanghai subway by holding signs that said, “It’s fine for me to be sexy, it’s not ok for you to touch” (我可以骚,你不能扰, “Wo ke yi sao, Ni bu neng sao,” a rhyming phrase). Photos of these protesters were sent to us via text message and then posted to Weibo on the Feminist Voices account. This post made great waves—it was shared more than 2000 times—and triggered a heated online debate.</p>
+    <p>In the ensuing controversy, sexual harassment became a public issue for the first time, marking the beginning of a new wave of activism by young Chinese feminists. In the course of this media frenzy, I realized for the first time that effective activism required us to communicate with the mainstream, launching public debates to shed light on feminist issues—and that only by launching these debates would a broader audience become aware of feminist ideas. In the beginning, Women's Voices had advocated “alternative” views. But we now realized that if we wanted Feminist Voices to enter the mainstream, we had to use mainstream means of empowering ordinary people.</p>
+    <p>From 2012 to 2015, China’s young feminist activists created many news events through radical actions. These had two direct effects. The first was to force several government departments to make policy concessions. In May 2013, for instance, the Ministry of Education announced that universities cannot set separate test score cutoffs for applicants of different genders, or establish gender ratios for admission, after a months-long advocacy campaign by feminists. The second effect was to spread feminist ideas more widely. The actions raised the public awareness of feminist issues and established a core community of activists committed to those issues.</p>
+    <p>Feminist Voices became the mouthpiece for this group of young people on social media. Feminist Voices had always tried to play the role of leading and coordinating the online feminist community by posting daily discussions, but we now hoped to bring those discussions into mainstream society.</p>
+    <p>This was not an easy task, for many reasons. At the time, Weibo imitated Twitter and restricted the number of characters to 140. Within this extremely limited range, figuring out how to express ourselves thoughtfully was difficult for me and my colleagues. We had many arguments... Another challenge we had to navigate was the emphasis that social media platforms place on getting more followers. From the beginning to the end, Feminist Voices was the most popular female rights platform on the Chinese internet. We were proud of this and we kept increasing our number of followers. On the other hand, popularity was not our only goal. I had told my young colleagues countless times that we shouldn’t be sensational or emotional, and that our tone should always remain resolutely cool and calm. In my opinion, sensationalism is a way of manipulating your audience. It’s a way to use your readers so that they do not think. In this way, it is anti-feminist.</p>
+    <p>Ultimately, we weren’t a media outlet. Our real goal was not to encourage more people to read us, but to encourage more people to join actions aimed at changing Chinese society. Therefore, for us, communication was only one path to a larger goal: organization and mobilization. This is the biggest difference between alternative media and mass media. Alternative media are the engines of social movements.</p>
+    <h3>Closing In</h3>
+    <p>In 2014, Feminist Voice reached its peak. We had popular accounts across multiple platforms, including Weibo, WeChat, and Douban (a social networking site for young people). We developed a series of video programs and independent documentaries that we distributed on those platforms. We supported a feminist community center, which was open every day, and a theater group that put on feminist plays, while keeping in touch with young feminists, NGOs, and gender researchers across the country. We also gave dozens of public lectures each year at universities and communities in cities.</p>
+    <p>At this time, however, China's social environment was becoming increasingly repressive. Liberal intellectuals no longer occupied positions as dissenters or thought leaders within mass media and social media. In 2013, after Xi Jinping took office, the government placed new restrictions on speech. It adopted stricter censorship rules and used criminal persecutions to crack down on citizens' speech and actions. The state also intensified its control of social media by censoring organic content and creating their own social media propaganda.</p>
+    <p>In August 2013, the government staged the “Eating Bao” event in Beijing. President Xi showed up at an ordinary bao shop, pretending to be a man of the people. Many users posted photos of Xi ordering and eating on Weibo, giving a new image to his leadership. However, this performance was a coordinated, top-down propaganda operation. The government ensured that the photos of Xi dominated the Chinese internet. Moreover, this event had far-reaching implications. The “Eating Bao” event was one of the first cases where the Chinese government directly intervened in social media for propaganda purposes, and it inaugurated a new era of stronger state regulation of online speech. Afterwards, the internet would no longer be a so-called "free zone," but would become an important site of authoritarian governance.</p>
+    <p>The space for activism was never large in China, but under Xi it has shrunk sharply. In 2014, the Chinese government arrested nearly 1,000 human rights defenders. China’s feminist movement was reaching a crossroads. On the one hand, a feminist community had taken shape on social media by the second half of 2014. A broad debate on feminist themes no longer needed to rely on the instigation of core activists. Rather, it was happening spontaneously. On the other hand, the government was constantly harassing and threatening feminist organizers, including the editors of Feminist Voices. These two phenomena coexisted, bringing both excitement and anxiety. In early 2015, I said to a friend, "People outside the inner circle will cheer because of the progress of feminism. People inside will feel more and more anxious. The government has seen the subversiveness of the feminist movement, so some of the feminist activists have been been targeted."</p>
+    <p>Online harassment—possibly directed by the government—became increasingly common. It came in multiple forms, and the platforms did little to prevent it. Early on, Chinese social media platforms had a "free for all" attitude. This could be seen in the phenomenon of the "human flesh search" on Weibo, where users publicly distribute the offline details and whereabouts of people who seemingly deserve public scorn. Similar to “doxxing,” this practice straddles the line between grassroots justice and pure harassment. Features like creating a "blocked list" on Weibo was not possible until late 2009, and even then harassers could continuously create new, anonymous accounts that let them continue attacking you. Regulations to protect users of online platforms were nonexistent, with legal means often unavailable to pursue online harassers. It wasn't until after 2015 that new laws were put into place that increased a platform's accountability for user interactions (as well as opening the door to state surveillance). Overall, however, the platforms continue to prioritize engagement and traffic over the wellbeing of the users.</p>
+    <p>More importantly, online censorship became both more stringent and more subtle. It was as if people on Weibo were gathered in a town square, but everyone was trapped in an invisible cage. The self-censorship was exhausting. Where was the boundary of permissible speech? What was the cost of crossing it? No one knew, so each of us had to try to evaluate every instance for ourselves. Looking back on that period, I’m proud that I never let the fear of censorship prevent me from saying what I wanted to say on Weibo. It’s not that I didn’t consider the risks. But I didn’t feel that we should keep silent because we were afraid of having the account deleted by the censors. For example, we thought long and hard about publishing a piece written by the scholar Ai De Ming on the feminist activist Wang Li Hong. Even if censorship did end up happening, the deletion of our account was nothing compared to what happened to the feminist activists who were thrown into prison such as Wang, who was sentenced to nine months for organizing a demonstration to defend three Fujian bloggers convicted of defamation.</p>
+    <h3>From the Square to the Alley</h3>
+    <p>Ultimately, however, we did become a target of state repression. During the Spring Festival of 2015, Feminist Voices launched an initiative to protest gender discrimination at the CCTV Spring Festival Gala. Feminist Voices started a WeChat group for the event, where people posted critiques. Some of the critiques went viral, as people from the group wrote articles that were circulated widely. However, we paid a price. In the aftermath, Feminist Voices suffered its first large-scale review by government censors. Many of our posts were deleted or blocked.</p>
+    <p>This happened around the time that the wave of feminist actions in China was coming to a climax. On March 5, 2015, I went to New York to attend a United Nations meeting and planned to stay for two weeks. The next day, five young feminist activists were arrested in Beijing, Hangzhou, and Guangzhou because they planned to organize volunteers to hand out flyers against sexual harassment in the bus stations of ten cities on the same day. This became known as the "Feminist Five" case. For the first time in its history, the Chinese Communist Party publicly suppressed a feminist action. Feminist activity was criminalized in a country where the constitution guarantees "equality between men and women." After thirty-seven days, the five sisters were released, but young feminist activists were terrified. Since then, many offline feminist activities have been cancelled, and the state-controlled mass media has reported almost no public feminist activities.</p>
+    <p>As for Feminist Voices, we survived, despite thorough investigations by the state. Still, we were forced to downsize. We closed the community center, and almost completely stopped organizing public events. But we maintained our accounts on the two most important social media platforms, Weibo and WeChat, and we continued to release original content—although many of our posts were quickly deleted by state censors. Due to continuous monitoring and threats, Feminist Voices had to become much more low-key. Continuing to exist became a struggle.</p>
+    <p>During this period, we found that our WeChat account showed better growth. WeChat is a mobile social application developed by Tencent. On WeChat, messages can be seen by your social circle, but not on the open internet. If Weibo is a town square, where everyone can see each other, then WeChat is more like an alley, where only a limited number of people can gather. That’s why WeChat is more suitable for connecting a close community.</p>
+    <p>Feminist Voices became more active on WeChat, and our readers carried on many vibrant feminist discussions in the comment area. On Weibo, by contrast, our influence declined. One of the reasons was that there were many other women's rights accounts. These accounts paid more attention to women's daily life, and weren’t focused on activism.</p>
+    <p>Even as we tried to be more low-key, however, Feminist Voices remained a target of the state. In February 2017, following the US women's strike, the government banned our Weibo account for one month. (The exact reason for the ban remains unclear, but the government was presumably concerned that our coverage of the US women’s strike would help further inspire the Chinese feminist movement; at that time the government was also restricting any communications critical of President Trump, since they expected Trump to be beneficial to them.) The editorial department decided to use this month as a special period. Through WeChat, we published many articles on the history of feminist activism, along with hundreds of photos from supporters from mainland China, Hong Kong, and other countries. (The photos included women wearing pink pussyhats holding signs that said, "Sina Weibo does not care about equality,” and men in Rosie the Riveter poses with signs that said, "I need Feminist Voices!") At the end of the ban, the editorial department sent the following letter of thanks:</p>
+    <blockquote><p>Feminism has gone from the periphery to the center of the public eye. As a movement, it is constantly facing new situations and challenges. We want to thank you, not only for your concern, your support and perseverance in the face of crisis and doubt cast on women’s voices, but also for your firm stand with feminism... We have always intended to persist; your choice to stand with us affirmed our mission. We know this was a choice based on your values, and not an easy choice to make.</p></blockquote>
+    <h3>Afterlives</h3>
+    <p>During the following year, the pressure on feminist activists in China escalated. In May 2017, the head of the All-China Women’s Federation—the country’s official women’s rights organization with close ties to the Chinese Communist Party—made a public speech accusing feminists of spreading Western ideas. They alleged that “Western hostile forces... actively peddled Western feminism” and “female supremacy” under the banner of “poverty alleviation,” “charity,” “empowerment,” and other labels.</p>
+    <p>The All-China Women’s Federation is basically a megaphone for government propaganda. Its conflation of feminism with “Western hostile forces” isn’t something that the organization’s leadership came up with on their own, but rather absorbed from the official state-controlled discourse. And this discourse, backed by violent suppression, was becoming increasingly anti-feminist. It was becoming okay to openly condemn feminists and even to circulate the most ridiculous rumors, such as the false claim that Saudi Arabia funded Feminist Voices. These attacks not only sapped our energy—energy we could have otherwise used to help women. They also created a malicious environment that made feminists and their supporters silent, afraid, and isolated.</p>
+    <p>In January 2018, the #MeToo movement began to rise in China, and women‘s anger that had accumulated for a long time against sexual harassment finally broke out. Almost everything happened on the internet because it was difficult to move offline. At this time, Feminist Voices only provided support by sharing articles via Weibo and WeChat. But when the “relevant departments”—China’s domestic security agencies—tried to convict the organizers of the movement, they didn’t target the young activists and students at the forefront. They targeted Feminist Voices.</p>
+    <p>In the middle of the night on March 8, 2018, Feminist Voices was shut down on Weibo because of the “posting of sensitive violation information.” After a few hours, the WeChat account was also banned, under the vague charge of “violating relevant laws and regulations.” On its last day, Feminist Voices had 250,000 followers on both platforms.</p>
+    <p>The next day, on March 9, 2018, the WeChat index—similar to Twitter’s trending topics—showed a significant increase in the popularity of the word "feminist," apparently related to the crackdown on Feminist Voices. Then, ten days later, a huge WeChat public account, whose daily theme was completely unrelated to feminism, issued a long article accusing Feminist Voices of being related to “criminal prostitution groups” and “outside reactionary forces.” This very sensational article quickly gained tens of millions of views online. However, when we tried to publish a rebuttal, it was removed after only 4,000 clicks. Any mentions of Feminist Voices’ legal work—such as our unsuccessful attempt to sue Weibo and WeChat in order to challenge the closure of our accounts—were banned, along with any articles or photos sent by our readers or supporters. WeChat shut down some supporters’ personal accounts, and Weibo even forbade users from using our logo as an internet avatar.</p>
+    <p>After that, the popularity of search terms related to feminism on the Chinese internet plummeted. Obviously, people had gotten the message that feminism was “unpopular” and should be taboo. This represented yet another front in the war that the state had been waging against feminism since 2015. However, this time, the means was no longer criminal investigation but online repression. Its purpose was to obliterate the social contribution of feminists, cut off our social network, abolish feminist actions’ legitimacy, and drive us out of the public spaces where we have been working hard for the past few years.</p>
+    <p>At that time, from New York, I wrote in an article:</p>
+    <blockquote><p>Many people may not understand why feminism is a "sensitive" topic, and I have always felt the same way. Regardless of the personal views of its participants, China’s feminist movement does not oppose the government agenda, and it has always paid more attention to economic, social, and cultural rights than civil and political rights. The policies and reforms advocated by the feminist movement do not touch the core of political power. However, we do not make the rules. I have gradually come to understand that there are three other factors that had to be considered. The first is that feminism is ultimately critical and serves to ask, “Who is responsible?” Second, any force that shows social organization and mobilization will be taboo, no matter what its claims are. Third, when the public space collapses, feminism cannot escape that kind of disaster. When dissenting thoughts and opinions are removed, feminist thought is also removed. In the future, we can go underground, but we will become isolated. Feminists cannot publicly preach and advocate for our cause...</p></blockquote>
+    <p>At that time, I said, "We have no choice but to resist." But how were we supposed to resist? Even though I was free, in the United States, I felt like a person who was being held captive.</p>
+    <p>In the most painful period, I was grateful for the companionship and dedication of my friends. I had never met many of them. They were our readers, and they created pictures, articles, and comics for Feminist Voices. Their contributions that were now deleted by the online platforms, their accounts that were canceled and no longer existed—all that they had sacrificed became part of a precious friendship.</p>
+    <p>I have come to realize that it is not the wisdom of leaders, but the contributions of the many “ordinary” feminists that keep the feminist movement alive. The rank and file contribute a large amount of unpaid work, and broadcast the work of Feminist Voices by relaying articles and working around censorship. It is through them that I had realized more deeply than ever that Feminist Voices was so important to everyone. They remembered how they used to find Women's Voices in the past when it consisted of .doc files, starting from the era of desktop computers, starting in high school, reading every day, saving the articles.</p>
+    <p>Some people said that our magazine was their best friend. Some people said that our magazine was alive. Some people said that the death of Feminist Voices felt like the death of a famous singer. Of course, I didn’t make that comparison myself. It was only until after Feminist Voices was gone that I realized that the purpose of creating feminist knowledge was to share and disseminate that knowledge.</p>
+    <p>When one part of our life dies, we take what we are left with and work hard to move on. This is the responsibility of social activists. I will always mourn Feminist Voices. It is such a beautiful name. It carries the enthusiasm, persistence, faith, and love of so many people, and I am proud and sad for it. I will also guard the intellectual riches created by Feminist Voices and strive to ensure that its history is not forgotten.</p>
+    <p>But I can't end on that note. The government may have blocked Feminist Voices, but they cannot block the feminist movement. About a month after the closing of Feminist Voices, the Chinese #MeToo movement set off a new wave of conversation and activism. By August 2018, an unprecedented, shocking tide of feminist activity had taken off —even if participants were not foregrounding the term "women’s rights." (In fact, some people online used emoji to avoid censorship. Instead of posting “#MeToo,” they used the emoji for a bowl of rice (mi) and a rabbit (tu), which together sound the same as “me too.”)</p>
+    <p>In 2012, I thought that we were starting a campaign. In 2015, I feared that the campaign was about to fail—I was wrong. In 2018, I finally realized that our campaign was just beginning. The movement is vast and networked: it has no central leadership. But this does not mean that it doesn’t need competent communicators, organizers, and trainers. So, as I write this article, we have begun to pursue the next stage of our campaign.</p>
+
+    <p class="back"><a href="2018-feminist-voices-nine-years.html" lang="zh-Hans">中文原文</a> · <a href="writings.html">Writing Archive</a></p>
+
+  </main>
+
+</div>
+</body>
+</html>
