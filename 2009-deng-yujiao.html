@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>邓玉娇事件回顾 &mdash; 吕频</title>
+<meta name="description" content="吕频对2009年邓玉娇事件的回顾。">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="canonical" href="https://lupin.phd/2009-deng-yujiao.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="邓玉娇事件回顾 — 吕频">
+<meta property="og:description" content="吕频对2009年邓玉娇事件的回顾。">
+<meta property="og:url" content="https://lupin.phd/2009-deng-yujiao.html">
+<meta property="og:image" content="https://lupin.phd/photo-full.jpg">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600&display=swap" rel="stylesheet">
+<style>
+/* ---------------------------------------------------------------
+   Shared styles.
+   Layout:  narrow sidebar (identity + navigation) beside a single
+            reading column set to a bibliographic measure.
+   Palette: cool paper, ink, one deep teal used sparingly.
+   Type:    Source Serif 4 for reading, Archivo for labels and nav.
+   --------------------------------------------------------------- */
+
+:root {
+  --paper:      #F2F3F0;
+  --ink:        #161C1A;
+  --ink-quiet:  #5E6863;
+  --rule:       #D5D9D2;
+  --accent:     #145A3C;
+  --accent-mid: #3E8A63;
+  --accent-pale:#BFD6C6;
+
+  --serif: "Source Serif 4", Georgia, "Songti SC", serif;
+  --sans:  "Archivo", -apple-system, "Helvetica Neue", "PingFang SC", Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 17px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  border-top: 3px solid var(--accent);
+}
+
+a {
+  color: var(--accent-mid);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  text-decoration-color: rgba(62, 138, 99, 0.4);
+}
+a:hover {
+  color: var(--accent);
+  text-decoration-color: var(--accent);
+}
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+/* ---------- page frame ---------- */
+
+.page {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 3rem 2rem 4rem;
+  display: grid;
+  grid-template-columns: 13rem minmax(0, 41rem);
+  gap: 4rem;
+}
+
+/* ---------- sidebar ---------- */
+
+.sidebar {
+  position: sticky;
+  top: 3.5rem;
+  align-self: start;
+}
+
+.sidebar .name {
+  font-family: var(--sans);
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  margin: 0 0 1.5rem;
+  line-height: 1.35;
+}
+.sidebar .name a { color: var(--ink); text-decoration: none; }
+.sidebar .name a:hover { color: var(--accent-mid); }
+
+.sidebar nav {
+  font-family: var(--sans);
+  font-size: 0.84rem;
+  border-top: 1px solid var(--rule);
+  padding-top: 0.9rem;
+}
+.sidebar nav a {
+  display: block;
+  padding: 0.28rem 0 0.28rem 0.85rem;
+  margin-left: -0.85rem;
+  border-left: 2px solid transparent;
+  color: var(--ink-quiet);
+  text-decoration: none;
+}
+.sidebar nav a:hover { color: var(--ink); }
+.sidebar nav a.current { color: var(--ink); border-left-color: var(--accent); }
+
+/* ---------- headings ---------- */
+
+h1 {
+  color: var(--accent);
+  font-family: var(--serif);
+  font-size: 1.9rem;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -0.012em;
+  margin: 0 0 1.3rem;
+  text-wrap: balance;
+}
+
+h2 {
+  font-family: var(--sans);
+  font-size: 0.74rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 2rem 0 0.85rem;
+  padding-bottom: 0.45rem;
+  border-bottom: 1px solid var(--accent-pale);
+}
+
+h3 {
+  font-family: var(--serif);
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.35;
+  margin: 1.4rem 0 0.4rem;
+}
+
+/* ---------- text ---------- */
+
+p { margin: 0 0 0.85rem; }
+
+p.lede { font-size: 1.16rem; line-height: 1.6; margin-bottom: 1.5rem; }
+
+.note { font-size: 0.92rem; color: var(--ink-quiet); }
+.at { color: var(--ink-quiet); font-style: italic; }
+.cn {
+  font-family: "Noto Serif SC", "Songti SC", "SimSun", serif;
+  color: inherit;
+  font-weight: 400;
+  font-size: 0.88em;
+  margin-left: 0.34em;
+}
+
+
+
+.status {
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  letter-spacing: 0.02em;
+  color: var(--ink-quiet);
+}
+
+/* ---------- lists ---------- */
+
+/* Bibliographic hanging indent, as in a reference list. */
+ul.entries { list-style: none; margin: 0 0 1.15rem; padding: 0; }
+ul.entries li {
+  padding-left: 1.5rem;
+  text-indent: -1.5rem;
+  margin-bottom: 0.8rem;
+}
+ul.entries li .note,
+ul.entries li .status { display: block; text-indent: 0; }
+
+ul.plain { margin: 0 0 1.15rem; padding-left: 1.1rem; }
+ul.plain li { margin-bottom: 0.25rem; }
+
+/* ---------- contact list ---------- */
+
+dl.info { margin: 0; }
+dl.info dt {
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-quiet);
+  margin-top: 0.9rem;
+}
+dl.info dd { margin: 0.15rem 0 0; }
+
+/* ---------- portrait (home page sidebar) ---------- */
+
+.portrait {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border: 1px solid var(--accent-pale);
+  margin: 0 0 0.55rem;
+  background: #E4EAE6;
+}
+.portrait-note {
+  font-family: var(--sans);
+  font-size: 0.86rem;
+  line-height: 1.5;
+  margin: 0 0 1.8rem;
+}
+.portrait-note a {
+  display: block;
+  padding: 0.3rem 0;
+  text-decoration: none;
+  color: var(--ink);
+}
+.portrait-note a:hover { color: var(--accent); }
+.portrait-note a::before {
+  content: "\2193";
+  display: inline-block;
+  width: 1em;
+  color: var(--accent);
+}
+
+@media (max-width: 860px) {
+  .portrait { width: 8.5rem; aspect-ratio: 4 / 5; float: left; margin: 0 1.1rem 0.6rem 0; }
+  .portrait-note { clear: both; margin-bottom: 1.1rem; }
+}
+
+/* ---------- news (home page) ---------- */
+
+ul.news { list-style: none; margin: 0 0 1.5rem; padding: 0; }
+ul.news li {
+  display: grid;
+  grid-template-columns: 5.75rem minmax(0, 1fr);
+  gap: 1rem;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+ul.news li:first-child { border-top: 1px solid var(--accent-pale); }
+ul.news .date {
+  font-family: var(--sans);
+  font-size: 0.74rem;
+  letter-spacing: 0.05em;
+  color: var(--accent-mid);
+  padding-top: 0.3rem;
+}
+ul.news .item { margin: 0; }
+ul.news .item .note { display: block; margin-top: 0.15rem; }
+
+/* older news, collapsed by default (no JavaScript) */
+details.more { margin: 0 0 1.5rem; }
+details.more > summary {
+  list-style: none;
+  cursor: pointer;
+  font-family: var(--sans);
+  font-size: 0.9rem;
+  letter-spacing: 0.02em;
+  color: var(--accent-mid);
+  padding: 0.85rem 0;
+}
+details.more > summary::-webkit-details-marker { display: none; }
+details.more > summary::before {
+  content: "\002B";
+  display: inline-block;
+  width: 1.1em;
+  color: var(--accent-mid);
+}
+details.more[open] > summary::before { content: "\2212"; }
+details.more > summary:hover { color: var(--accent); }
+details.more .label-less { display: none; }
+details.more[open] .label-more { display: none; }
+details.more[open] .label-less { display: inline; }
+details.more ul.news,
+details.more ul.entries { margin-bottom: 0; }
+details.more > p:first-of-type { margin-top: 0.35rem; }
+details.more > p:last-of-type { margin-bottom: 0.35rem; }
+details.more ul.news li:first-child { border-top: 0; }
+details.more > summary { margin-top: -0.35rem; }
+
+@media (max-width: 640px) {
+  ul.news li { grid-template-columns: minmax(0, 1fr); gap: 0.15rem; }
+  ul.news .date { padding-top: 0; }
+}
+
+/* ---------- footer ---------- */
+
+main > footer {
+  margin-top: 2.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--rule);
+}
+main > footer p {
+  margin: 0;
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  color: var(--ink-quiet);
+}
+main > footer a { color: var(--ink-quiet); text-decoration-color: var(--rule); }
+main > footer a:hover { color: var(--accent); }
+
+/* ---------- responsive ---------- */
+
+@media (max-width: 860px) {
+  .page {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2.25rem;
+    padding: 2.25rem 1.5rem 4rem;
+    max-width: 42rem;
+  }
+  .sidebar { position: static; }
+  .sidebar .name { margin-bottom: 1.1rem; }
+  .sidebar nav {
+    border-top: 0;
+    padding-top: 0;
+  }
+  .sidebar nav a {
+    display: inline-block;
+    margin: 0 1.1rem 0.3rem 0;
+    padding: 0 0 0.2rem;
+    border-left: 0;
+    border-bottom: 2px solid transparent;
+  }
+  .sidebar nav a.current { border-bottom-color: var(--accent); }
+  h1 { font-size: 1.6rem; }
+}
+
+@media (max-width: 460px) {
+  body { font-size: 16px; }
+  .page { padding: 2rem 1.15rem 3.5rem; }
+}
+
+/* ---------- print ---------- */
+
+@media print {
+  body { background: #fff; border-top: 0; }
+  .page { display: block; max-width: none; padding: 0; }
+  .sidebar nav { display: none; }
+  a { color: #000; text-decoration: none; }
+}
+
+.zh { font-family: "Noto Serif SC", "Songti SC", "SimSun", serif; }
+ul.entries li .zh-title { font-family: "Noto Serif SC", "Songti SC", "SimSun", serif; font-weight: 600; }
+ul.entries li .meta { display: block; text-indent: 0; font-family: "Noto Serif SC", "Songti SC", "SimSun", serif; font-size: 0.92rem; color: var(--ink-quiet); }
+
+.article h1 { font-family: "Noto Serif SC", "Songti SC", "SimSun", serif; font-weight: 600; font-size: 1.6rem; line-height: 1.5; }
+.article .meta-line { color: var(--ink-quiet); margin: 0 0 2rem; }
+.article p { font-family: "Noto Serif SC", "Songti SC", "SimSun", serif; line-height: 1.95; text-align: justify; }
+.article .back { font-size: 0.92rem; margin-top: 2.5rem; }
+.article h3 { font-family: "Noto Serif SC", "Songti SC", "SimSun", serif; font-weight: 600; font-size: 1.05rem; margin: 1.8rem 0 0.6rem; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header class="sidebar">
+    <p class="name"><a href="index.html">Lü Pin</a></p>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="public.html">Public scholarship</a>
+      <a href="writings.html" class="current">Writing Archive</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="article" lang="zh-Hans">
+
+    <h1>邓玉娇事件回顾</h1>
+    <p class="meta-line">吕频　2009年</p>
+
+    <p>邓玉娇事件无疑是2009年最重要的社会热点事件之一，它本身具有一定的偶然性，但随着它迅速被卷入舆论的风暴眼，后续的动态变得纷纭复杂，在各方力量的争议和拉扯之中，后续动态和最终结果都远远超出了一般刑事案件的常规。对于当下的中国社会现实，这一事件提供了一个很有意义的透视角度，而中国妇女权利的生态环境也由其可见一斑，尽管在围绕这一事件的种种表演中，性别立场相当边缘化。</p>
+    <h3>一. 事件概述</h3>
+    <p>2009年5月10日晚，湖北恩施土家族自治州巴东县野三关镇的雄风宾馆内发生了一起血案：21岁的宾馆服务员邓玉娇将44岁的镇招商办主任邓贵大刺死。</p>
+    <p>据巴东警方通报及媒体报道称，事件由邓贵大及其同伴向邓玉娇强求“异性洗浴服务”引发，因邓玉娇拒绝提供服务，双方发生言语及身体冲突，邓玉娇以随身携带的水果刀乱刺，邓贵大受伤后抢救无效死亡，另一同伴受伤。</p>
+    <p>邓玉娇随即向当地公安机关自首，并于5月11日被刑事拘留，因其包中发现抗抑郁药物，她一度被送入精神病院，后改为监视居住。2009年6月初，巴东县检察院以故意伤害罪对邓玉娇提起公诉，6月16日，巴东县法院开庭审理此案，当庭认定她构成故意伤害罪，但系在遭受不法侵害时防卫过当，且其在案发时患有“心境障碍”，仅须负部分刑事责任，又有自首情节，因此对她免予刑事处罚。</p>
+    <p>事后，在地方政府的安排下，邓玉娇离开野三关就职于一家电视台，并改换了姓名，过上了据说平静而“幸福”的生活。</p>
+    <p>然而，以上概述远不能反映这一事件的全貌。本应对命案性质认定及量刑产生关键影响的一些事件细节至今仍扑朔迷离，没有公论，而地方权力机关对案件的处置，则是在全国舆论高度关注下，在与媒体、网民、律师……等各种社会力量的互动中步步展开的，其中情节，有人说：“太像一部电影了，波谲云诡、跌宕起伏。”1至于案件的判决，最高人民法院认为是“取得了较好的法律效果和社会效果”2，而另一些人则认为是地方机关与社会力量相互妥协的结果，或者称为“有限让步”。3</p>
+    <h3>二. 为什么关注邓玉娇</h3>
+    <p>在邓玉娇事件之前，从2008年开始，全国各地相继发生了一些影响广泛的妇女权利事件，例如因一名女中学生被怀疑奸杀而导致的贵州瓮安群体性事件、浙江丽水“嫖宿幼女”案、贵州习水公职人员“嫖宿幼女”案、深圳海事局某官员“猥亵女童”（后公安机关认定不构成猥亵）案等等，其中贵州习水“嫖宿幼女”案刚刚在当年4月在舆论压力下被撤回补充侦查。在这些事件中，个别地方公职人员的行为作风遭到了严厉抨击，而地方机关在处置中的公正性则受到质疑。</p>
+    <p>而邓玉娇事件又是一个同类的典型事例，死者邓贵大的言行重现了个别基层公务员的腐败、堕落和骄横，而邓玉娇则似乎不过是以极端的方式表达了对此种作风的痛恨和抗争，尽管她针对的是邓贵大个人，但在他们背后，却是某种早已暗中失衡的权力关系和痼疾深重的权力制度，而在压抑的不满中，公众对所有这类冲突都已经高度敏感，正如《南方都市报》5月23日的社论所说：“邓玉娇案之所以从个案发展成为轰动全国的公共事件，其时代背景正在于这些年来积聚的社会不公、司法腐败与官民断裂，急需一个宣泄的出口。”4这种社会和心理背景，注定了这一事件的外延绝不会被限于个案。</p>
+    <p>与此同时，邓玉娇事件和此前的那些事件一样都有一个关键词，即“性”。涉性的纠纷令人感兴趣几乎是“自然而然”的，个别公务员在性方面的腐化被认为是社会风气败坏的根源，早已令人深恶痛绝，当这种腐化成为对底层弱势妇女的侵害时，所激发的与性有关的道德感就被高度正当化，尽管这种道德感未必与陈旧的贞操观彻底划清界限。</p>
+    <p>因此，邓玉娇事件注定了将受到社会各界的高度关注，它从被媒体捕捉到的那一刻开始，就被建构成一个令人厌恶的权力者对一个无辜弱势女子的故事，在这个故事当中，杀人者不但是完全清白、令人同情的，甚至还是一个值得赞美的“女英雄”，而是否支持她，则首先是一个关于社会公正的道德选择甚至政治选择，而不是技术化的法律判断，尽管法律的争议后来也始终不断。</p>
+    <h3>三. 媒体报道背后的议程设置</h3>
+    <p>5月11日中午，巴东县政府的官方网站长江巴东网率先发表了对此案的报道，5月12日，在汶川地震纪念一周年的消息成为所有报纸的头号选题的这一天，宜昌的《三峡晚报》在“今日要闻”版中对此案做了重点报道，并做了头版导读，5月13日开始，其他地方的报纸开始报道此事，广州的《南方都市报》从这一天到2009年6月2日共发表相关报道21篇，平均每天超过一篇，其中有7篇头版导读。5而北京的《京华时报》则从5月14日开始到当年6月17日发表相关报道16篇，其中有4篇头版导读。6</p>
+    <p>按照新闻传播学的观点，大众媒体可以通过突出某些议题来影响公众对议题的优先排序，这是媒体的重要功能之一：议程设置。当然，在这种设置所依循的“新闻规律”背后，是媒体对受众心理和自身定位的把握，以及对中国社会形势的评估。例如《南方都市报》以“时代进程的记录者，言说者；现代社会的培育者，陪伴者；公民意识的启蒙者，同行者”自居，对媒体来说，承载这种使命的方式，就是寻求和追踪像邓玉娇事件这样的个案，通过重大个案的解剖来说明和推动它所关注的社会议题。</p>
+    <p>所谓“客观中立”只是媒体的愿景或说辞，它们总是在或明或暗地表达自己对新闻事件的立场，并希望这种立场能够得到读者的认同。如《南方都市报》就曾多次发表明确支持邓玉娇、质疑巴东地方机关的观点，例如其5月15日的社论《女工受辱自卫 关抑郁症何事》，指出公众对事件的认识与警方的侦查方向有分歧，对邓玉娇的精神病鉴定可能会干扰对正当防卫的认定。但另外一方面，媒体的立场并不一定总能得到读者的认同，该报5月20日的调查报道《女服务员与招商办官员的致命邂逅》，由于披露了邓玉娇在案发前情绪不稳，并对邓贵大做了一些温和的描述，遭到了一些读者的反感。不过，总的来说，该报和其他媒体的总体立场仍然是同情邓玉娇，并努力提供来自地方权力机关之外的信息，与此同时也不断借此事件重申其在公民权利、公民意识、权力监督等方面的一贯观点，同时向决策者警示与民意割裂的危险。</p>
+    <p>总之，在邓玉娇事件当中，媒体所发挥的作用绝不仅限于传递信息，而是通过传递信息成为了推动事件发展的重要力量，其所笃信的价值观也通过报道传递给了读者。</p>
+    <p>应该提出的是，一些媒体对此事的报道没有肃清传统社会性别观念的流毒，如《南方都市报》5月20日发表的一篇评论，其中说：“如果21岁的烈女邓玉娇‘故意杀人’定性之后，并最终罪名成立获刑，在后邓玉娇时代，我们的妻女亲人，我们的女同胞们，在遭遇权贵猥亵欺辱邪行的时候，该做怎样的应对？是奋力反抗不惜杀伤恶徒自保清白却堕入‘故意杀人’之嫌，还是默默承受以免刑责加身？这，真是个让人绝望的两难选择！”这篇文章将邓玉娇的维权自卫行动解释成捍卫“贞操”的旧故事，把妇女的权利斗争转移为男人对妻女“清白”的捍卫，这种基于传统男性道德立场的观点，在媒体上并没有受到应有的反驳。</p>
+    <h3>四. 一边倒的网络舆论</h3>
+    <p>另外一个重要的介入性力量是网民。在影响最大的新浪网上，关于该事件的评论在几个小时内就达到数万条，而在人民网强国社区、凯迪、天涯等论坛，大量帖子和回复中的态度则更加活跃和尖锐，相应的QQ群和专门的“邓玉娇维权网”也建立了起来，网络舆论形成之快、范围之广，称为网络风暴毫不为过。很多人把使命感注入到对邓玉娇命运的关切当中，有人说：“每次看到关于社会黑暗面的报道，总有人悲哀的问我，中国还有没有救。我要说有，这些不懈关注的网友和帖子，代表了追求正义的国人，代表了未来的希望。”7互联网为民众特别是年轻人提供了一个公共的舆论场，在这个场里不但可以相对自由地发表观点，而且可以快速地与他人交流碰撞，并由此体会到比现实生活中强得多的表达和参与的成就感。互联网已经成为中国民众参与社会和政治生活的重要平台，这一点在邓玉娇事件当中得到了显著的表现。</p>
+    <p>很多人指出在该事件当中网络舆论是“一边倒”的，在央视网的投票调查中，认为“邓玉娇属正当防卫，应无罪释放”的票数高达92%以上，有人将评论该事件的网民态度趋向分为四种：义愤填膺型、深刻型、表现型、无奈型，并认为在案发近一个月的时间中，前两种类型一直占据主导。8也有人指出，一些网民的观点比较情绪化，“凡是对邓女有利的说法，网民不加思考地一律采信；凡是对邓女不利的信息，网民一概不信。”尽管在个案当中，这种高度一致的强烈诉求可能有助于促进问题的迅速解决，但从长远来说，这种简单化的思考方式不利于多元观念的发展。9</p>
+    <p>另外，在互联网上还出现了大量男性化的暴力语言，同时“弱女子”、“烈女”成为对邓玉娇的流行赞美，甚至有人主张为她立“烈女”碑。互联网的女性用户在不断增加，但网上表达意见的人群仍以男性为主，男性思维更是占据主导，在非黑即白、非敌即友的极化逻辑下，对互联网上的男性思维做冷静辩论的机会基本没有。尽管邓玉娇个人的权利得到了充分支持，但这绝不表示网民理解了妇女权利作为人权的重要性和广泛性，更与社会性别视角基本无关。</p>
+    <p>互联网上的绝大多数声音仍然是围绕着传统媒体报道展开，只是对这些报道的再发酵，其中的在场感仍然是虚拟的，但是，互联网上的虚拟在场已经开始向网下的亲身干预延伸，5月17日，网友屠夫在其他人的资助下到达邓玉娇当时所住的精神病院，这是整个事件中外界与邓玉娇难得的直接接触之一。他发到论坛上的照片和信息被广泛转载，因此成为传统媒体之外“掌握网络民间发言权”的舆论领袖。在这个示范性的行动之后，网民直接“围观”社会热点事件的尝试一个接一个，中国的公民参与是否将由此进入一个新的阶段，值得观察。</p>
+    <h3>五. 迟缓的妇女组织与妇联</h3>
+    <p>5月16日，一封以“立即无罪开释邓玉娇”为题的“社会各界致公安部的公开信”出现在互联网上，签名者中有学者、作家、媒体人等，有组织的联合发声和行动由此开启。5月24日，北京大学妇女法律援助服务中心和北京益仁平中心联合组织了““女性权益保障与尊严维护暨邓玉娇事件”研讨会，并计划成立各类人群的声援团支持邓玉娇。随后，中国法学会反对家庭暴力网络、北京大学妇女法律研究与服务中心、北京红枫妇女心理咨询中心、陕西妇女理论婚姻家庭研究会相继发表了针对该事件的声明。其中中国法学会反家庭暴力网络的声明中，提出应该认真查清邓玉娇有没有遭受性侵害，抽调妇女权益保护意识强、处理性侵害案件经验丰富的人员参加案件的侦查工作，向她提供法律、心理、医疗等多方面的社会救助，尊重妇女人格尊严，避免“邓玉娇”们成为男权社会的娱乐对象等观点。社会性别与发展在中国（GAD）网络则组织了以该事件为主题的社会性别评论征文，益仁平中心和中国民间女权工作室还分别在北京和武汉做了相关的行为艺术表演。</p>
+    <p>不过总的来说，，相对于媒体、网民和公益律师，民间组织对邓玉娇案的介入比较迟缓，而且缺乏直接行动；除了行为艺术活动之外，大多数也没有得到公众和舆论的重视，对北京五家报纸的报道监测发现，在围绕该事件的报道中，均没有提及民间组织的活动，也没有援引这些组织的观点。民间妇女组织因此受到了一些误解和批评。</p>
+    <p>中国民间组织的力量仍然微薄，动员和倡导的经验比较有限，对与妇女权利相关的重大热点事件做出快速反应的意识和能力准备也不够充分，邓玉娇事件暴露了民间组织特别是民间妇女组织在这方面的弱点。但另一方面，妇女权利和性别平等并不是由妇女组织垄断的议题，如一位妇女组织成员所说：“男性的积极参与，对于妇女权益的促进是机遇，也是妇女组织学习成长的机会。但是，绝不是恩赐，更不应该成为道德优越的标签，以及指责妇女组织的理由。”10</p>
+    <p>邓玉娇事件把回应突发事件、积极参与公共事务的课题摆在了民间妇女组织的面前，将妇女权利和性别平等的主张带入公共话题，需要对条件和风险的准确评估，也需要创意和效率。在邓玉娇事件之后，中国法学会反家暴网络和社会性别与发展在中国（GAD）网络建立了专门的紧急回应小组，这方面的实践还需要在演练中不断积累。</p>
+    <p>5月22日，全国妇联在其主办的中国妇女网上发表声明，称“高度重视邓玉娇案并将密切关注案件进展”，对全国妇联来说，就一起尚未定论的个案公开表态并不寻常，这实际是对公众强烈要求妇联介入此案的被动回应，在这之前，全国妇联的维权部门已经接到了许多这样的来电。</p>
+    <p>妇女权益保障法和妇联章程都明确了“代表和维护各族各界妇女的利益”是妇联的职责，为邓玉娇这样的受害者维权应该是妇联的份内事，而且，妇联虽然被定位为群众团体，但仍拥有相当的体制资本，它有条件、有能力对这类事件的走向发挥一定的作用。但是，以往此类事件发生时，妇联却往往保持沉默，究其原因，在于妇联的实际功能与其名义职责有所脱节，作为“党和政府联系群众的桥梁纽带”，妇联将主要精力用于围绕党和政府的中心工作动员妇女，却缺乏与妇女站在一起的独立担当，加之工作方式行政化甚至官僚化，意识形态上又过于保守，导致它对很多弱者维权要求都难以响应，特别是面对权力机关本身也牵涉其中的事件时，更难以摆脱暧昧的态度。</p>
+    <p>但是，妇联不仅为维持庞大组织系统而使用了许多公共资源，也占据了民间组织成长的空间，对民间妇女组织的羸弱和由此造成的维权真空，妇联负有一定的责任。</p>
+    <p>向妇联问责也是公民意识觉醒的一种表现，全国妇联的声明尽管有些类似“外交辞令”，但无疑仍是一个进步，如果能更进一步，能够诚恳回应草根妇女的需求，改革自己的工作方式和思想观念，回归维权本位，并开放与民间妇女组织的平等合作，它将会得到更多的社会肯定。</p>
+    <h3>六. 地方政府“应对舆情”的失败</h3>
+    <p>对一起“普通命案”引发如此民意汹涌，巴东地方机关开始似乎并无准备，后来也始终处于被动应对之中，但是，它所采取的一些应对措施，包括多次通报侦查进展，安排邓玉娇接受精神病鉴定等，却一次次地受到质疑，甚至陷入了“不管说什么，都会被网民骂死”的窘境。或许，在这种地方机关公信力已经非常菲薄的社会大环境下，质疑与其说是就事论事，毋宁说是借机投出早就写好的不信任票。</p>
+    <p>坚持公正、公开、透明，重建公众信任，是让地方机关走出这种窘境的惟一选择，但是，在“维护稳定”的动力和压力下，它们往往却不会、不愿、不能这样做。巴东地方机关后来转变了“把案子办得透明些”的思路，转而采取了封闭的态度，邓玉娇对维权律师的委托被莫名撤销，记者和网友被限制进入巴东，甚至当地的通信也一度产生故障。5月28日，外地记者撤出巴东，网络舆论相继收紧，大批帖子被删除，到6月16日一审宣判时，前期的众说纷纭已经变成了一场独脚戏，尽管正当防卫、免予处罚的结论在相当程度上符合民众此前的期待，但很多人却对这一结果感到失望。</p>
+    <p>7月中旬，人民网网络舆情监测室对2009上半年10件社会热点事件中地方政府的舆情应对表现进行统计分析，巴东对邓玉娇事件的处理排名仅为第九，其评论者说：“地方政府在此案的信息透明方面与过去相比并非毫无进步，然而，这起案件也突出反映出基层政府对信息公开的基本方法和技巧十分陌生。”据说，邓玉娇事件耗费了惊人的巴东地方财政经费，一些基层官员事后受到处分，其教训是沉重的。</p>
+    <p>实际上，所谓“应对舆情”本身或许就是一个陷阱式的概念，它把地方政府与舆论对立起来，并使人误以为可以通过一些暗箱操作来转移视线、压制批评，这种思路不是真正解决社会矛盾，重建社会公信的方案。一些地方政府为了维护“面子”而不计代价地保护个别无良官员，拒绝纠正他们的罪错，这等于是让自己被这些人绑架，而“维稳”的思路又让政府把民众的正当要求和合法行动负面化，却因弹压行动的侵权性使裂痕进一步扩大。要走出这种怪圈，地方政府必须在执政理念和行政方式上都做出重大的改变。</p>
+    <h3>八. 结论：被“利用”的妇女暴力事件</h3>
+    <p>邓玉娇事件事出偶然却又绝不偶然。在未必自觉的愿望之下，一个由对妇女暴力事件引发的刑事案件，颇具戏剧性地召唤出了许多人在日常生活中压抑的焦虑和愤怒。在这个事件当中，性别和性暴力成了权力机制的象征，但其本身却并没有受到足够的重视，尽管许多人强调着邓玉娇的“弱女子”身份，有社会性别视角的分析和妇女组织的声音却被高度边缘化。因此，邓玉娇事件并不能说明公众建立了对妇女权利和性别平等的持续友好态度，实际上，对妇女的暴力或许只是一个被“利用”的契机，而暴力生长的土壤仍然非常深厚。</p>
+    <p>媒体和互联网在舆论上改变了此案中的强弱对比，并或许在一定程度上制衡了地方机关，最终收获了一个相对温和的结果。但是，这一事件中并没有简单的“胜利”，就像没有简单的“公正”一样，它如同河流中一朵浪花，激荡起了许多潜伏的冲突，但河流的走向仍然未知。整个事件的过程跌宕起伏，中国社会的未来前程必定也是如此。</p>
+    <p>邓玉娇事件所留下的最大财富，是展现了联合行动的重要性，媒体、网民、律师、民间组织……都在介入中显示和确认了自身的力量，而且在许多方面都突破了原有的局限，在这样的实践当中，原有的权力迷思逐渐退隐，中国公民社会的自觉意识越来越强，公民社会各个方面的连接，更成为下一步的紧迫议题。</p>
+
+    <p class="back" lang="en"><a href="writings.html">Writing Archive</a></p>
+
+  </main>
+
+</div>
+</body>
+</html>
